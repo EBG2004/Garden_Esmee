@@ -12,6 +12,22 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 Een fork van de model repository gemaakt en gepubliceerd via mijn eigen Github omgeving. ook heb ik al mijn huiswerk voor volgende week afgemaakt zodat ik nu bij ben met de rest. Verder vandaag ben ik gaan werken aan het huiswerk voor morgen (woensdag) een onderzoekje over waar we onze digital garden over willen maken. Ik heb gekozen voor popartiesten omdat daar mijn passie ligt en omdat het mij leuk lijkt me mij verder hierin te verdiepen doormiddel van een schoolproject. 
 
-### 8 sept - Thuisstudie 
+### 9 sept - Thuisstudie 
 
 De opdracht is om een presentatie te maken in HTML over je onderwerp die wij woensdag gaan presenteren. Helaas had ik 's ochtends een Ziggo storing in onze straat waar ze lang mee bezig waren dus ben wat later op de middag verder gegaan. gelukkig had ik gister al na de les een opzet gemaakt. 
+
+### 10 sept- Huiswerk Vrijdag 
+### Uitleg wat ik heb gedaan in mijn Garden
+
+Voor mijn Digital Garden heb ik **HTML en CSS** gebruikt. Met HTML heb ik de website opgebouwd. Ik heb verschillende pagina’s gemaakt, teksten toegevoegd, afbeeldingen geplaatst en links naar nieuwsartikelen toegevoegd. Met CSS heb ik de website vormgegeven. Ik heb hiermee onder andere de kleuren, lettertypes, knoppen en afbeeldingen aangepast.
+
+Ik heb tijdens het maken veel hulp gehad van **W3Schools**. Als ik niet wist hoe ik iets in HTML of CSS moest maken, zocht ik het daar op. Daar staan veel voorbeelden en uitleg over verschillende codes. Soms heb ik een stukje code uit een voorbeeld gebruikt en dit aangepast zodat het bij mijn eigen website past. Ook heb ik gekeken naar websites die ik eerder heb gemaakt. Sommige stukken code kon ik opnieuw gebruiken en aanpassen. Hierdoor hoefde ik niet alles opnieuw te maken.
+
+Mijn Digital Garden gaat over mijn favoriete popartiesten: **Ariana Grande, Sabrina Carpenter, Olivia Rodrigo, Roxy Dekker en Tate McRae**. Voor iedere artiest heb ik een eigen pagina gemaakt. Op deze pagina’s staat informatie over de artiest, bekende nummers, leuke weetjes en waarom ik haar leuk vind. Ook heb ik een aparte pagina gemaakt met **10 links naar websites en nieuwsartikelen** over de artiesten. Ik heb ook een **inspiratiepagina** toegevoegd met mijn twee moodboards. Deze moodboards laten zien waar ik mijn inspiratie vandaan heb gehaald en welke beelden, kleuren en stijlen bij mijn onderwerp passen. Ik heb hierbij gekeken naar mijn sfeerwoorden **glamoureus, creatief en energiek**.
+
+Voor de stijl van mijn website heb ik vooral **roze en paarse kleuren**, grote titels en veel afbeeldingen gebruikt. Ik wilde dat de website een beetje de uitstraling kreeg van een **popmagazine**, maar dat het wel overzichtelijk bleef en niet te druk werd. Ook heb ik **gouden sterren** toegevoegd aan de pagina’s om de website wat meer een glamoureuze uitstraling te geven. Daarnaast heb ik ervoor gezorgd dat mijn website **dark mode en light mode** heeft. Hiervoor heb ik CSS gebruikt. De kleuren veranderen mee met de donkere of lichte instelling van de computer, zodat de website in beide standen goed leesbaar blijft.
+
+Ook heb ik een **navigatiemenu** gemaakt waarmee je makkelijk tussen de verschillende pagina’s kunt gaan. De artiesten op de artiestenpagina zijn aanklikbaar, waardoor je meteen naar hun eigen pagina kunt gaan. Op de verschillende pagina’s staat ook een knop om weer terug te gaan naar de artiestenpagina.
+
+Tijdens het maken heb ik veel dingen uitgeprobeerd en aangepast. Soms werkte een stukje code niet meteen en moest ik opzoeken wat er fout ging. Door **W3Schools, mijn oude websites en zelf veel uit te proberen**, heb ik steeds meer geleerd over HTML en CSS. Uiteindelijk heb ik daarmee mijn Digital Garden gemaakt zoals ik hem wilde: een overzichtelijke, kleurrijke en glamoureuze website over mijn favoriete popartiesten.
+
