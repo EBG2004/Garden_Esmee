@@ -29,24 +29,13 @@ Ik kies deze sfeerwoorden omdat ze goed passen bij mijn onderwerp. Popartiesten 
 
 Ik zie in deze posters veel opvallende typografie, felle kleuren en verschillende vormen. De posters hebben een creatieve en energieke uitstraling. Bij sommige posters zie ik ook een luxe en opvallende uitstraling door het gebruik van kleur en vorm. Dit past bij mijn sfeerwoorden glamoureus, creatief en energiek.
 
-Dit zijn mijn crazy 8 schetsen: 
+**Dit zijn mijn crazy 8 schetsen:** 
 
 <img width="400" height="300" alt="Untitled_Artwork" src="https://github.com/user-attachments/assets/e195efdc-1eda-48d2-933c-6f46a45cbdd5"/>
 
 
 
-### 10 sept- Huiswerk Vrijdag 
-### Uitleg wat ik heb gedaan in mijn Garden
-
-Voor mijn Digital Garden heb ik **HTML en CSS** gebruikt. Met HTML heb ik de website opgebouwd. Ik heb verschillende pagina’s gemaakt, teksten toegevoegd, afbeeldingen geplaatst en links naar nieuwsartikelen toegevoegd. Met CSS heb ik de website vormgegeven. Ik heb hiermee onder andere de kleuren, lettertypes, knoppen en afbeeldingen aangepast.
-
-Ik heb tijdens het maken veel hulp gehad van **W3Schools**. Als ik niet wist hoe ik iets in HTML of CSS moest maken, zocht ik het daar op. Daar staan veel voorbeelden en uitleg over verschillende codes. Soms heb ik een stukje code uit een voorbeeld gebruikt en dit aangepast zodat het bij mijn eigen website past. Ook heb ik gekeken naar websites die ik eerder heb gemaakt. Sommige stukken code kon ik opnieuw gebruiken en aanpassen. Hierdoor hoefde ik niet alles opnieuw te maken.
-
-Mijn Digital Garden gaat over mijn favoriete popartiesten: **Ariana Grande, Sabrina Carpenter, Olivia Rodrigo, Roxy Dekker en Tate McRae**. Voor iedere artiest heb ik een eigen pagina gemaakt. Op deze pagina’s staat informatie over de artiest, bekende nummers, leuke weetjes en waarom ik haar leuk vind. Ook heb ik een aparte pagina gemaakt met **10 links naar websites en nieuwsartikelen** over de artiesten. Ik heb ook een **inspiratiepagina** toegevoegd met mijn twee moodboards. Deze moodboards laten zien waar ik mijn inspiratie vandaan heb gehaald en welke beelden, kleuren en stijlen bij mijn onderwerp passen. Ik heb hierbij gekeken naar mijn sfeerwoorden **glamoureus, creatief en energiek**.
-
-Voor de stijl van mijn website heb ik vooral **roze en paarse kleuren**, grote titels en veel afbeeldingen gebruikt. Ik wilde dat de website een beetje de uitstraling kreeg van een **popmagazine**, maar dat het wel overzichtelijk bleef en niet te druk werd. Ook heb ik **gouden sterren** toegevoegd aan de pagina’s om de website wat meer een glamoureuze uitstraling te geven. Daarnaast heb ik **light mode en dark mode** toegevoegd. Dit heb ik gehaald uit de **Deep Dives**. Eerst wist ik niet hoe ik dit moest maken, maar door het te zoeken en verschillende codes uit te proberen, begrijp ik nu hoe het werkt. Ik vind het heel cool dat ik dit zelf heb kunnen toevoegen en dat mijn website nu zowel in een lichte als donkere stand goed werkt. De kleuren veranderen mee met de donkere of lichte instelling van de computer, zodat de website in beide standen goed leesbaar blijft.
-
-Ook heb ik een **navigatiemenu** gemaakt waarmee je makkelijk tussen de verschillende pagina’s kunt gaan. De artiesten op de artiestenpagina zijn aanklikbaar, waardoor je meteen naar hun eigen pagina kunt gaan. Op de verschillende pagina’s staat ook een knop om weer terug te gaan naar de artiestenpagina.
-
-Tijdens het maken heb ik veel dingen uitgeprobeerd en aangepast. Soms werkte een stukje code niet meteen en moest ik opzoeken wat er fout ging. Door **W3Schools, mijn oude websites en zelf veel uit te proberen**, heb ik steeds meer geleerd over HTML en CSS. Uiteindelijk heb ik daarmee mijn Digital Garden gemaakt zoals ik hem wilde: een overzichtelijke, kleurrijke en glamoureuze website over mijn favoriete popartiesten.
+### 11 sept 
+Helaas had ik in DLO perongeluk het huiswerk voor volgende week bekeken ipv voor vandaag 11/09. Dus heb al een hele site gebouwd in HTML/CSS ;) oeps!
+Nick heeft met ons een feedback gesprekje gehad en heeft mij positieve feedback gegeven. Hij zei dat ik gewoon verder kan en dat ik kleine dingetje along the way kan aanpassen. Vandaag ga ik verder met de 5 schetsen van een one column layout.  
 
