@@ -23,15 +23,15 @@ hieronder staan wat afbeeldingen van wat ik gedaan heb:
 
 <img width="867" height="441" alt="inspiratie-moodboard-1" src="https://github.com/user-attachments/assets/9bad0f51-caa7-4e41-b613-a663a611325e" width="200"/>
 
-Ik kies deze sfeerwoorden omdat ze goed passen bij mijn onderwerp. Popartiesten zijn vaak glamoureus, creatief en energiek. Dit zie je terug in hun muziek, kleding, optredens en foto’s. Met deze sfeerwoorden wil ik mijn Digital Garden een opvallende en vrolijke uitstraling geven.
+Ik kies deze sfeerwoorden omdat ze goed passen bij mijn onderwerp. Popartiesten zijn vaak glamoureus, creatief en energiek. Dit zie je terug in hun muziek, kleding, optredens en foto’s. Met deze sfeerwoorden wil ik mijn Digital Garden een opvallende en vrolijke uitstraling geven. Uiteindelijk wil ik een meer rustigere uitstraling geven omdat ik daarmee beter kan werken. Ook door mijn Autisme is dat fijner dan dat ik iets heel druks maak word ik er zelf heel onrustig van. 
 
-<img width="660" height="442" alt="inspiratie-moodboard-2" src="https://github.com/user-attachments/assets/c527dce4-8f7b-4928-bffc-5861240200c1" />
+<img width="660" height="442" alt="inspiratie-moodboard-2" src="https://github.com/user-attachments/assets/c527dce4-8f7b-4928-bffc-5861240200c1" width="200"/>
 
 Ik zie in deze posters veel opvallende typografie, felle kleuren en verschillende vormen. De posters hebben een creatieve en energieke uitstraling. Bij sommige posters zie ik ook een luxe en opvallende uitstraling door het gebruik van kleur en vorm. Dit past bij mijn sfeerwoorden glamoureus, creatief en energiek.
 
 Dit zijn mijn crazy 8 schetsen: 
 
-<img width="2732" height="2048" alt="Untitled_Artwork" src="https://github.com/user-attachments/assets/e195efdc-1eda-48d2-933c-6f46a45cbdd5" />
+<img width="2732" height="2048" alt="Untitled_Artwork" src="https://github.com/user-attachments/assets/e195efdc-1eda-48d2-933c-6f46a45cbdd5" width="200"/>
 
 
 
