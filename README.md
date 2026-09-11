@@ -40,8 +40,10 @@ Helaas had ik in DLO perongeluk het huiswerk voor volgende week bekeken ipv voor
 Nick heeft met ons een feedback gesprekje gehad en heeft mij positieve feedback gegeven. Hij zei dat ik gewoon verder kan en dat ik kleine dingetje along the way kan aanpassen. Vandaag ga ik verder met de 5 schetsen van een one column layout.  
 
 <img width="400" height="300" alt="one layout schetsen " src="https://github.com/user-attachments/assets/5eee48b7-b386-45b5-a538-9ac96a60faba" />
+<img width="400" height="300" alt="one layout schetsen 2" src="https://github.com/user-attachments/assets/7c1e10b2-a080-4d3b-8606-24adb8c2cb3c" />
 
-Dit zijn mijn eerste 3 schetsen. Vind ze erg leuk geworden. 
+
+Dit zijn mijn 5 schetsen. Vind ze erg leuk geworden. 
 
 
 
