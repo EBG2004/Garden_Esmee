@@ -21,7 +21,7 @@ De opdracht is om een presentatie te maken in HTML over je onderwerp die wij woe
 Ik heb mijn presentatie vanuit html aan Eva uit den andere klas gepresenteerd. Het was leuk om ieder zijn ideeën te horen. Ook zijn we bezig geweest met **JOUW VISUAL RESEARCH**
 hieronder staan wat afbeeldingen van wat ik gedaan heb: 
 
-<img width="867" height="441" alt="inspiratie-moodboard-1" src="https://github.com/user-attachments/assets/9bad0f51-caa7-4e41-b613-a663a611325e" />
+<img width="867" height="441" alt="inspiratie-moodboard-1" src="https://github.com/user-attachments/assets/9bad0f51-caa7-4e41-b613-a663a611325e" width="200"/>
 
 Ik kies deze sfeerwoorden omdat ze goed passen bij mijn onderwerp. Popartiesten zijn vaak glamoureus, creatief en energiek. Dit zie je terug in hun muziek, kleding, optredens en foto’s. Met deze sfeerwoorden wil ik mijn Digital Garden een opvallende en vrolijke uitstraling geven.
 
