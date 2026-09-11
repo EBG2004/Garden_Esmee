@@ -12,9 +12,21 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 Een fork van de model repository gemaakt en gepubliceerd via mijn eigen Github omgeving. ook heb ik al mijn huiswerk voor volgende week afgemaakt zodat ik nu bij ben met de rest. Verder vandaag ben ik gaan werken aan het huiswerk voor morgen (woensdag) een onderzoekje over waar we onze digital garden over willen maken. Ik heb gekozen voor popartiesten omdat daar mijn passie ligt en omdat het mij leuk lijkt me mij verder hierin te verdiepen doormiddel van een schoolproject. 
 
-### 9 sept - Thuisstudie 
+
+### 8 sept - Thuisstudie 
 
 De opdracht is om een presentatie te maken in HTML over je onderwerp die wij woensdag gaan presenteren. Helaas had ik 's ochtends een Ziggo storing in onze straat waar ze lang mee bezig waren dus ben wat later op de middag verder gegaan. gelukkig had ik gister al na de les een opzet gemaakt. 
+
+### 9 sept - Online les 
+Ik heb mijn presentatie vanuit html aan Eva uit den andere klas gepresenteerd. Het was leuk om ieder zijn ideeën te horen. Ook zijn we bezig geweest met **JOUW VISUAL RESEARCH**
+hieronder staan wat afbeeldingen van wat ik gedaan heb: 
+
+<img width="867" height="441" alt="inspiratie-moodboard-1" src="https://github.com/user-attachments/assets/9bad0f51-caa7-4e41-b613-a663a611325e" />
+Ik kies deze sfeerwoorden omdat ze goed passen bij mijn onderwerp. Popartiesten zijn vaak glamoureus, creatief en energiek. Dit zie je terug in hun muziek, kleding, optredens en foto’s. Met deze sfeerwoorden wil ik mijn Digital Garden een opvallende en vrolijke uitstraling geven.
+
+<img width="660" height="442" alt="inspiratie-moodboard-2" src="https://github.com/user-attachments/assets/c527dce4-8f7b-4928-bffc-5861240200c1" />
+Ik zie in deze posters veel opvallende typografie, felle kleuren en verschillende vormen. De posters hebben een creatieve en energieke uitstraling. Bij sommige posters zie ik ook een luxe en opvallende uitstraling door het gebruik van kleur en vorm. Dit past bij mijn sfeerwoorden glamoureus, creatief en energiek.
+
 
 ### 10 sept- Huiswerk Vrijdag 
 ### Uitleg wat ik heb gedaan in mijn Garden
