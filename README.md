@@ -39,3 +39,21 @@ Ik zie in deze posters veel opvallende typografie, felle kleuren en verschillend
 Helaas had ik in DLO perongeluk het huiswerk voor volgende week bekeken ipv voor vandaag 11/09. Dus heb al een hele site gebouwd in HTML/CSS ;) oeps!
 Nick heeft met ons een feedback gesprekje gehad en heeft mij positieve feedback gegeven. Hij zei dat ik gewoon verder kan en dat ik kleine dingetje along the way kan aanpassen. Vandaag ga ik verder met de 5 schetsen van een one column layout.  
 
+<img width="500" height="300" alt="one layout schetsen " src="https://github.com/user-attachments/assets/5eee48b7-b386-45b5-a538-9ac96a60faba" />
+
+Dit zijn mijn eerste 3 schetsen. Vind ze erg leuk geworden. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
