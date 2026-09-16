@@ -73,6 +73,8 @@ Alle drie de bronnen gaan over het internet, maar vanuit een andere kant.
 
 **Schetsen Interface layout mobiel:**
 <img width="400" height="300" alt="Shets opdracht 18" src="https://github.com/user-attachments/assets/317230cc-a8d4-45da-b8dd-dfb96fea5054" />
+
+
 **Feedback:** In mobiel layout lijkt het veel tekst. Mijn linkjes misschien iets kleiner maken. 
 
 
