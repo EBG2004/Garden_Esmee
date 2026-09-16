@@ -1,0 +1,354 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fff3f8;
+  color: #29222a;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+
+header {
+  background: #fffaff;
+  border-bottom: 2px solid #f1c5dc;
+  padding: 35px 20px 20px;
+  text-align: center;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.kleine-titel {
+  margin: 0;
+  color: #b65a91;
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 5px 0;
+  color: #d43c88;
+  font-family: Georgia, serif;
+  font-size: clamp(48px, 9vw, 100px);
+  line-height: 1;
+  letter-spacing: 3px;
+}
+
+.ondertitel {
+  margin: 15px auto 25px;
+  max-width: 600px;
+  color: #725d6d;
+}
+
+
+/* ------------------------------
+   NAVIGATIE
+------------------------------ */
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 25px 0 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #6f3260;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav a:hover {
+  color: #d43c88;
+}
+
+
+/* ------------------------------
+   MAIN
+------------------------------ */
+
+main {
+  width: min(1100px, 92%);
+  margin: auto;
+}
+
+section {
+  scroll-margin-top: 30px;
+}
+
+
+/* ------------------------------
+   HERO
+------------------------------ */
+
+.hero {
+  min-height: 600px;
+  margin: 50px 0;
+  padding: 50px;
+  background: #f9dce9;
+  border: 1px solid #eebbd4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-tekst {
+  max-width: 500px;
+}
+
+.label {
+  color: #b44782;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  margin: 0 0 20px;
+  font-family: Georgia, serif;
+  font-size: clamp(40px, 6vw, 70px);
+  line-height: 1;
+  color: #542744;
+}
+
+.hero p {
+  color: #5d4c58;
+}
+
+.hero-foto {
+  transform: rotate(3deg);
+}
+
+.hero-foto img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border: 10px solid white;
+  box-shadow: 0 10px 30px #b98ba5;
+}
+
+
+/* ------------------------------
+   KNOP
+------------------------------ */
+
+.knop {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 13px 20px;
+  background: #d43c88;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.knop:hover {
+  background: #9d2865;
+}
+
+
+/* ------------------------------
+   PAGINA'S
+------------------------------ */
+
+.pagina {
+  margin: 80px 0;
+  padding: 45px;
+  background: #fffaff;
+  border: 1px solid #efc8dc;
+  box-shadow: 0 8px 25px rgba(130, 70, 105, 0.08);
+}
+
+.pagina h2 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: clamp(40px, 6vw, 65px);
+  color: #542744;
+  line-height: 1;
+}
+
+.intro {
+  max-width: 650px;
+  color: #725d6d;
+  margin-bottom: 35px;
+}
+
+
+/* ------------------------------
+   ARTIESTEN
+------------------------------ */
+
+.artiest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.artiest-kaart {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  min-height: 180px;
+  background: white;
+  border: 1px solid #efc4d9;
+  text-decoration: none;
+  color: #29222a;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.artiest-kaart:hover {
+  transform: translateY(-6px) rotate(-1deg);
+  box-shadow: 0 12px 25px rgba(120, 50, 90, 0.15);
+}
+
+.artiest-kaart img {
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.artiest-kaart div {
+  padding: 25px;
+}
+
+.artiest-kaart h3 {
+  margin: 0 0 5px;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  color: #a83273;
+}
+
+.artiest-kaart p {
+  margin: 0;
+  color: #88717f;
+  font-size: 14px;
+}
+
+
+/* ------------------------------
+   FOTO'S
+------------------------------ */
+
+.foto-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.foto-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #f2d8e5;
+  transition: 0.2s;
+}
+
+.foto-grid img:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+
+
+/* ------------------------------
+   LINKS
+------------------------------ */
+
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.links-grid a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #efc4d9;
+  color: #542744;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.links-grid a:hover {
+  background: #f9dce9;
+}
+
+.links-grid span {
+  color: #d43c88;
+  font-family: Georgia, serif;
+  font-size: 22px;
+}
+
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+  margin-top: 80px;
+  padding: 30px;
+  background: #542744;
+  color: white;
+  text-align: center;
+  font-size: 13px;
+}
+
+
+/* ------------------------------
+   MOBIEL
+------------------------------ */
+
+@media (max-width: 750px) {
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  .hero-foto img {
+    height: 350px;
+  }
+
+  .pagina {
+    padding: 30px 20px;
+  }
+
+  .artiest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .foto-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .links-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+}

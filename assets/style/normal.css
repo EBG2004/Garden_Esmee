@@ -1,14 +1,811 @@
-/* HIER KOMT JOUW CSS */
-@font-face {
-  font-family: "Comic Relief";
-  src: url(../type/ComicRelief-Regular.woff2);
-  font-weight: 400;
-  font-style: normal;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Comic Relief", system-ui;
-  background-color: Canvas;
-  color: CanvasText;
-  color-scheme: light dark;
+  margin: 0;
+  background: #fff3f8;
+  color: #29222a;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #fffaff;
+  border-bottom: 2px solid #f1c5dc;
+  padding: 35px 20px 20px;
+  text-align: center;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.kleine-titel {
+  margin: 0;
+  color: #b65a91;
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 5px 0;
+  color: #d43c88;
+  font-family: Georgia, serif;
+  font-size: clamp(48px, 9vw, 100px);
+  line-height: 1;
+  letter-spacing: 3px;
+}
+
+.ondertitel {
+  margin: 15px auto 25px;
+  max-width: 600px;
+  color: #725d6d;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 0;
+  margin: 25px 0 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #6f3260;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav a:hover {
+  color: #d43c88;
+}
+
+main {
+  width: min(1100px, 92%);
+  margin: auto;
+}
+
+.hero {
+  min-height: 580px;
+  margin: 50px 0;
+  padding: 50px;
+  background: #f9dce9;
+  border: 1px solid #eebbd4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.hero-tekst {
+  max-width: 500px;
+}
+
+.label {
+  color: #b44782;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  margin: 0 0 20px;
+  font-family: Georgia, serif;
+  font-size: clamp(40px, 6vw, 70px);
+  line-height: 1;
+  color: #542744;
+}
+
+.hero p {
+  color: #5d4c58;
+}
+
+.hero-foto {
+  transform: rotate(3deg);
+}
+
+.hero-foto img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border: 10px solid white;
+  box-shadow:
+    0 10px 30px rgba(100, 50, 80, 0.25);
+}
+
+.knop {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 13px 20px;
+  background: #d43c88;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.knop:hover {
+  background: #9d2865;
+}
+
+.pagina {
+  margin: 80px 0;
+  padding: 45px;
+  background: #fffaff;
+  border: 1px solid #efc8dc;
+  box-shadow:
+    0 8px 25px rgba(130, 70, 105, 0.08);
+}
+
+.pagina h2 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: clamp(40px, 6vw, 65px);
+  color: #542744;
+  line-height: 1;
+}
+
+.pagina h3 {
+  color: #a83273;
+  font-family: Georgia, serif;
+  font-size: 25px;
+}
+
+.intro {
+  max-width: 650px;
+  color: #725d6d;
+  margin-bottom: 35px;
+}
+
+.artiest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.artiest-kaart {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  min-height: 180px;
+  background: white;
+  border: 1px solid #efc4d9;
+  text-decoration: none;
+  color: #29222a;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.artiest-kaart:hover {
+  transform: translateY(-6px) rotate(-1deg);
+  box-shadow:
+    0 12px 25px rgba(120, 50, 90, 0.15);
+}
+
+.artiest-kaart img {
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.artiest-kaart div {
+  padding: 25px;
+}
+
+.artiest-kaart h3 {
+  margin: 0 0 5px;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  color: #a83273;
+}
+
+.artiest-kaart p {
+  margin: 0;
+  color: #88717f;
+  font-size: 14px;
+}
+
+.foto-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.foto-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #f2d8e5;
+  transition: 0.2s;
+}
+
+.foto-grid img:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.links-grid a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  background: white;
+  border: 1px solid #efc4d9;
+  color: #542744;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.links-grid a:hover {
+  background: #f9dce9;
+  transform: translateX(5px);
+}
+
+.links-grid span {
+  color: #d43c88;
+  font-family: Georgia, serif;
+  font-size: 22px;
+}
+
+.sfeer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.sfeer div {
+  padding: 25px;
+  background: #f9dce9;
+  border: 1px solid #efbfd7;
+}
+
+.sfeer strong {
+  color: #a83273;
+  font-family: Georgia, serif;
+  letter-spacing: 1px;
+}
+
+.sfeer p {
+  margin-bottom: 0;
+  color: #725d6d;
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 80px;
+  padding: 30px;
+  background: #542744;
+  color: white;
+  text-align: center;
+  font-size: 13px;
+}
+
+@media (max-width: 750px) {
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  .hero-foto img {
+    height: 350px;
+  }
+
+  .pagina {
+    padding: 30px 20px;
+  }
+
+  .artiest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .foto-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .links-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sfeer {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+}
+.artist-profile {
+  margin: 55px 0 30px;
+
+  display: grid;
+  grid-template-columns: 45% 55%;
+  background: #f9dce9;
+  border: 1px solid #efbfd7;
+  min-height: 550px;
+}
+
+.artist-profile-foto {
+  position: relative;
+  padding: 30px;
+}
+
+.artist-profile-foto img {
+  width: 100%;
+  height: 490px;
+  object-fit: cover;
+  border: 10px solid white;
+  box-shadow:
+    0 12px 30px rgba(100, 50, 80, 0.2);
+  transform: rotate(-2deg);
+}
+
+.foto-label {
+  position: absolute;
+
+  bottom: 15px;
+  left: 45px;
+
+  padding: 8px 14px;
+  background: white;
+  color: #d43c88;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transform: rotate(-4deg);
+}
+
+.artist-profile-info {
+  padding: 65px 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.artist-profile-info h2 {
+  margin: 5px 0 15px;
+  font-family: Georgia, serif;
+  font-size: clamp(55px, 7vw, 90px);
+  line-height: 0.9;
+  color: #542744;
+}
+
+.artist-profile-info p {
+  max-width: 500px;
+  color: #654f5e;
+}
+
+.artist-quote {
+  color: #b44782 !important;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.artist-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 25px 0;
+}
+
+.info-box {
+  padding: 30px;
+  background: #fffaff;
+  border: 1px solid #efc8dc;
+  position: relative;
+}
+
+.box-number {
+  margin: 0;
+  color: #d43c88;
+  font-family: Georgia, serif;
+  font-size: 25px;
+}
+
+.info-box h3 {
+  margin-top: 5px;
+  font-family: Georgia, serif;
+  font-size: 28px;
+  color: #542744;
+}
+.artist-section {
+  margin: 50px 0;
+  padding: 40px;
+  background: #fffaff;
+  border: 1px solid #efc8dc;
+}
+
+.artist-section h2 {
+  margin-top: 0;
+  font-family: Georgia, serif;
+  font-size: 45px;
+  color: #542744;
+}
+
+.songs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.songs div {
+  padding: 18px 20px;
+  background: #f9dce9;
+  border: 1px solid #efbfd7;
+  font-weight: bold;
+  color: #542744;
+}
+
+.songs span {
+  margin-right: 15px;
+  color: #d43c88;
+  font-family: Georgia, serif;
+}
+
+.weetjes ul {
+  padding-left: 20px;
+  max-width: 700px;
+}
+
+.weetjes li {
+  margin-bottom: 15px;
+  padding-left: 8px;
+  color: #654f5e;
+}
+
+
+.waarom {
+  margin: 50px 0;
+  padding: 45px;
+  background: #542744;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.waarom h2 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+.waarom .label {
+  color: #f5a8cd;
+}
+
+.waarom p:last-child {
+  margin: 0;
+  color: #f9dce9;
+  font-size: 16px;
+}
+
+.terug {
+  text-align: center;
+  margin: 50px 0 80px;
+}
+
+@media (max-width: 750px) {
+
+  .artist-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .artist-profile-foto img {
+    height: 400px;
+  }
+
+  .artist-profile-info {
+    padding: 40px 30px;
+  }
+
+  .artist-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .songs {
+    grid-template-columns: 1fr;
+  }
+
+  .waarom {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+  body {
+    background: #1d1820;
+    color: #f5eaf1;
+  }
+
+  header {
+    background: #241d27;
+    border-bottom: 2px solid #53334a;
+  }
+
+  .kleine-titel {
+    color: #d98ab5;
+  }
+
+  h1 {
+    color: #ef6eae;
+  }
+
+  .ondertitel {
+    color: #c7b3c1;
+  }
+
+  nav a {
+    color: #e5a4c8;
+  }
+
+  nav a:hover {
+    color: #ff7fba;
+  }
+  .hero {
+    background: #342532;
+    border-color: #5a3b4f;
+  }
+
+  .hero h2 {
+    color: #f4c5dc;
+  }
+
+  .hero p {
+    color: #d8c5d0;
+  }
+
+  .label {
+    color: #e58ab7;
+  }
+
+  .hero-foto img {
+    border-color: #f5edf2;
+
+    box-shadow:
+      0 10px 30px rgba(0, 0, 0, 0.4);
+  }
+
+  .knop {
+    background: #d43c88;
+    color: white;
+  }
+
+  .knop:hover {
+    background: #ef5da1;
+  }
+
+  .pagina {
+    background: #241d27;
+    border-color: #53334a;
+
+    box-shadow:
+      0 8px 25px rgba(0, 0, 0, 0.3);
+  }
+
+  .pagina h2 {
+    color: #f4c5dc;
+  }
+
+  .pagina h3 {
+    color: #e87caf;
+  }
+
+  .intro {
+    color: #c7b3c1;
+  }
+  .artiest-kaart {
+    background: #29212c;
+    border-color: #57394e;
+    color: #f5eaf1;
+  }
+
+  .artiest-kaart:hover {
+    box-shadow:
+      0 12px 25px rgba(0, 0, 0, 0.4);
+  }
+
+  .artiest-kaart h3 {
+    color: #e87caf;
+  }
+
+  .artiest-kaart p {
+    color: #bdaab7;
+  }
+  .foto-grid img {
+    background: #352936;
+  }
+
+  .links-grid a {
+    background: #29212c;
+    border-color: #57394e;
+    color: #f4c5dc;
+  }
+
+  .links-grid a:hover {
+    background: #3a2936;
+  }
+
+  .links-grid span {
+    color: #ef6eae;
+  }
+
+  .sfeer div {
+    background: #342532;
+    border-color: #5a3b4f;
+  }
+
+  .sfeer strong {
+    color: #e87caf;
+  }
+
+  .sfeer p {
+    color: #c7b3c1;
+  }
+
+
+  /* FOOTER */
+
+  footer {
+    background: #120f14;
+    color: #eadce5;
+  }
+
+  .artist-profile {
+    background: #342532;
+    border-color: #5a3b4f;
+  }
+
+  .artist-profile-foto img {
+    border-color: #f5edf2;
+
+    box-shadow:
+      0 12px 30px rgba(0, 0, 0, 0.45);
+  }
+
+  .foto-label {
+    background: #29212c;
+    color: #ef6eae;
+  }
+
+  .artist-profile-info h2 {
+    color: #f4c5dc;
+  }
+
+  .artist-profile-info p {
+    color: #d2bfca;
+  }
+
+  .artist-quote {
+    color: #e58ab7 !important;
+  }
+
+
+  .info-box {
+    background: #241d27;
+    border-color: #53334a;
+  }
+
+  .box-number {
+    color: #ef6eae;
+  }
+
+  .info-box h3 {
+    color: #f4c5dc;
+  }
+
+  .artist-section {
+    background: #241d27;
+    border-color: #53334a;
+  }
+
+  .artist-section h2 {
+    color: #f4c5dc;
+  }
+
+  .songs div {
+    background: #342532;
+    border-color: #5a3b4f;
+    color: #f4c5dc;
+  }
+
+  .songs span {
+    color: #ef6eae;
+  }
+
+
+  .weetjes li {
+    color: #d2bfca;
+  }
+
+
+  .waarom {
+    background: #120f14;
+    color: white;
+  }
+
+  .waarom p:last-child {
+    color: #e7cbd9;
+  }
+
+}
+.moodboards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.moodboards img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 5px solid white;
+  border-radius: 15px;
+}
+
+.ster {
+  position: absolute;
+  color: #d4af37;
+  font-size: 24px;
+  z-index: 10;
+  pointer-events: none;
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+}
+
+.ster1 {
+  top: 15%;
+  left: 4%;
+}
+
+.ster2 {
+  top: 30%;
+  right: 5%;
+  font-size: 18px;
+}
+
+.ster3 {
+  top: 55%;
+  left: 3%;
+  font-size: 16px;
+}
+
+.ster4 {
+  top: 75%;
+  right: 4%;
+  font-size: 26px;
+}
+
+.ster5 {
+  top: 12%;
+  right: 20%;
+  font-size: 14px;
 }
