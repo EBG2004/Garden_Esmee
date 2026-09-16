@@ -80,6 +80,19 @@ Alle drie de bronnen gaan over het internet, maar vanuit een andere kant.
 
 **Feedback:** In mobiel layout lijkt het veel tekst. Mijn linkjes misschien iets kleiner maken. 
 
+**Checkout**
+
+**Noem 3 Gestaltprincipes op en laat de ander uitleggen wat ze betekenen en doen.**
+
+**1. Nabijheid:** Elementen die dicht bij elkaar staan. Doen je denk aan een bepaald iets in je hoofd.
+**2 Overeenkomst:** Dingen die dezelfde kleur, vorm of stijl hebben. 
+**3 Hierachie:** Dat je laat zien wat het belangrijkste is op een pagina. Dit kan bijvoorbeeld door verschil te maken in grootte, kleur, lettertype of plek.
+
+**Een grid biedt ruimte om te spelen (vrijheid), maar tegelijkertijd ook eenheid en structuur (vastigheid). Wat wordt hiermee bedoeld?**: Een grid zorgt ervoor dat mijn website netjes en overzichtelijk blijft, maar alles blijft wel een geheel en wordt het niet rommelig.
+
+**Welk principe neem je mee in een laatste iteratie van je ontwerp?** 
+Ik ga de grid beter gebruiken bij mijn linkjes. zodat je mooi uitgelijnd staan voor zowel desktop en mobiel.
+
 
 
 
