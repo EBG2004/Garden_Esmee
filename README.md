@@ -1,5 +1,4 @@
-<img width="2732" height="2048" alt="Shets opdracht 18" src="https://github.com/user-attachments/assets/8f0adf2b-8e43-4fd1-8a57-0787491ed987" />
-<img width="2732" height="2048" alt="schets opdracht 18 (2)" src="https://github.com/user-attachments/assets/b18bf52c-c82c-46ee-8da7-9dd91401c562" />
+
 # Model
 
 Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door studenten worden gemaakt.
@@ -73,8 +72,8 @@ Alle drie de bronnen gaan over het internet, maar vanuit een andere kant.
 ### 16 sept - [Werkgroep]
 
 Schets:
-<img width="2732" height="2048" alt="Shets opdracht 18" src="https://github.com/user-attachments/assets/317230cc-a8d4-45da-b8dd-dfb96fea5054" />
-<img width="2732" height="2048" alt="schets opdracht 18 (2)" src="https://github.com/user-attachments/assets/e115fb0c-e30c-4d94-86fb-aeb3bbcbaf86" />
+<img width="400" height="300" alt="Shets opdracht 18" src="https://github.com/user-attachments/assets/317230cc-a8d4-45da-b8dd-dfb96fea5054" />
+<img width="400" height="300" alt="schets opdracht 18 (2)" src="https://github.com/user-attachments/assets/e115fb0c-e30c-4d94-86fb-aeb3bbcbaf86" />
 
 
 
