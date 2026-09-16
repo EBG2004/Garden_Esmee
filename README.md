@@ -4,11 +4,8 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ## Learning Log
 
-### [...]
 
-[...]
-
-### 7 sept - [Workshop] + (inhalen huiswerk)
+### 7 sept -  [Werkgroep] + (inhalen huiswerk)
 
 Een fork van de model repository gemaakt en gepubliceerd via mijn eigen Github omgeving. ook heb ik al mijn huiswerk voor volgende week afgemaakt zodat ik nu bij ben met de rest. Verder vandaag ben ik gaan werken aan het huiswerk voor morgen (woensdag) een onderzoekje over waar we onze digital garden over willen maken. Ik heb gekozen voor popartiesten omdat daar mijn passie ligt en omdat het mij leuk lijkt me mij verder hierin te verdiepen doormiddel van een schoolproject. 
 
@@ -44,6 +41,34 @@ Nick heeft met ons een feedback gesprekje gehad en heeft mij positieve feedback 
 
 
 Dit zijn mijn 5 schetsen. Vind ze erg leuk geworden. 
+
+### 15 sept - Bi-weekly geek 1
+
+**Artikel 1 – De cloudstoring**
+Het eerste artikel gaat over een grote storing bij Amazon Web Services (AWS). AWS zorgt ervoor dat veel websites en apps op internet kunnen werken. Toen AWS een storing had, vielen daardoor ook veel andere websites en apps uit.
+Het artikel laat zien dat veel bedrijven afhankelijk zijn van een paar grote technologiebedrijven. Als zo'n bedrijf problemen heeft, kunnen veel andere bedrijven daar ook last van krijgen.
+Kort samengevat: Veel delen van het internet zijn afhankelijk van een paar grote bedrijven. Daardoor kan één storing voor veel problemen zorgen.
+
+**Artikel 2 – Tim Berners-Lee**
+Het tweede artikel gaat over Tim Berners-Lee, de bedenker van het World Wide Web. Hij wilde dat het internet een open plek zou zijn waar mensen informatie met elkaar kunnen delen.
+Volgens hem is het internet in de loop van de tijd veranderd. Grote bedrijven hebben nu veel invloed op het internet. Ook verzamelen bedrijven veel gegevens van gebruikers.
+Tim Berners-Lee vindt dat mensen meer controle moeten hebben over hun eigen gegevens. Hij werkt daarom aan manieren om mensen meer controle over hun data te geven.
+**Kort samengevat:**  Het internet was bedoeld om mensen met elkaar te verbinden. Volgens Tim Berners-Lee hebben grote bedrijven nu te veel invloed en moeten mensen meer controle krijgen over hun eigen gegevens.
+
+**Video – How Does the Internet Work? – BBC Click**
+De video legt uit hoe het internet werkt.
+Het internet bestaat uit heel veel computers die met elkaar verbonden zijn. Als je bijvoorbeeld een website opent, vraagt jouw telefoon of computer informatie op bij een server.
+De informatie wordt in kleine stukjes verstuurd. Deze stukjes noemen we datapakketjes. Routers zorgen ervoor dat de pakketjes de juiste route vinden. Ook wordt uitgelegd dat het internet en het World Wide Web niet precies hetzelfde zijn. Het internet is het grote netwerk. Het World Wide Web is een onderdeel daarvan waarop websites staan.
+**Kort samengevat:** Het internet is een groot netwerk van computers. Via kabels, servers en routers wordt informatie van de ene computer naar de andere gestuurd.
+
+**Wat hebben de drie bronnen met elkaar te maken?**
+Alle drie de bronnen gaan over het internet, maar vanuit een andere kant.
+1. De BBC-video legt uit hoe het internet werkt.
+2. Het eerste artikel laat zien hoe afhankelijk we zijn van grote technologiebedrijven.
+3. Het tweede artikel gaat over wie controle heeft over het internet en onze gegevens.
+**Gezamenlijke conclusie:**  Het internet lijkt iets simpels wat we iedere dag gebruiken, maar achter het internet zit een groot netwerk van computers, servers en bedrijven. Een paar grote bedrijven hebben veel invloed op hoe het internet werkt. Daarom zijn onderwerpen zoals privacy, controle en afhankelijkheid steeds belangrijker.
+
+### 16 sept - [Werkgroep]
 
 
 
