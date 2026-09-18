@@ -48,13 +48,13 @@ Dit zijn mijn 5 schetsen. Vind ze erg leuk geworden.
 **Artikel 1 – De cloudstoring**
 Het eerste artikel gaat over een grote storing bij Amazon Web Services (AWS). AWS zorgt ervoor dat veel websites en apps op internet kunnen werken. Toen AWS een storing had, vielen daardoor ook veel andere websites en apps uit.
 Het artikel laat zien dat veel bedrijven afhankelijk zijn van een paar grote technologiebedrijven. Als zo'n bedrijf problemen heeft, kunnen veel andere bedrijven daar ook last van krijgen.
-Kort samengevat: Veel delen van het internet zijn afhankelijk van een paar grote bedrijven. Daardoor kan één storing voor veel problemen zorgen.
+Kort samengevat:Veel delen van het internet zijn afhankelijk van een paar grote bedrijven. Daardoor kan één storing voor veel problemen zorgen.
 
 **Artikel 2 – Tim Berners-Lee**
 Het tweede artikel gaat over Tim Berners-Lee, de bedenker van het World Wide Web. Hij wilde dat het internet een open plek zou zijn waar mensen informatie met elkaar kunnen delen.
 Volgens hem is het internet in de loop van de tijd veranderd. Grote bedrijven hebben nu veel invloed op het internet. Ook verzamelen bedrijven veel gegevens van gebruikers.
 Tim Berners-Lee vindt dat mensen meer controle moeten hebben over hun eigen gegevens. Hij werkt daarom aan manieren om mensen meer controle over hun data te geven.
-**Kort samengevat:**  Het internet was bedoeld om mensen met elkaar te verbinden. Volgens Tim Berners-Lee hebben grote bedrijven nu te veel invloed en moeten mensen meer controle krijgen over hun eigen gegevens.
+**Kort samengevat:** Het internet was bedoeld om mensen met elkaar te verbinden. Volgens Tim Berners-Lee hebben grote bedrijven nu te veel invloed en moeten mensen meer controle krijgen over hun eigen gegevens.
 
 **Video – How Does the Internet Work? – BBC Click**
 De video legt uit hoe het internet werkt.
@@ -67,7 +67,7 @@ Alle drie de bronnen gaan over het internet, maar vanuit een andere kant.
 1. De BBC-video legt uit hoe het internet werkt.
 2. Het eerste artikel laat zien hoe afhankelijk we zijn van grote technologiebedrijven.
 3. Het tweede artikel gaat over wie controle heeft over het internet en onze gegevens.
-**Gezamenlijke conclusie:**  Het internet lijkt iets simpels wat we iedere dag gebruiken, maar achter het internet zit een groot netwerk van computers, servers en bedrijven. Een paar grote bedrijven hebben veel invloed op hoe het internet werkt. Daarom zijn onderwerpen zoals privacy, controle en afhankelijkheid steeds belangrijker.
+**Gezamenlijke conclusie:** Het internet lijkt iets simpels wat we iedere dag gebruiken, maar achter het internet zit een groot netwerk van computers, servers en bedrijven. Een paar grote bedrijven hebben veel invloed op hoe het internet werkt. Daarom zijn onderwerpen zoals privacy, controle en afhankelijkheid steeds belangrijker.
 
 ### 16 sept - [Werkgroep]
 
@@ -141,9 +141,6 @@ Door deze opdracht weet ik nu beter hoe ik een website vanaf een idee kan uitwer
 Ik heb vooral meer geleerd over **CSS, Grid, Flexbox, responsive design en light/dark mode**. Eerst wist ik bijvoorbeeld niet hoe ik dark mode moest maken, maar nu begrijp ik hoe ik dit zelf kan toepassen. Wat ik nog beter wil leren is hoe ik mijn website nog **toegankelijker** kan maken en hoe ik mijn HTML en CSS nog beter kan controleren op fouten. Ik wil ook nog meer leren over CSS, omdat ik heb gemerkt dat je met CSS veel meer kunt doen dan ik eerst dacht. En proberen om codes te onthouden ipv dingen opzoeken. 
 
 Uiteindelijk vind ik dat mijn Digital Garden goed bij mij past. Ik zie mijn eigen stijl terug in de **pastelkleuren, popmagazine-uitstraling, gouden sterren en de verschillende artiesten**. Door steeds te testen en aan te passen heb ik de website steeds meer gemaakt zoals ik hem voor ogen had.
-
-
-
 
 
 
