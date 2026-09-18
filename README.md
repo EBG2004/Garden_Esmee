@@ -96,7 +96,53 @@ Ik ga de grid beter gebruiken bij mijn linkjes. zodat je mooi uitgelijnd staan v
 ### 18 sept - Retrospectieve 
 
 **Opdracht 1:**
+
 <img width="400" height="700" alt="Ontwerp zonder titel" src="https://github.com/user-attachments/assets/e6ee7f10-7ea8-4e1b-8baa-cfdcd0583b54" />
+
+**Opdracht 2:**
+<img width="400" height="300" alt="IMG_3145" src="https://github.com/user-attachments/assets/04175634-f8a3-4299-9cea-33ddbe8f5a2c" />
+<img width="400" height="300" alt="IMG_3148" src="https://github.com/user-attachments/assets/1763f44d-576e-41af-b48b-d49cd2f4113a" />
+<img width="400" height="300" alt="IMG_3147" src="https://github.com/user-attachments/assets/1872b80a-16e2-46fb-a2c2-76f1b03a905e" />
+
+**Opdracht 3:**
+## Reflectie op mijn Digital Garden
+
+### Oriënteren en begrijpen
+
+Voor mijn Digital Garden heb ik eerst nagedacht over **waar mijn website over moest gaan**. Ik heb gekozen voor vrouwelijke popartiesten, omdat ik veel naar hun muziek luister en het leuk vind om meer over deze artiesten te vertellen. Mijn vijf artiesten zijn **Ariana Grande, Sabrina Carpenter, Olivia Rodrigo, Roxy Dekker en Tate McRae**.
+
+Ik heb tijdens het eerste jaar geleerd dat HTML en CSS allebei een andere functie hebben. Met **HTML** zorg ik voor de structuur en de inhoud van mijn website. Met **CSS** zorg ik ervoor hoe de website eruitziet. Ik gebruik HTML bijvoorbeeld voor mijn teksten, afbeeldingen, links, headings en verschillende pagina’s. Met CSS pas ik onder andere kleuren, lettertypes, kaarten, marges en de layout aan. Ik heb ook gekeken naar de **randvoorwaarden van de opdracht**. Eerst was het de bedoeling om 50 afbeeldingen te gebruiken. Tijdens het maken heb ik dit aangepast naar inspiratiebeelden en moodboards. Hierdoor kon ik beter laten zien waar mijn ontwerpstijl vandaan komt. Ik heb gekeken naar mijn sfeerwoorden **glamoureus, creatief en energiek**.
+
+### Verbeelden en conceptualiseren
+
+Tijdens het maken heb ik verschillende ideeën uitgeprobeerd voor de uitstraling van mijn website. Ik heb gekeken naar kleuren, afbeeldingen, lettertypes en verschillende manieren om de artiesten op de pagina te zetten.
+Eerst gebruikte ik wat een wat simpelere site wat voor mijn idee wat te formeel was en de spraak miste, daarna heb ik fellere kleuren geprobeerd, maar ik vond dat dit te druk werd. Daarom heb ik verschillende kleurcombinaties uitgeprobeerd en uiteindelijk gekozen voor **zachte pastelkleuren**. Iedere artiest heeft een eigen kleurstijl. Hierdoor blijft de website één geheel, maar heeft iedere artiest toch een eigen uitstraling.
+
+Ik heb ook inspiratie gehaald uit websites en voorbeelden die ik eerder heb gezien op Pinterest. Daarnaast heb ik mijn eigen **moodboards** gemaakt. Hierin heb ik niet alleen afbeeldingen van popartiesten gebruikt, maar ook andere beelden die passen bij de sfeer van mijn website.
+
+Tijdens het werken met CSS heb ik ook nieuwe technieken uitgeprobeerd. Ik heb bijvoorbeeld gewerkt met **Grid, Flexbox, media queries en `prefers-color-scheme`**. Door deze technieken echt te gebruiken, snap ik beter wat je ermee kunt doen. Voor hulp heb ik veel gebruikgemaakt van **W3Schools**. Als ik iets niet begreep, zocht ik daar uitleg of voorbeelden op. Ook heb ik gekeken naar mijn eerdere websites en stukken code die ik al kende opnieuw gebruikt en aangepast. Hierdoor heb ik steeds meer geleerd over HTML en CSS.
+
+### Prototypen en uitwerken
+
+Mijn website zelf is mijn **werkende prototype**. Door de website steeds te bouwen en in de browser te bekijken, kon ik zien wat wel en niet werkte. Ik heb bijvoorbeeld gemerkt dat sommige kleuren te fel waren en dat bepaalde onderdelen op een kleiner scherm niet goed stonden. Daarom heb ik mijn CSS meerdere keren aangepast. Ook heb ik ervoor gezorgd dat de artiestenkaarten klikbaar zijn en naar een aparte pagina van de artiest gaan. Hierdoor heb ik veel aparte HTML bestanden moeten aanmaken en aanpassen, maar voor het uiteindelijke resultaat is het het zeker waard!
+
+Ik heb mijn website **responsive** gemaakt. Op een groot scherm kunnen onderdelen naast elkaar staan en op een kleiner scherm worden ze onder elkaar geplaatst. Hiervoor heb ik vooral Grid en Flexbox gebruikt. Ik heb ook geprobeerd om **mobile-first** te werken.
+Een andere grote toevoeging is de **light en dark mode**. Dit heb ik geleerd uit de Deep Dives. Eerst wist ik niet hoe dit werkte, maar door ermee te oefenen begrijp ik nu beter hoe `prefers-color-scheme` werkt. Ik vind het leuk dat ik dit zelf heb kunnen toevoegen en dat de kleuren van mijn website zich aanpassen aan de lichte of donkere instelling.
+
+### Evalueren
+
+Tijdens het hele proces heb ik mijn website steeds bekeken en aangepast. Ik keek bijvoorbeeld of de kleuren goed bij elkaar pasten, of de teksten duidelijk waren en of de website nog overzichtelijk bleef. Ik heb ook mijn CSS aangepast aan de **Do’s en Don’ts**. Ik probeer bijvoorbeeld duidelijke HTML te gebruiken, mijn CSS apart te houden van mijn HTML en niet alles met vaste pixels te maken. Ik gebruik ook relatieve maten zoals `rem`, `%`, `vw` en `clamp()`. Hierdoor kan mijn website beter reageren op verschillende schermformaten. Vaak heb ik ook codes opgezocht en krijg ik soms wel een code wat ik niet mocht gebruiken maar uiteindelijk had ik geen idee hoe ik dat moest oplossen. 
+
+
+### Wat heb ik geleerd?
+
+Door deze opdracht weet ik nu beter hoe ik een website vanaf een idee kan uitwerken naar een werkend product. Ik heb geleerd dat je niet eerst alles hoeft te bedenken voordat je begint met maken. Door gewoon te bouwen, kom je erachter wat werkt en wat je nog moet aanpassen. Althans dat werk zo voor mij.
+
+Ik heb vooral meer geleerd over **CSS, Grid, Flexbox, responsive design en light/dark mode**. Eerst wist ik bijvoorbeeld niet hoe ik dark mode moest maken, maar nu begrijp ik hoe ik dit zelf kan toepassen. Wat ik nog beter wil leren is hoe ik mijn website nog **toegankelijker** kan maken en hoe ik mijn HTML en CSS nog beter kan controleren op fouten. Ik wil ook nog meer leren over CSS, omdat ik heb gemerkt dat je met CSS veel meer kunt doen dan ik eerst dacht. En proberen om codes te onthouden ipv dingen opzoeken. 
+
+Uiteindelijk vind ik dat mijn Digital Garden goed bij mij past. Ik zie mijn eigen stijl terug in de **pastelkleuren, popmagazine-uitstraling, gouden sterren en de verschillende artiesten**. Door steeds te testen en aan te passen heb ik de website steeds meer gemaakt zoals ik hem voor ogen had.
+
+
 
 
 
