@@ -93,6 +93,16 @@ Alle drie de bronnen gaan over het internet, maar vanuit een andere kant.
 **Welk principe neem je mee in een laatste iteratie van je ontwerp?** 
 Ik ga de grid beter gebruiken bij mijn linkjes. zodat je mooi uitgelijnd staan voor zowel desktop en mobiel.
 
+### 18 sept - Retrospectieve 
+
+**Opdracht 1:**
+<img width="400" height="300" alt="Ontwerp zonder titel" src="https://github.com/user-attachments/assets/e6ee7f10-7ea8-4e1b-8baa-cfdcd0583b54" />
+
+
+
+
+
+
 
 
 
