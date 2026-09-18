@@ -1,811 +1,1711 @@
 
+/* ========================================
+   BASIS KLEUREN
+   ======================================== */
+
+:root {
+    --pink: #f2a2bc;
+    --light-pink: #ffcddb;
+    --cream: #ffe4f5;
+    --blue: #d8fcff;
+    --lilac: #f4d9ff;
+    --yellow: #fff3b8;
+    --burgundy: #e58aa8;
+    --text: #765d60;
+    --white: #fffdf8;
+}
+
+
+/* ========================================
+   ALGEMEEN
+   ======================================== */
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  background: #fff3f8;
-  color: #29222a;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+    margin: 0;
+    background: var(--cream);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    transition: 0.3s ease;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+}
+
+
+/* ========================================
+   HEADER
+   ======================================== */
+
 header {
-  background: #fffaff;
-  border-bottom: 2px solid #f1c5dc;
-  padding: 35px 20px 20px;
-  text-align: center;
+    background: var(--white);
+    border-bottom: 0.15rem solid var(--pink);
+    padding: 2rem 1rem 1.5rem;
+    text-align: center;
 }
 
 .header-inner {
-  max-width: 1100px;
-  margin: auto;
+    width: min(92%, 68.75rem);
+    margin-inline: auto;
 }
 
 .kleine-titel {
-  margin: 0;
-  color: #b65a91;
-  font-size: 13px;
-  letter-spacing: 4px;
-  font-weight: bold;
+    margin: 0;
+    color: var(--burgundy);
+    font-size: 0.8rem;
+    letter-spacing: 0.25rem;
+    font-weight: bold;
 }
 
 h1 {
-  margin: 5px 0;
-  color: #d43c88;
-  font-family: Georgia, serif;
-  font-size: clamp(48px, 9vw, 100px);
-  line-height: 1;
-  letter-spacing: 3px;
+    margin: 0.5rem 0;
+    color: var(--burgundy);
+    font-size: clamp(3rem, 9vw, 6.25rem);
+    line-height: 1;
+    letter-spacing: 0.15rem;
 }
 
 .ondertitel {
-  margin: 15px auto 25px;
-  max-width: 600px;
-  color: #725d6d;
+    margin: 1rem auto 1.5rem;
+    max-width: 37.5rem;
+    color: var(--text);
+}
+
+
+/* ========================================
+   NAVIGATIE
+   ======================================== */
+
+nav {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    background: var(--light-pink);
+    padding: 0.6rem;
+    border-top: 0.15rem solid var(--burgundy);
+    border-bottom: 0.15rem solid var(--burgundy);
 }
 
 nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 35px;
-  padding: 0;
-  margin: 25px 0 0;
-  list-style: none;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-wrap: wrap;
 }
 
 nav a {
-  color: #6f3260;
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 2px;
+    display: inline-block;
+    padding: 0.5rem 0.9rem;
+    color: var(--burgundy);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.12rem;
+    border: 0.15rem solid transparent;
 }
 
 nav a:hover {
-  color: #d43c88;
+    color: var(--burgundy);
+    background: var(--cream);
+    border-color: var(--burgundy);
+    border-radius: 1.25rem;
+    transform: translateY(-0.2rem) rotate(-1deg);
 }
+
+
+/* ========================================
+   PAGINA
+   ======================================== */
 
 main {
-  width: min(1100px, 92%);
-  margin: auto;
-}
-
-.hero {
-  min-height: 580px;
-  margin: 50px 0;
-  padding: 50px;
-  background: #f9dce9;
-  border: 1px solid #eebbd4;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  align-items: center;
-}
-
-.hero-tekst {
-  max-width: 500px;
-}
-
-.label {
-  color: #b44782;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  margin-bottom: 10px;
-}
-
-.hero h2 {
-  margin: 0 0 20px;
-  font-family: Georgia, serif;
-  font-size: clamp(40px, 6vw, 70px);
-  line-height: 1;
-  color: #542744;
-}
-
-.hero p {
-  color: #5d4c58;
-}
-
-.hero-foto {
-  transform: rotate(3deg);
-}
-
-.hero-foto img {
-  width: 100%;
-  height: 450px;
-  object-fit: cover;
-  border: 10px solid white;
-  box-shadow:
-    0 10px 30px rgba(100, 50, 80, 0.25);
-}
-
-.knop {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 13px 20px;
-  background: #d43c88;
-  color: white;
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.knop:hover {
-  background: #9d2865;
+    width: min(92%, 68.75rem);
+    margin-inline: auto;
 }
 
 .pagina {
-  margin: 80px 0;
-  padding: 45px;
-  background: #fffaff;
-  border: 1px solid #efc8dc;
-  box-shadow:
-    0 8px 25px rgba(130, 70, 105, 0.08);
+    margin: 3rem 0;
+    padding: 2rem 1.25rem;
+    background: var(--white);
+    border: 0.15rem solid var(--burgundy);
+    border-radius: 1.4rem;
+    box-shadow: 0.4rem 0.4rem 0 var(--light-pink);
 }
 
 .pagina h2 {
-  margin: 0;
-  font-family: Georgia, serif;
-  font-size: clamp(40px, 6vw, 65px);
-  color: #542744;
-  line-height: 1;
+    margin: 0;
+    font-size: clamp(2.5rem, 6vw, 4.1rem);
+    color: var(--burgundy);
+    line-height: 1;
 }
 
 .pagina h3 {
-  color: #a83273;
-  font-family: Georgia, serif;
-  font-size: 25px;
+    color: var(--burgundy);
+    font-size: 1.5rem;
 }
 
 .intro {
-  max-width: 650px;
-  color: #725d6d;
-  margin-bottom: 35px;
+    max-width: 40.6rem;
+    color: var(--text);
+    margin-bottom: 2rem;
 }
 
+
+/* ========================================
+   HOME / HERO
+   ======================================== */
+
+.hero {
+    margin: 2.5rem 0;
+    padding: 2rem 1.25rem;
+    background: var(--light-pink);
+    border: 0.15rem solid var(--burgundy);
+    border-radius: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.hero-tekst {
+    max-width: 31.25rem;
+}
+
+.label {
+    color: var(--burgundy);
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.hero h2 {
+    margin: 0 0 1.25rem;
+    font-size: clamp(2.5rem, 6vw, 4.4rem);
+    line-height: 1;
+    color: var(--burgundy);
+}
+
+.hero p {
+    color: var(--text);
+}
+
+.hero-foto {
+    transform: rotate(3deg);
+}
+
+.hero-foto img {
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
+    border: 0.6rem solid white;
+    border-radius: 0.3rem;
+    box-shadow: 0.5rem 0.5rem 0 var(--burgundy);
+}
+
+
+/* ========================================
+   KNOPPEN
+   ======================================== */
+
+.knop {
+    display: inline-block;
+    margin-top: 1.25rem;
+    padding: 0.8rem 1.4rem;
+    background: var(--burgundy);
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.06rem;
+    border: 0.15rem solid var(--burgundy);
+    border-radius: 1.5rem;
+}
+
+.knop:hover {
+    background: var(--pink);
+    color: var(--cream);
+    transform: translateY(-0.25rem);
+    box-shadow: 0.3rem 0.3rem 0 var(--burgundy);
+}
+
+
+/* ========================================
+   ARTIESTEN KAARTEN
+   ======================================== */
+
 .artiest-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
 
 .artiest-kaart {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  min-height: 180px;
-  background: white;
-  border: 1px solid #efc4d9;
-  text-decoration: none;
-  color: #29222a;
-  overflow: hidden;
-  transition: 0.2s;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    min-height: 11rem;
+    background: var(--white);
+    border: 0.15rem solid var(--burgundy);
+    border-radius: 1.1rem;
+    text-decoration: none;
+    color: var(--text);
+    overflow: hidden;
+    transition: 0.3s ease;
 }
 
 .artiest-kaart:hover {
-  transform: translateY(-6px) rotate(-1deg);
-  box-shadow:
-    0 12px 25px rgba(120, 50, 90, 0.15);
+    transform: translateY(-0.4rem) rotate(-1deg);
+    box-shadow: 0.4rem 0.4rem 0 var(--pink);
 }
 
 .artiest-kaart img {
-  width: 150px;
-  height: 180px;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 11rem;
+    object-fit: cover;
 }
 
-.artiest-kaart div {
-  padding: 25px;
+.artiest-kaart-inhoud {
+    padding: 1.25rem;
 }
 
 .artiest-kaart h3 {
-  margin: 0 0 5px;
-  font-family: Georgia, serif;
-  font-size: 25px;
-  color: #a83273;
+    margin: 0 0 0.3rem;
+    font-size: 1.5rem;
+    color: var(--burgundy);
 }
 
 .artiest-kaart p {
-  margin: 0;
-  color: #88717f;
-  font-size: 14px;
+    margin: 0;
+    color: var(--text);
+    font-size: 0.9rem;
 }
 
+
+/* ========================================
+   ARTIESTEN BANNER
+   ======================================== */
+
+.artiesten-pagina {
+    width: min(92%, 68.75rem);
+    margin: 2.5rem auto;
+}
+
+.artiesten-banner {
+    padding: 2rem 1.25rem;
+    background: var(--blue);
+    border: 0.15rem solid var(--burgundy);
+    border-radius: 1.5rem;
+}
+
+.artiesten-banner h2 {
+    font-size: clamp(3rem, 8vw, 6.25rem);
+    line-height: 0.9;
+    margin: 0 0 1.5rem;
+    color: var(--burgundy);
+}
+
+
+/* ========================================
+   ARTIESTEN PAGINA
+   ======================================== */
+
+.artiesten-pagina .artiest-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin: 1.25rem 0;
+}
+
+.artiesten-pagina .artiest-kaart {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    min-height: 17.5rem;
+    overflow: hidden;
+    color: var(--burgundy);
+}
+
+.artiesten-pagina .artiest-kaart img {
+    width: 100%;
+    height: 100%;
+    min-height: 17.5rem;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.kaart-inhoud {
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kaart-nummer {
+    margin-bottom: 0.8rem;
+    display: inline-block;
+    width: fit-content;
+    background: var(--cream);
+    padding: 0.3rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border: 0.08rem solid var(--burgundy);
+}
+
+.kaart-label {
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.12rem;
+    margin: 0 0 0.9rem;
+}
+
+.artiesten-pagina .artiest-kaart h3 {
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0 0 0.9rem;
+    color: var(--burgundy);
+}
+
+.artiesten-pagina .artiest-kaart p {
+    font-size: 0.75rem;
+}
+
+.kaart-link {
+    display: inline-block;
+    margin-top: 0.9rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 0.06rem;
+}
+
+
+/* ========================================
+   KLEUREN ARTIESTENKAARTEN
+   ======================================== */
+
+.kaart-ariana {
+    background: #ffcddb;
+}
+
+.kaart-sabrina {
+    background: #d8fcff;
+}
+
+.kaart-olivia {
+    background: #f4d9ff;
+}
+
+.kaart-roxy {
+    background: #fff3b8;
+}
+
+.kaart-tate {
+    background: #ffd9c2;
+}
+
+.artiesten-pagina .artiest-kaart:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0.4rem 0.4rem 0 var(--burgundy);
+}
+
+.artiesten-pagina .artiest-kaart:hover img {
+    transform: scale(1.04);
+}
+
+
+/* ========================================
+   FOTO'S / INSPIRATIE
+   ======================================== */
+
 .foto-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
 }
 
 .foto-grid img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  background: #f2d8e5;
-  transition: 0.2s;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background: var(--light-pink);
+    border: 0.2rem solid var(--burgundy);
+    border-radius: 0.75rem;
+    transition: 0.3s ease;
 }
 
 .foto-grid img:hover {
-  transform: scale(1.04) rotate(1deg);
+    transform: scale(1.04) rotate(1deg);
+    box-shadow: 0.25rem 0.25rem 0 var(--pink);
 }
 
-.links-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-}
-
-.links-grid a {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 12px;
-  background: white;
-  border: 1px solid #efc4d9;
-  color: #542744;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.2s;
-}
-
-.links-grid a:hover {
-  background: #f9dce9;
-  transform: translateX(5px);
-}
-
-.links-grid span {
-  color: #d43c88;
-  font-family: Georgia, serif;
-  font-size: 22px;
-}
-
-.sfeer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  margin-top: 35px;
-}
-
-.sfeer div {
-  padding: 25px;
-  background: #f9dce9;
-  border: 1px solid #efbfd7;
-}
-
-.sfeer strong {
-  color: #a83273;
-  font-family: Georgia, serif;
-  letter-spacing: 1px;
-}
-
-.sfeer p {
-  margin-bottom: 0;
-  color: #725d6d;
-  font-size: 14px;
-}
-
-footer {
-  margin-top: 80px;
-  padding: 30px;
-  background: #542744;
-  color: white;
-  text-align: center;
-  font-size: 13px;
-}
-
-@media (max-width: 750px) {
-
-  .hero {
-    grid-template-columns: 1fr;
-    padding: 30px;
-  }
-
-  .hero-foto img {
-    height: 350px;
-  }
-
-  .pagina {
-    padding: 30px 20px;
-  }
-
-  .artiest-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .foto-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .links-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .sfeer {
-    grid-template-columns: 1fr;
-  }
-
-  nav ul {
-    gap: 15px;
-  }
-
-}
-.artist-profile {
-  margin: 55px 0 30px;
-
-  display: grid;
-  grid-template-columns: 45% 55%;
-  background: #f9dce9;
-  border: 1px solid #efbfd7;
-  min-height: 550px;
-}
-
-.artist-profile-foto {
-  position: relative;
-  padding: 30px;
-}
-
-.artist-profile-foto img {
-  width: 100%;
-  height: 490px;
-  object-fit: cover;
-  border: 10px solid white;
-  box-shadow:
-    0 12px 30px rgba(100, 50, 80, 0.2);
-  transform: rotate(-2deg);
-}
-
-.foto-label {
-  position: absolute;
-
-  bottom: 15px;
-  left: 45px;
-
-  padding: 8px 14px;
-  background: white;
-  color: #d43c88;
-  font-size: 11px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  transform: rotate(-4deg);
-}
-
-.artist-profile-info {
-  padding: 65px 55px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.artist-profile-info h2 {
-  margin: 5px 0 15px;
-  font-family: Georgia, serif;
-  font-size: clamp(55px, 7vw, 90px);
-  line-height: 0.9;
-  color: #542744;
-}
-
-.artist-profile-info p {
-  max-width: 500px;
-  color: #654f5e;
-}
-
-.artist-quote {
-  color: #b44782 !important;
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.artist-info-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin: 25px 0;
-}
-
-.info-box {
-  padding: 30px;
-  background: #fffaff;
-  border: 1px solid #efc8dc;
-  position: relative;
-}
-
-.box-number {
-  margin: 0;
-  color: #d43c88;
-  font-family: Georgia, serif;
-  font-size: 25px;
-}
-
-.info-box h3 {
-  margin-top: 5px;
-  font-family: Georgia, serif;
-  font-size: 28px;
-  color: #542744;
-}
-.artist-section {
-  margin: 50px 0;
-  padding: 40px;
-  background: #fffaff;
-  border: 1px solid #efc8dc;
-}
-
-.artist-section h2 {
-  margin-top: 0;
-  font-family: Georgia, serif;
-  font-size: 45px;
-  color: #542744;
-}
-
-.songs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-
-.songs div {
-  padding: 18px 20px;
-  background: #f9dce9;
-  border: 1px solid #efbfd7;
-  font-weight: bold;
-  color: #542744;
-}
-
-.songs span {
-  margin-right: 15px;
-  color: #d43c88;
-  font-family: Georgia, serif;
-}
-
-.weetjes ul {
-  padding-left: 20px;
-  max-width: 700px;
-}
-
-.weetjes li {
-  margin-bottom: 15px;
-  padding-left: 8px;
-  color: #654f5e;
-}
-
-
-.waarom {
-  margin: 50px 0;
-  padding: 45px;
-  background: #542744;
-  color: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  align-items: center;
-}
-
-.waarom h2 {
-  margin: 0;
-  font-family: Georgia, serif;
-  font-size: 40px;
-  line-height: 1.1;
-}
-
-.waarom .label {
-  color: #f5a8cd;
-}
-
-.waarom p:last-child {
-  margin: 0;
-  color: #f9dce9;
-  font-size: 16px;
-}
-
-.terug {
-  text-align: center;
-  margin: 50px 0 80px;
-}
-
-@media (max-width: 750px) {
-
-  .artist-profile {
-    grid-template-columns: 1fr;
-  }
-
-  .artist-profile-foto img {
-    height: 400px;
-  }
-
-  .artist-profile-info {
-    padding: 40px 30px;
-  }
-
-  .artist-info-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .songs {
-    grid-template-columns: 1fr;
-  }
-
-  .waarom {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-}
-
-@media (prefers-color-scheme: dark) {
-
-  body {
-    background: #1d1820;
-    color: #f5eaf1;
-  }
-
-  header {
-    background: #241d27;
-    border-bottom: 2px solid #53334a;
-  }
-
-  .kleine-titel {
-    color: #d98ab5;
-  }
-
-  h1 {
-    color: #ef6eae;
-  }
-
-  .ondertitel {
-    color: #c7b3c1;
-  }
-
-  nav a {
-    color: #e5a4c8;
-  }
-
-  nav a:hover {
-    color: #ff7fba;
-  }
-  .hero {
-    background: #342532;
-    border-color: #5a3b4f;
-  }
-
-  .hero h2 {
-    color: #f4c5dc;
-  }
-
-  .hero p {
-    color: #d8c5d0;
-  }
-
-  .label {
-    color: #e58ab7;
-  }
-
-  .hero-foto img {
-    border-color: #f5edf2;
-
-    box-shadow:
-      0 10px 30px rgba(0, 0, 0, 0.4);
-  }
-
-  .knop {
-    background: #d43c88;
-    color: white;
-  }
-
-  .knop:hover {
-    background: #ef5da1;
-  }
-
-  .pagina {
-    background: #241d27;
-    border-color: #53334a;
-
-    box-shadow:
-      0 8px 25px rgba(0, 0, 0, 0.3);
-  }
-
-  .pagina h2 {
-    color: #f4c5dc;
-  }
-
-  .pagina h3 {
-    color: #e87caf;
-  }
-
-  .intro {
-    color: #c7b3c1;
-  }
-  .artiest-kaart {
-    background: #29212c;
-    border-color: #57394e;
-    color: #f5eaf1;
-  }
-
-  .artiest-kaart:hover {
-    box-shadow:
-      0 12px 25px rgba(0, 0, 0, 0.4);
-  }
-
-  .artiest-kaart h3 {
-    color: #e87caf;
-  }
-
-  .artiest-kaart p {
-    color: #bdaab7;
-  }
-  .foto-grid img {
-    background: #352936;
-  }
-
-  .links-grid a {
-    background: #29212c;
-    border-color: #57394e;
-    color: #f4c5dc;
-  }
-
-  .links-grid a:hover {
-    background: #3a2936;
-  }
-
-  .links-grid span {
-    color: #ef6eae;
-  }
-
-  .sfeer div {
-    background: #342532;
-    border-color: #5a3b4f;
-  }
-
-  .sfeer strong {
-    color: #e87caf;
-  }
-
-  .sfeer p {
-    color: #c7b3c1;
-  }
-
-
-  /* FOOTER */
-
-  footer {
-    background: #120f14;
-    color: #eadce5;
-  }
-
-  .artist-profile {
-    background: #342532;
-    border-color: #5a3b4f;
-  }
-
-  .artist-profile-foto img {
-    border-color: #f5edf2;
-
-    box-shadow:
-      0 12px 30px rgba(0, 0, 0, 0.45);
-  }
-
-  .foto-label {
-    background: #29212c;
-    color: #ef6eae;
-  }
-
-  .artist-profile-info h2 {
-    color: #f4c5dc;
-  }
-
-  .artist-profile-info p {
-    color: #d2bfca;
-  }
-
-  .artist-quote {
-    color: #e58ab7 !important;
-  }
-
-
-  .info-box {
-    background: #241d27;
-    border-color: #53334a;
-  }
-
-  .box-number {
-    color: #ef6eae;
-  }
-
-  .info-box h3 {
-    color: #f4c5dc;
-  }
-
-  .artist-section {
-    background: #241d27;
-    border-color: #53334a;
-  }
-
-  .artist-section h2 {
-    color: #f4c5dc;
-  }
-
-  .songs div {
-    background: #342532;
-    border-color: #5a3b4f;
-    color: #f4c5dc;
-  }
-
-  .songs span {
-    color: #ef6eae;
-  }
-
-
-  .weetjes li {
-    color: #d2bfca;
-  }
-
-
-  .waarom {
-    background: #120f14;
-    color: white;
-  }
-
-  .waarom p:last-child {
-    color: #e7cbd9;
-  }
-
-}
 .moodboards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-  margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.8rem;
 }
 
 .moodboards img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border: 5px solid white;
-  border-radius: 15px;
+    width: 100%;
+    height: 90%;
+    border: 0.3rem solid white;
+    border-radius: 0.9rem;
+    box-shadow: 0.3rem 0.3rem 0 var(--pink);
 }
+
+
+/* ========================================
+   LINKS
+   ======================================== */
+
+.links-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    min-width: 0;
+}
+
+.links-grid a {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.9rem;
+    width: 100%;
+    min-width: 0;
+    padding: 1rem;
+
+    background: var(--yellow);
+    border: 0.15rem solid var(--burgundy);
+    border-radius: 0.9rem;
+
+    color: var(--burgundy);
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.2s;
+
+    /* Zorgt dat lange tekst/URL's niet uit het scherm gaan */
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.links-grid a:hover {
+    background: var(--light-pink);
+    transform: translateX(0.3rem);
+    box-shadow: 0.25rem 0.25rem 0 var(--burgundy);
+}
+
+.links-grid span {
+    flex-shrink: 0;
+    color: var(--pink);
+    font-family: Georgia, serif;
+    font-size: 1.4rem;
+}
+
+.links-grid a strong,
+.links-grid a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+
+/* ========================================
+   SFEER
+   ======================================== */
+
+.sfeer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.sfeer div {
+    background: var(--light-pink);
+    border: 0.15rem solid var(--burgundy);
+    padding: 1.25rem;
+    text-align: center;
+    border-radius: 1.1rem;
+    transition: 0.3s;
+}
+
+.sfeer div:nth-child(2) {
+    background: var(--blue);
+}
+
+.sfeer div:nth-child(3) {
+    background: var(--yellow);
+}
+
+.sfeer div:hover {
+    transform: translateY(-0.3rem) rotate(-1deg);
+    box-shadow: 0.3rem 0.3rem 0 var(--burgundy);
+}
+
+.sfeer strong {
+    color: var(--burgundy);
+    font-family: Georgia, serif;
+    letter-spacing: 0.06rem;
+}
+
+.sfeer p {
+    margin-bottom: 0;
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
+
+/* =====================================================
+   ARTIEST PROFIELPAGINA
+   ===================================================== */
+
+.artist-profile {
+    margin: 3.5rem 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    background: var(--light-pink);
+    border: 0.15rem solid var(--burgundy);
+    border-radius: 1.4rem;
+    min-height: 34rem;
+    overflow: hidden;
+}
+
+.artist-profile-foto {
+    padding: 1.5rem;
+}
+
+.artist-profile-foto img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    border: 0.6rem solid white;
+    border-radius: 0.3rem;
+    box-shadow: 0.5rem 0.5rem 0 var(--burgundy);
+    transform: rotate(-2deg);
+    transition: 0.3s ease;
+}
+
+.artist-profile-foto img:hover {
+    transform: rotate(1deg) scale(1.02);
+}
+
+.foto-label {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 0.9rem;
+    background: var(--cream);
+    color: var(--burgundy);
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 0.12rem;
+    transform: rotate(-2deg);
+    border: 0.15rem solid var(--burgundy);
+}
+
+.artist-profile-info {
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.artist-profile-info h2 {
+    margin: 0.3rem 0 1rem;
+    font-size: clamp(3.4rem, 7vw, 5.6rem);
+    line-height: 0.9;
+    color: var(--burgundy);
+}
+
+.artist-profile-info p {
+    max-width: 31.25rem;
+    color: var(--text);
+}
+
+.artist-quote {
+    color: var(--burgundy) !important;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   INFO BLOKKEN
+   ======================================== */
+
+.artist-info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin: 1.5rem 0;
+}
+
+.info-box {
+    padding: 1.5rem;
+    background: var(--cream);
+    border: 0.15rem solid var(--burgundy);
+    border-radius: 1.1rem;
+    box-shadow: 0.3rem 0.3rem 0 var(--light-pink);
+}
+
+.box-number {
+    margin: 0;
+    color: var(--pink);
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+}
+
+.info-box h3 {
+    margin-top: 0.3rem;
+    font-size: 1.7rem;
+    color: var(--burgundy);
+}
+
+
+/* ========================================
+   ARTIEST SECTIES
+   ======================================== */
+
+.artist-section {
+    margin: 3rem 0;
+    padding: 2rem 1.25rem;
+    background: var(--white);
+    border: 0.15rem solid var(--burgundy);
+    border-radius: 1.25rem;
+    box-shadow: 0.4rem 0.4rem 0 var(--light-pink);
+}
+
+.artist-section h2 {
+    margin-top: 0;
+    font-size: 2.8rem;
+    color: var(--burgundy);
+}
+
+.songs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+}
+
+.songs div {
+    padding: 1rem 1.25rem;
+    background: var(--light-pink);
+    border: 0.15rem solid var(--burgundy);
+    border-radius: 0.75rem;
+    font-weight: bold;
+    color: var(--burgundy);
+}
+
+.songs div:nth-child(even) {
+    background: var(--blue);
+}
+
+.songs span {
+    margin-right: 0.9rem;
+    color: var(--pink);
+    font-family: Georgia, serif;
+}
+
+.weetjes ul {
+    padding-left: 1.25rem;
+    max-width: 43.75rem;
+}
+
+.weetjes li {
+    margin-bottom: 0.9rem;
+    padding-left: 0.5rem;
+    color: var(--text);
+}
+
+
+/* ========================================
+   WAAROM IK HAAR LEUK VIND
+   ======================================== */
+
+.waarom {
+    margin: 3rem 0;
+    padding: 2.25rem 1.5rem;
+    background: var(--burgundy);
+    color: var(--cream);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    border-radius: 1.25rem;
+}
+
+.waarom h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    color: var(--cream);
+}
+
+.waarom .label {
+    color: var(--light-pink);
+}
+
+.waarom p:last-child {
+    margin: 0;
+    color: var(--light-pink);
+    font-size: 1rem;
+}
+
+
+/* ========================================
+   TERUG
+   ======================================== */
+
+.terug {
+    text-align: center;
+    margin: 3rem 0 5rem;
+}
+
+.terug a {
+    color: var(--burgundy);
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 0.15rem solid var(--burgundy);
+}
+
+
+/* ========================================
+   STERRETJES
+   ======================================== */
 
 .ster {
-  position: absolute;
-  color: #d4af37;
-  font-size: 24px;
-  z-index: 10;
-  pointer-events: none;
-  text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+    color: var(--pink);
+    font-size: 1.5rem;
+    pointer-events: none;
+    opacity: 0.8;
 }
 
-.ster1 {
-  top: 15%;
-  left: 4%;
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+footer {
+    margin-top: 5rem;
+    padding: 2rem 1rem;
+    background: var(--burgundy);
+    color: var(--cream);
+    text-align: center;
+    font-size: 0.8rem;
 }
 
-.ster2 {
-  top: 30%;
-  right: 5%;
-  font-size: 18px;
+
+/* =====================================================
+   ARIANA — ROZE PALET
+   ===================================================== */
+
+body:has(.artist-profile img[src*="ariana"]) {
+    --cream: #fff3f7;
+    --light-pink: #ffd6e3;
+    --pink: #efa1ba;
+    --burgundy: #d77b9d;
+    --blue: #edf8fa;
+    --lilac: #f4e3ee;
+    --yellow: #fff4d9;
+    --white: #fffafd;
+    --text: #725c65;
 }
 
-.ster3 {
-  top: 55%;
-  left: 3%;
-  font-size: 16px;
+body:has(.artist-profile img[src*="ariana"]) .artist-profile {
+    background: #ffd6e3;
+    border-color: #d77b9d;
+    box-shadow: 0.5rem 0.5rem 0 #efb4c8;
 }
 
-.ster4 {
-  top: 75%;
-  right: 4%;
-  font-size: 26px;
+body:has(.artist-profile img[src*="ariana"]) .info-box {
+    background: #fff0f5;
+    border-color: #d77b9d;
+    box-shadow: 0.3rem 0.3rem 0 #f2c4d5;
 }
 
-.ster5 {
-  top: 12%;
-  right: 20%;
-  font-size: 14px;
+body:has(.artist-profile img[src*="ariana"]) .artist-section {
+    background: #f9e4ed;
+    border-color: #d77b9d;
+    box-shadow: 0.4rem 0.4rem 0 #efb4c8;
+}
+
+body:has(.artist-profile img[src*="ariana"]) .songs div {
+    background: #f4c5d7;
+    border-color: #d77b9d;
+}
+
+body:has(.artist-profile img[src*="ariana"]) .songs div:nth-child(even) {
+    background: #ffe8ef;
+}
+
+body:has(.artist-profile img[src*="ariana"]) .waarom {
+    background: #d77b9d;
+}
+
+
+/* =====================================================
+   SABRINA — BLAUW PALET
+   ===================================================== */
+
+body:has(.artist-profile img[src*="sabrina"]) {
+    --cream: #effcff;
+    --light-pink: #d8f5f8;
+    --blue: #bfeaf0;
+    --lilac: #dceff5;
+    --yellow: #eef8f5;
+    --pink: #91cfd8;
+    --burgundy: #65aeb9;
+    --white: #f9feff;
+    --text: #536f76;
+}
+
+body:has(.artist-profile img[src*="sabrina"]) .artist-profile {
+    background: #c8edf2;
+    border-color: #65aeb9;
+    box-shadow: 0.5rem 0.5rem 0 #9fd7df;
+}
+
+body:has(.artist-profile img[src*="sabrina"]) .info-box {
+    background: #e8f9fb;
+    border-color: #65aeb9;
+    box-shadow: 0.3rem 0.3rem 0 #b9e5eb;
+}
+
+body:has(.artist-profile img[src*="sabrina"]) .artist-section {
+    background: #d9f3f6;
+    border-color: #65aeb9;
+    box-shadow: 0.4rem 0.4rem 0 #a9dfe6;
+}
+
+body:has(.artist-profile img[src*="sabrina"]) .songs div {
+    background: #bde7ed;
+    border-color: #65aeb9;
+}
+
+body:has(.artist-profile img[src*="sabrina"]) .songs div:nth-child(even) {
+    background: #e5f8fa;
+}
+
+body:has(.artist-profile img[src*="sabrina"]) .waarom {
+    background: #78bbc5;
+}
+
+body:has(.artist-profile img[src*="sabrina"]) .waarom h2 {
+    color: white;
+}
+
+body:has(.artist-profile img[src*="sabrina"]) .waarom p:last-child {
+    color: #e8f9fb;
+}
+
+
+/* =====================================================
+   OLIVIA — LILA PALET
+   ===================================================== */
+
+body:has(.artist-profile img[src*="olivia"]) {
+    --cream: #faf4fd;
+    --light-pink: #ead9f5;
+    --pink: #c99bdc;
+    --burgundy: #a56dbb;
+    --blue: #e8f5f6;
+    --lilac: #ddc4ec;
+    --yellow: #f8f0da;
+    --white: #fdfaff;
+    --text: #66556d;
+}
+
+body:has(.artist-profile img[src*="olivia"]) .artist-profile {
+    background: #e4d0f0;
+    border-color: #a56dbb;
+    box-shadow: 0.5rem 0.5rem 0 #c6a4d8;
+}
+
+body:has(.artist-profile img[src*="olivia"]) .info-box {
+    background: #f5eafb;
+    border-color: #a56dbb;
+    box-shadow: 0.3rem 0.3rem 0 #dfc7ec;
+}
+
+body:has(.artist-profile img[src*="olivia"]) .artist-section {
+    background: #eee2f7;
+    border-color: #a56dbb;
+    box-shadow: 0.4rem 0.4rem 0 #cdb0dd;
+}
+
+body:has(.artist-profile img[src*="olivia"]) .songs div {
+    background: #dcc5ea;
+    border-color: #a56dbb;
+}
+
+body:has(.artist-profile img[src*="olivia"]) .songs div:nth-child(even) {
+    background: #f1e8f7;
+}
+
+body:has(.artist-profile img[src*="olivia"]) .waarom {
+    background: #a56dbb;
+}
+
+
+/* =====================================================
+   ROXY — LICHT PASTELGEEL
+   ===================================================== */
+
+body:has(.artist-profile img[src*="roxy"]) {
+    --cream: #fffdf3;
+    --light-pink: #fff8d9;
+    --pink: #e7d18c;
+    --burgundy: #c9ae65;
+    --blue: #eef8f6;
+    --lilac: #f8f3df;
+    --yellow: #fff4c2;
+    --white: #fffefa;
+    --text: #70674f;
+}
+
+body:has(.artist-profile img[src*="roxy"]) .artist-profile {
+    background: #fff6ce;
+    border-color: #c9ae65;
+    box-shadow: 0.5rem 0.5rem 0 #eadfae;
+}
+
+body:has(.artist-profile img[src*="roxy"]) .info-box {
+    background: #fffbea;
+    border-color: #c9ae65;
+    box-shadow: 0.3rem 0.3rem 0 #f0e6bd;
+}
+
+body:has(.artist-profile img[src*="roxy"]) .artist-section {
+    background: #fff8df;
+    border-color: #c9ae65;
+    box-shadow: 0.4rem 0.4rem 0 #eadfae;
+}
+
+body:has(.artist-profile img[src*="roxy"]) .songs div {
+    background: #fff0c0;
+    border-color: #c9ae65;
+}
+
+body:has(.artist-profile img[src*="roxy"]) .songs div:nth-child(even) {
+    background: #fffaf0;
+}
+
+body:has(.artist-profile img[src*="roxy"]) .waarom {
+    background: #d8bd70;
+}
+
+
+/* =====================================================
+   TATE — PASTEL ORANJE / PERZIK
+   ===================================================== */
+
+body:has(.artist-profile img[src*="tate"]) {
+    --cream: #fff8f2;
+    --light-pink: #ffdcca;
+    --pink: #f2ae8c;
+    --burgundy: #d98968;
+    --blue: #edf6f5;
+    --lilac: #f7e3da;
+    --yellow: #fff0d8;
+    --white: #fffdfb;
+    --text: #715d55;
+}
+
+body:has(.artist-profile img[src*="tate"]) .artist-profile {
+    background: #ffd8c2;
+    border-color: #d98968;
+    box-shadow: 0.5rem 0.5rem 0 #efb79d;
+}
+
+body:has(.artist-profile img[src*="tate"]) .info-box {
+    background: #fff0e6;
+    border-color: #d98968;
+    box-shadow: 0.3rem 0.3rem 0 #f3c5ad;
+}
+
+body:has(.artist-profile img[src*="tate"]) .artist-section {
+    background: #ffe8d9;
+    border-color: #d98968;
+    box-shadow: 0.4rem 0.4rem 0 #efb79d;
+}
+
+body:has(.artist-profile img[src*="tate"]) .songs div {
+    background: #f9ccb2;
+    border-color: #d98968;
+}
+
+body:has(.artist-profile img[src*="tate"]) .songs div:nth-child(even) {
+    background: #fff0e5;
+}
+
+body:has(.artist-profile img[src*="tate"]) .waarom {
+    background: #d98968;
+}
+
+
+/* =====================================================
+   GROTERE SCHERMEN
+   Mobile-first: eerst de kleine versie,
+   daarna wordt de layout groter gemaakt.
+   ===================================================== */
+
+@media (min-width: 47rem) {
+
+    header {
+        padding: 2.2rem 1.25rem 1.5rem;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+    }
+
+    .pagina {
+        padding: 2.8rem;
+    }
+
+    .hero {
+        min-height: 36rem;
+        padding: 3rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .hero-foto img {
+        height: 28rem;
+    }
+
+    .artiest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .artiest-kaart {
+        grid-template-columns: 9.4rem 1fr;
+    }
+
+    .artiest-kaart img {
+        width: 9.4rem;
+        min-height: 11rem;
+    }
+
+    .artiesten-banner {
+        padding: 2.8rem;
+    }
+
+    .artiesten-pagina .artiest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .foto-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .moodboards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .links-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sfeer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .artist-profile {
+        grid-template-columns: 45% 55%;
+    }
+
+    .artist-profile-foto {
+        padding: 2rem;
+    }
+
+    .artist-profile-foto img {
+        height: 30rem;
+    }
+
+    .artist-profile-info {
+        padding: 4rem 3rem;
+    }
+
+    .artist-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .artist-section {
+        padding: 2.5rem;
+    }
+
+    .songs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .waarom {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        padding: 2.8rem;
+    }
+}
+/* =====================================================
+   DARK MODE
+   ===================================================== */
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --pink: #d99aae;
+        --light-pink: #443039;
+        --cream: #211c20;
+        --blue: #293c40;
+        --lilac: #38303d;
+        --yellow: #45402e;
+        --burgundy: #df9ab0;
+        --text: #eee2e6;
+        --white: #2d272b;
+    }
+
+    body {
+        background: var(--cream);
+        color: var(--text);
+    }
+
+    header {
+        background: var(--white);
+        border-color: var(--pink);
+    }
+
+    .kleine-titel,
+    h1,
+    .pagina h2,
+    .pagina h3 {
+        color: var(--burgundy);
+    }
+
+    .ondertitel,
+    .intro,
+    .hero p,
+    .artist-profile-info p,
+    .weetjes li {
+        color: var(--text);
+    }
+
+
+    /* NAVIGATIE */
+
+    nav {
+        background: var(--light-pink);
+        border-color: var(--burgundy);
+    }
+
+    nav a {
+        color: var(--burgundy);
+    }
+
+    nav a:hover {
+        background: var(--cream);
+        color: var(--burgundy);
+        border-color: var(--burgundy);
+    }
+
+
+    /* PAGINA */
+
+    .pagina {
+        background: var(--white);
+        border-color: var(--burgundy);
+        box-shadow: 0.4rem 0.4rem 0 var(--light-pink);
+    }
+
+
+    /* HOME */
+
+    .hero {
+        background: var(--light-pink);
+        border-color: var(--burgundy);
+    }
+
+    .hero h2,
+    .label {
+        color: var(--burgundy);
+    }
+
+
+    /* KNOPPEN */
+
+    .knop {
+        background: var(--burgundy);
+        color: var(--cream);
+        border-color: var(--burgundy);
+    }
+
+    .knop:hover {
+        background: var(--pink);
+        color: #211c20;
+    }
+
+
+    /* ARTIESTENPAGINA */
+
+    .artiesten-banner {
+        background: var(--blue);
+        border-color: var(--burgundy);
+    }
+
+    .artiesten-banner h2 {
+        color: var(--burgundy);
+    }
+
+
+    /* ARTIESTENKAARTEN */
+
+    .kaart-ariana {
+        background: #49313b;
+        border-color: #d99aae;
+    }
+
+    .kaart-sabrina {
+        background: #294044;
+        border-color: #91cbd2;
+    }
+
+    .kaart-olivia {
+        background: #403548;
+        border-color: #c19bd1;
+    }
+
+    .kaart-roxy {
+        background: #45412e;
+        border-color: #d6c67c;
+    }
+
+    .kaart-tate {
+        background: #49372f;
+        border-color: #d9a183;
+    }
+
+    .artiesten-pagina .artiest-kaart h3 {
+        color: var(--burgundy);
+    }
+
+    .artiesten-pagina .artiest-kaart p {
+        color: var(--text);
+    }
+
+    .kaart-nummer {
+        background: var(--cream);
+        color: var(--burgundy);
+        border-color: var(--burgundy);
+    }
+
+    .kaart-link {
+        color: var(--burgundy);
+    }
+
+
+    /* FOTO'S */
+
+    .foto-grid img {
+        background: var(--light-pink);
+        border-color: var(--burgundy);
+    }
+
+    .moodboards img {
+        border-color: var(--white);
+    }
+
+
+    /* LINKS */
+
+    .links-grid a {
+        background: var(--yellow);
+        border-color: var(--burgundy);
+        color: var(--burgundy);
+    }
+
+    .links-grid a:hover {
+        background: var(--light-pink);
+    }
+
+
+    /* SFEER */
+
+    .sfeer div {
+        background: var(--light-pink);
+        border-color: var(--burgundy);
+    }
+
+    .sfeer div:nth-child(2) {
+        background: var(--blue);
+    }
+
+    .sfeer div:nth-child(3) {
+        background: var(--yellow);
+    }
+
+    .sfeer strong {
+        color: var(--burgundy);
+    }
+
+    .sfeer p {
+        color: var(--text);
+    }
+
+
+    /* ARTIEST PROFIEL */
+
+    .artist-profile {
+        background: var(--light-pink);
+        border-color: var(--burgundy);
+    }
+
+    .artist-profile-foto img {
+        border-color: var(--white);
+    }
+
+    .foto-label {
+        background: var(--cream);
+        color: var(--burgundy);
+        border-color: var(--burgundy);
+    }
+
+    .artist-profile-info h2 {
+        color: var(--burgundy);
+    }
+
+    .artist-quote {
+        color: var(--burgundy) !important;
+    }
+
+
+    /* INFO BLOKKEN */
+
+    .info-box {
+        background: var(--cream);
+        border-color: var(--burgundy);
+        box-shadow: 0.3rem 0.3rem 0 var(--light-pink);
+    }
+
+    .box-number,
+    .info-box h3 {
+        color: var(--burgundy);
+    }
+
+
+    /* ARTIEST SECTIES */
+
+    .artist-section {
+        background: var(--white);
+        border-color: var(--burgundy);
+        box-shadow: 0.4rem 0.4rem 0 var(--light-pink);
+    }
+
+    .artist-section h2 {
+        color: var(--burgundy);
+    }
+
+
+    /* LIEDJES */
+
+    .songs div {
+        background: var(--light-pink);
+        border-color: var(--burgundy);
+        color: var(--burgundy);
+    }
+
+    .songs div:nth-child(even) {
+        background: var(--blue);
+    }
+
+    .songs span {
+        color: var(--pink);
+    }
+
+
+    /* WAAROM IK HAAR LEUK VIND */
+
+    .waarom {
+        background: #49313b;
+        color: #f5e9ee;
+    }
+
+    .waarom h2 {
+        color: #fff0f5;
+    }
+
+    .waarom .label {
+        color: var(--pink);
+    }
+
+    .waarom p:last-child {
+        color: #eadde1;
+    }
+
+
+    /* TERUG */
+
+    .terug a {
+        color: var(--burgundy);
+        border-color: var(--burgundy);
+    }
+
+
+    /* STERRETJES */
+
+    .ster {
+        color: var(--pink);
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        background: var(--white);
+        color: var(--text);
+    }
+
+
+    /* =================================================
+       ARIANA
+       ================================================= */
+
+    body:has(.artist-profile img[src*="ariana"]) {
+        --cream: #21191e;
+        --light-pink: #49313b;
+        --pink: #d99aae;
+        --burgundy: #e09aae;
+        --blue: #29383b;
+        --lilac: #3a303b;
+        --yellow: #45402e;
+        --white: #2d2429;
+        --text: #f0e2e7;
+    }
+
+    body:has(.artist-profile img[src*="ariana"]) .artist-profile {
+        background: #49313b;
+        border-color: #d99aae;
+    }
+
+    body:has(.artist-profile img[src*="ariana"]) .info-box {
+        background: #38272e;
+        border-color: #d99aae;
+    }
+
+    body:has(.artist-profile img[src*="ariana"]) .artist-section {
+        background: #32262c;
+        border-color: #d99aae;
+    }
+
+    body:has(.artist-profile img[src*="ariana"]) .songs div {
+        background: #49313b;
+        border-color: #d99aae;
+    }
+
+    body:has(.artist-profile img[src*="ariana"]) .songs div:nth-child(even) {
+        background: #38272e;
+    }
+
+    body:has(.artist-profile img[src*="ariana"]) .waarom {
+        background: #70445a;
+    }
+
+
+    /* =================================================
+       SABRINA
+       ================================================= */
+
+    body:has(.artist-profile img[src*="sabrina"]) {
+        --cream: #182225;
+        --light-pink: #294044;
+        --pink: #91cbd2;
+        --burgundy: #8bcbd2;
+        --blue: #26383b;
+        --lilac: #304044;
+        --yellow: #3d402f;
+        --white: #202c2f;
+        --text: #e5f2f4;
+    }
+
+    body:has(.artist-profile img[src*="sabrina"]) .artist-profile {
+        background: #294044;
+        border-color: #91cbd2;
+    }
+
+    body:has(.artist-profile img[src*="sabrina"]) .info-box {
+        background: #24363a;
+        border-color: #91cbd2;
+    }
+
+    body:has(.artist-profile img[src*="sabrina"]) .artist-section {
+        background: #25373a;
+        border-color: #91cbd2;
+    }
+
+    body:has(.artist-profile img[src*="sabrina"]) .songs div {
+        background: #294044;
+        border-color: #91cbd2;
+    }
+
+    body:has(.artist-profile img[src*="sabrina"]) .songs div:nth-child(even) {
+        background: #24363a;
+    }
+
+    body:has(.artist-profile img[src*="sabrina"]) .waarom {
+        background: #396a72;
+    }
+
+
+    /* =================================================
+       OLIVIA
+       ================================================= */
+
+    body:has(.artist-profile img[src*="olivia"]) {
+        --cream: #211c26;
+        --light-pink: #403548;
+        --pink: #c19bd1;
+        --burgundy: #c19bd1;
+        --blue: #2d3c3e;
+        --lilac: #403548;
+        --yellow: #45402e;
+        --white: #2d2732;
+        --text: #eee5f2;
+    }
+
+    body:has(.artist-profile img[src*="olivia"]) .artist-profile {
+        background: #403548;
+        border-color: #c19bd1;
+    }
+
+    body:has(.artist-profile img[src*="olivia"]) .info-box {
+        background: #332b3a;
+        border-color: #c19bd1;
+    }
+
+    body:has(.artist-profile img[src*="olivia"]) .artist-section {
+        background: #302937;
+        border-color: #c19bd1;
+    }
+
+    body:has(.artist-profile img[src*="olivia"]) .songs div {
+        background: #403548;
+        border-color: #c19bd1;
+    }
+
+    body:has(.artist-profile img[src*="olivia"]) .songs div:nth-child(even) {
+        background: #332b3a;
+    }
+
+    body:has(.artist-profile img[src*="olivia"]) .waarom {
+        background: #674b76;
+    }
+
+
+    /* =================================================
+       ROXY
+       ================================================= */
+
+    body:has(.artist-profile img[src*="roxy"]) {
+        --cream: #24231b;
+        --light-pink: #45412e;
+        --pink: #d6c67c;
+        --burgundy: #d6c67c;
+        --blue: #2d3938;
+        --lilac: #3c392c;
+        --yellow: #45412e;
+        --white: #302f25;
+        --text: #f0eddc;
+    }
+
+    body:has(.artist-profile img[src*="roxy"]) .artist-profile {
+        background: #45412e;
+        border-color: #d6c67c;
+    }
+
+    body:has(.artist-profile img[src*="roxy"]) .info-box {
+        background: #39382b;
+        border-color: #d6c67c;
+    }
+
+    body:has(.artist-profile img[src*="roxy"]) .artist-section {
+        background: #353429;
+        border-color: #d6c67c;
+    }
+
+    body:has(.artist-profile img[src*="roxy"]) .songs div {
+        background: #45412e;
+        border-color: #d6c67c;
+    }
+
+    body:has(.artist-profile img[src*="roxy"]) .songs div:nth-child(even) {
+        background: #39382b;
+    }
+
+    body:has(.artist-profile img[src*="roxy"]) .waarom {
+        background: #756633;
+    }
+
+
+    /* =================================================
+       TATE
+       ================================================= */
+
+    body:has(.artist-profile img[src*="tate"]) {
+        --cream: #241e1b;
+        --light-pink: #49372f;
+        --pink: #d9a183;
+        --burgundy: #d9a183;
+        --blue: #2d3938;
+        --lilac: #3c302b;
+        --yellow: #45402e;
+        --white: #302825;
+        --text: #f2e7e1;
+    }
+
+    body:has(.artist-profile img[src*="tate"]) .artist-profile {
+        background: #49372f;
+        border-color: #d9a183;
+    }
+
+    body:has(.artist-profile img[src*="tate"]) .info-box {
+        background: #3b2e29;
+        border-color: #d9a183;
+    }
+
+    body:has(.artist-profile img[src*="tate"]) .artist-section {
+        background: #382c28;
+        border-color: #d9a183;
+    }
+
+    body:has(.artist-profile img[src*="tate"]) .songs div {
+        background: #49372f;
+        border-color: #d9a183;
+    }
+
+    body:has(.artist-profile img[src*="tate"]) .songs div:nth-child(even) {
+        background: #3b2e29;
+    }
+
+    body:has(.artist-profile img[src*="tate"]) .waarom {
+        background: #704c3b;
+    }
 }
