@@ -152,9 +152,12 @@ Uiteindelijk vind ik dat mijn Digital Garden goed bij mij past. Ik zie mijn eige
 <img width="461" height="313" alt="Scherm­afbeelding 2026-09-21 om 14 08 26" src="https://github.com/user-attachments/assets/efec0edb-f8b9-4c55-a440-a172e279b358" />
 <img width="583" height="642" alt="Scherm­afbeelding 2026-09-21 om 14 08 05" src="https://github.com/user-attachments/assets/6cc426e4-ac5c-421e-976d-264fdf38a627" />
 
+
 **Template samen met Joëlle:**
 
 <img width="400" height="300" alt="IMG_3197" src="https://github.com/user-attachments/assets/6ede25ac-724b-4b6a-ad5c-605f340c69d9" />
+
+
 
 
 
