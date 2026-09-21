@@ -143,6 +143,8 @@ Ik heb vooral meer geleerd over **CSS, Grid, Flexbox, responsive design en light
 Uiteindelijk vind ik dat mijn Digital Garden goed bij mij past. Ik zie mijn eigen stijl terug in de **pastelkleuren, popmagazine-uitstraling, gouden sterren en de verschillende artiesten**. Door steeds te testen en aan te passen heb ik de website steeds meer gemaakt zoals ik hem voor ogen had.
 
 
+### 21 sept - (Werkgroep)
+
 
 
 
