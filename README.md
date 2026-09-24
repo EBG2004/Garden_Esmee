@@ -160,7 +160,12 @@ Uiteindelijk vind ik dat mijn Digital Garden goed bij mij past. Ik zie mijn eige
 
 ### 24 sept - (Thuis)
 
-De afgelopen dagen voelde ik mij niet zo lekker. ik heb mijn nieuwe bril met nieuwe sterkte binnen gekregen en had veel last van de vernieuwde sterkte. Daarom was in woensdag 23/09 niet bij de les. Vandaag gaat het al beter mijn hersenen beginnen er aan te wennen. Dus mijn huiswerk ben ik aan het bijwerken. 
+De afgelopen dagen voelde ik mij niet zo lekker. ik heb mijn nieuwe bril met nieuwe sterkte binnen gekregen en had veel last van de vernieuwde sterkte. Daarom was in woensdag 23/09 niet bij de les. Vandaag gaat het al beter mijn hersenen beginnen er aan te wennen. Dus mijn huiswerk ben ik aan het bijwerken. Ook ben ik veranderd van Website thema. 
+
+### Waarom ik van Pop Girls naar Stranger Things ben veranderd:
+
+Eerst had ik gekozen voor **Pop Girls**, omdat ik veel luister naar artiesten zoals Ariana Grande, Sabrina Carpenter en Olivia Rodrigo. Tijdens het maken merkte ik dat ik bij **Stranger Things** veel meer mogelijkheden zag voor mijn website. Ik vind Stranger Things zelf ook erg leuk en de stijl past goed bij wat ik wil maken. Ik kan werken met de Upside Down en verschillende effecten. Ook kan ik laten zien wat ik inmiddels heb geleerd met HTML en CSS, zoals **light en dark mode, responsive design, animaties en interactieve elementen**. Ik heb het gevoel dat ik met dit onderwerp **meer van mijn skills kan laten zien** en meer kan uitproberen met mijn ontwerp. Daarom heb ik besloten om van Pop Girls naar Stranger Things te veranderen.
+
 <img width="700" height="500" alt="schets" src="https://github.com/user-attachments/assets/e46812fc-df32-4482-8731-d4b8303451bc" />
 
 
