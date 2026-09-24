@@ -161,7 +161,7 @@ Uiteindelijk vind ik dat mijn Digital Garden goed bij mij past. Ik zie mijn eige
 ### 24 sept - (Thuis)
 
 De afgelopen dagen voelde ik mij niet zo lekker. ik heb mijn nieuwe bril met nieuwe sterkte binnen gekregen en had veel last van de vernieuwde sterkte. Daarom was in woensdag 23/09 niet bij de les. Vandaag gaat het al beter mijn hersenen beginnen er aan te wennen. Dus mijn huiswerk ben ik aan het bijwerken. 
-
+<img width="700" height="500" alt="schets" src="https://github.com/user-attachments/assets/e46812fc-df32-4482-8731-d4b8303451bc" />
 
 
 
