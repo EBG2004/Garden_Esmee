@@ -168,6 +168,25 @@ Eerst had ik gekozen voor **Pop Girls**, omdat ik veel luister naar artiesten zo
 
 <img width="700" height="500" alt="schets" src="https://github.com/user-attachments/assets/e46812fc-df32-4482-8731-d4b8303451bc" />
 
+**Checkout**
+### 1. Wat is een wireflow en wat heb je eraan?
+
+Een **wireflow** is een tekening van mijn Stranger Things website waarin ik laat zien hoe de gebruiker door de website heen gaat. Ik gebruik schermen en pijlen om te laten zien waar iemand kan klikken en wat er daarna gebeurt. Zo kan ik vooraf controleren of mijn website logisch en makkelijk te gebruiken is.
+
+### 2. Wat zijn dark UX patterns? Geef drie voorbeelden.
+
+**Dark UX patterns** zijn manieren waarop een website de gebruiker probeert te sturen om iets te doen wat die misschien niet zelf zou kiezen.
+
+Drie voorbeelden zijn:
+
+* **Misleidende knoppen:** bijvoorbeeld een opvallende knop voor accepteren en een minder opvallende knop voor weigeren.
+* **Moeilijk weigeren:** de gebruiker moet veel stappen doorlopen om iets te weigeren.
+* **Verborgen informatie:** belangrijke informatie wordt verstopt of pas later zichtbaar gemaakt.
+
+### 3. Waar moet je als ontwerper rekening mee houden bij het maken van een human consent component?
+
+Bij mijn **Stranger Things website** moet ik ervoor zorgen dat de gebruiker duidelijk begrijpt waarvoor toestemming wordt gevraagd. De tekst moet kort en duidelijk zijn en de knoppen voor **accepteren en weigeren** moeten allebei goed zichtbaar zijn. Ik mag de gebruiker niet misleiden of onder druk zetten. Ook moet het component passen bij de Stranger Things-stijl, maar de vormgeving mag niet belangrijker worden dan een duidelijke keuze voor de gebruiker.
+
 
 
 
