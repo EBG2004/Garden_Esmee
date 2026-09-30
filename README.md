@@ -188,6 +188,8 @@ Drie voorbeelden zijn:
 Bij mijn **Stranger Things website** moet ik ervoor zorgen dat de gebruiker duidelijk begrijpt waarvoor toestemming wordt gevraagd. De tekst moet kort en duidelijk zijn en de knoppen voor **accepteren en weigeren** moeten allebei goed zichtbaar zijn. Ik mag de gebruiker niet misleiden of onder druk zetten. Ook moet het component passen bij de Stranger Things-stijl, maar de vormgeving mag niet belangrijker worden dan een duidelijke keuze voor de gebruiker.
 
 
+### 30 sept - (Thuis UPDATE)
+Helaas ben ik de afgelopen week behoorlijk ziek geweest. Dit vind ik erg vervelend sinds ik geen overzicht meer heb over wat er gedaan moet worden en ik dus lesstof mis. Het begon bij flauwvallen en eindige in een keelontsteking. Ik ben vandaag al stuk beter en ben daarom aan de slag gegaan met het verder afronden van mijn website. Voor mij is het beter om deze week nog even rustig aan te doen zodat ik er maandag weer met volle vaart in kan! Dus niet alles zal perfect gaan. 
 
 
 
