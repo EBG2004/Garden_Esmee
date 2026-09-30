@@ -191,6 +191,22 @@ Bij mijn **Stranger Things website** moet ik ervoor zorgen dat de gebruiker duid
 ### 30 sept - (Thuis UPDATE)
 Helaas ben ik de afgelopen week behoorlijk ziek geweest. Dit vind ik erg vervelend sinds ik geen overzicht meer heb over wat er gedaan moet worden en ik dus lesstof mis. Het begon bij flauwvallen en eindige in een keelontsteking. Ik ben vandaag al stuk beter en ben daarom aan de slag gegaan met het verder afronden van mijn website. Voor mij is het beter om deze week nog even rustig aan te doen zodat ik er maandag weer met volle vaart in kan! Dus niet alles zal perfect gaan. 
 
+**Bi-weekly geek 2**
+
+**1. The Internet Just Changed**
+De DSA is een nieuwe Europese wet voor het internet. Grote websites en apps zoals TikTok, Instagram, Facebook en X moeten zich aan nieuwe regels houden. De regels zorgen ervoor dat gebruikers beter worden beschermd. Zo moet je bijvoorbeeld advertenties beter kunnen herkennen en mogen websites je niet met trucjes overhalen om ergens op te klikken. Dit worden dark patterns genoemd.
+Ook moeten online platforms controleren wie er iets verkoopt en moeten ze reageren als iemand illegale content meldt.
+**Kort gezegd:** de EU zorgt ervoor dat het internet veiliger en eerlijker wordt.
+
+**2. ChatGPT krijgt strengere regels**
+Ook ChatGPT, Reddit en Roblox krijgen strengere regels van de EU. Deze platforms hebben heel veel gebruikers en krijgen daarom extra verantwoordelijkheden. Ze moeten bijvoorbeeld: illegale content aanpakken, jongeren beter beschermen en beter omgaan met privacy en veiligheid. Als bedrijven zich niet aan de regels houden, kunnen ze een hoge boete krijgen.
+**Kort gezegd:** grote online platforms moeten beter letten op de veiligheid van hun gebruikers.
+
+**3. AI-chatbots en verkeerde informatie**
+Het derde stuk gaat over AI-chatbots. AI kan soms informatie gebruiken die niet betrouwbaar is. Daardoor kan een chatbot bijvoorbeeld verkeerde of misleidende informatie geven. Daarom is het belangrijk om niet alles wat AI zegt zomaar te geloven. Je moet kijken waar de informatie vandaan komt en belangrijke informatie controleren.
+**Kort gezegd:** AI is handig, maar je moet altijd kritisch blijven over de informatie die je krijgt.
+
+**Alle drie de stukken gaan over hoe het internet en AI veiliger en betrouwbaarder moeten worden.**
 
 
 
