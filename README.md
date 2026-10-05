@@ -228,7 +228,7 @@ Ik heb voor het liedje **YMCA** gekozen omdat ik dit liedje al van vroeger ken. 
 Ik vind het ook een goed nummer voor deze opdracht, omdat er veel herhaling en een duidelijk ritme in zit. Daardoor kan ik goed spelen met de grootte van de letters, de ruimte tussen de tekst en de plaatsing op het scherm. Ik wil proberen om de vrolijke en energieke sfeer van het liedje terug te laten komen in mijn ontwerp.
 
 
-<img width="500" height="300" alt="10 schetsen YMCA" src="https://github.com/user-attachments/assets/43750ac8-4432-46c5-8787-e593803d256f" />
+<img width="500" height="400" alt="10 schetsen YMCA" src="https://github.com/user-attachments/assets/43750ac8-4432-46c5-8787-e593803d256f" />
 
 
 
