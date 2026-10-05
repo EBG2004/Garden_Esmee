@@ -210,6 +210,25 @@ Het derde stuk gaat over AI-chatbots. AI kan soms informatie gebruiken die niet 
 
 
 
+## 5 okt 
+
+### Helaas ziek geweest
+
+De afgelopen twee weken ben ik helaas ziek geweest door een erge keelontsteking. Ik had twee weken geleden echt niet verwacht dat ik zo ziek zou worden en dat het uiteindelijk zo lang zou duren. Ik heb geprobeerd om thuis zoveel mogelijk bij te blijven met school en mijn opdrachten, maar ik voelde me echt te ziek om goed te kunnen werken.
+
+Ik ben best gedreven met school en wil natuurlijk absoluut geen onvoldoende halen. Daarom vond ik het ook erg vervelend dat ik niet gewoon verder kon werken zoals ik gewend ben. Ik baal ervan dat ik hierdoor achter ben geraakt, maar nu ik me weer beter voel, ga ik hard aan de slag om alles weer op te pakken en de gemiste opdrachten zo goed mogelijk in te halen.
+
+
+**Sprint 3**
+
+### Waarom ik voor YMCA heb gekozen
+
+Ik heb voor het liedje **YMCA** gekozen omdat ik dit liedje al van vroeger ken. Het doet me denken aan mijn jeugd en aan de vakanties op de camping bij mijn opa en oma. Ik heb het liedje daar vaak gehoord en daarom geeft het mij een fijn en vertrouwd gevoel.
+
+Ik vind het ook een goed nummer voor deze opdracht, omdat er veel herhaling en een duidelijk ritme in zit. Daardoor kan ik goed spelen met de grootte van de letters, de ruimte tussen de tekst en de plaatsing op het scherm. Ik wil proberen om de vrolijke en energieke sfeer van het liedje terug te laten komen in mijn ontwerp.
+
+
+<img width="500" height="300" alt="10 schetsen YMCA" src="https://github.com/user-attachments/assets/43750ac8-4432-46c5-8787-e593803d256f" />
 
 
 
