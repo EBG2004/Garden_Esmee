@@ -230,6 +230,38 @@ Ik vind het ook een goed nummer voor deze opdracht, omdat er veel herhaling en e
 
 <img width="500" height="400" alt="10 schetsen YMCA" src="https://github.com/user-attachments/assets/43750ac8-4432-46c5-8787-e593803d256f" />
 
+### Wat wil je bij de kijker bereiken met je vormgeving?
+
+Ik wil dat de kijker meteen de vrolijke en energieke sfeer van het liedje voelt. Door de tekst groot, klein en op verschillende plekken te zetten, wil ik ervoor zorgen dat het ontwerp niet saai wordt en dat je het ritme van het liedje een beetje kunt zien.
+
+### Hoe voegt jouw opzet iets toe aan de tekst?
+
+Door met de grootte en plaatsing van de tekst te spelen, wordt de tekst meer dan alleen woorden op een scherm. De herhaling van YMCA laat het ritme van het liedje extra goed zien. Hierdoor past de vormgeving beter bij de vrolijke en energieke sfeer van het nummer.
+
+### Wat is een volgende stap?
+
+Van mijn 10 schetsen vind ik de schets waarbij **YMCA steeds herhaald wordt en op verschillende plekken staat** het meest geschikt om digitaal uit te werken. Ik vind deze het beste passen bij het ritme van het liedje. Ook kan ik hier goed met verschillende groottes en afstanden tussen de tekst spelen.
+
+### Hoe zou je dit kunnen aanpakken in code?
+
+Ik kan de tekst in verschillende HTML-elementen zetten, zodat ik ieder stukje apart kan opmaken. In CSS kan ik daarna spelen met `font-size`, `line-height`, `letter-spacing`, `word-spacing`, `margin` en de plaatsing van de tekst. Ik gebruik hierbij alleen het lettertype Seraphs en geen kleuren, zoals in de opdracht staat.
+
+Voor YMCA kies ik het refrein omdat daar de herhaling heel duidelijk is:
+**It's fun to stay at the Y.M.C.A.
+It's fun to stay at the Y.M.C.A.
+They have everything for young men to enjoy
+You can hang out with all the boys**
+
+**Dit is een goed stukje omdat:**
+- **Herhaling:** “It's fun to stay at the Y.M.C.A.” komt twee keer achter elkaar.
+- **Ritme:** de regels hebben een duidelijk en herkenbaar ritme.
+- **Contrast:** de korte herhaalde regel wordt afgewisseld met langere regels.
+- **Dynamiek:** je kunt de eerste YMCA klein maken, de tweede groter en daarna weer teruggaan naar kleinere tekst.
+
+Uiteindelijk kwam ik op een idee met een box om daar de herhaling Y.M.C.A terug te laten komen. 
+<img width="500" height="400" alt="schets herhaling ymca" src="https://github.com/user-attachments/assets/5bf96c5c-27c6-4683-926d-ee55befcd6d0" />
+
+
 
 
 
