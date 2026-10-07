@@ -261,6 +261,25 @@ You can hang out with all the boys**
 Uiteindelijk kwam ik op een idee met een box om daar de herhaling Y.M.C.A terug te laten komen. 
 <img width="500" height="400" alt="schets herhaling ymca" src="https://github.com/user-attachments/assets/5bf96c5c-27c6-4683-926d-ee55befcd6d0" />
 
+# Voorbereiding Bi-Weekly Geek #3
+
+## Artikel 1
+
+Het eerste artikel gaat over **AI-slop**. Dit zijn afbeeldingen, filmpjes of andere content die met AI worden gemaakt en vaak heel snel en in grote hoeveelheden online worden gezet.
+Een voorbeeld hiervan is **Shrimp Jesus**. Dit zijn vreemde AI-afbeeldingen die veel aandacht krijgen op social media. Mensen reageren erop en delen ze, waardoor ze nog meer worden verspreid. Het probleem is dat AI steeds makkelijker content kan maken. Hierdoor komt er steeds meer content op internet te staan. Een deel hiervan is niet echt interessant of betrouwbaar en wordt vooral gemaakt om **views, likes en reacties** te krijgen.
+Social media speelt hier ook een rol in. Algoritmes kijken naar welke content veel aandacht krijgt. Als mensen veel reageren op rare AI-afbeeldingen, kan het algoritme deze content aan nog meer mensen laten zien.
+
+## Artikel 2 
+
+Het tweede artikel gaat over de **Dead Internet Theory**. Dit is een theorie die zegt dat een steeds groter deel van het internet niet meer door echte mensen wordt gemaakt, maar door **bots en AI**.
+Op internet zijn steeds meer automatisch gemaakte berichten, afbeeldingen en accounts te vinden. Hierdoor kan het soms lijken alsof heel veel echte mensen actief zijn, terwijl een deel van de content automatisch wordt gemaakt.
+De Dead Internet Theory is **geen bewezen feit**. Het is een theorie. Wel zien we dat AI en bots steeds meer worden gebruikt op internet. Het artikel laat je daarom nadenken over de vraag of het internet nog wel zo menselijk is als vroeger. Ook wordt het steeds moeilijker om te weten of iets door een echt persoon is gemaakt.
+
+## Wat hebben de artikelen met elkaar te maken?
+
+De twee artikelen hebben allebei te maken met de invloed van **AI op het internet**.
+Door AI wordt het makkelijker om heel veel content te maken. Hierdoor wordt het moeilijker om te herkennen wat door een echt persoon is gemaakt en wat door AI is gemaakt.
+
 
 
 
