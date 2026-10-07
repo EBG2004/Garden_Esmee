@@ -168,6 +168,8 @@ Eerst had ik gekozen voor **Pop Girls**, omdat ik veel luister naar artiesten zo
 
 <img width="700" height="500" alt="schets" src="https://github.com/user-attachments/assets/e46812fc-df32-4482-8731-d4b8303451bc" />
 
+
+
 **Checkout**
 ### 1. Wat is een wireflow en wat heb je eraan?
 
