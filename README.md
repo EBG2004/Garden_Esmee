@@ -281,7 +281,7 @@ De twee artikelen hebben allebei te maken met de invloed van **AI op het interne
 Door AI wordt het makkelijker om heel veel content te maken. Hierdoor wordt het moeilijker om te herkennen wat door een echt persoon is gemaakt en wat door AI is gemaakt.
 
 
-
+### 7 okt (Werkgroep)
 
 
 
