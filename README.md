@@ -313,10 +313,43 @@ Door AI wordt het makkelijker om heel veel content te maken. Hierdoor wordt het 
 **Hoeveel gekkigheid moet er in je werk zitten?**
 Er mag best wat gekkigheid en creativiteit in mijn ontwerp zitten, maar het moet wel leesbaar en overzichtelijk blijven. De gekkigheid moet dus passen bij het onderwerp en niet ervoor zorgen dat de bezoeker niet meer weet waar hij moet kijken.
 
+**Huiswerk** 
+Ik ga het gebruik van een **grid** toepassen in mijn Stranger Things Digital Garden. Het grid helpt mij om de pagina overzichtelijk te maken en om teksten, afbeeldingen en andere onderdelen goed uit te lijnen.  
+Ook wil ik **ritme en herhaling** gebruiken. Bijvoorbeeld door dezelfde vormen, lettertypes en stijlen op meerdere pagina's terug te laten komen. Dit past goed bij mijn Stranger Things thema, omdat ik een duidelijke en herkenbare stijl wil maken.  
+Ik wil wel **ruimte** houden voor creativiteit en gekkigheid. Ik kan bijvoorbeeld spelen met grote titels, afbeeldingen en de positie van onderdelen. Het belangrijkste is dat het ontwerp nog steeds duidelijk en makkelijk te gebruiken blijft.
+Bij mijn YMCA ontwerp gebruik ik het grid vooral om de tekst goed te verdelen. Deze manier van werken kan ik meenemen naar mijn Stranger Things website. Zo krijg ik meer structuur, terwijl mijn website nog steeds een eigen Stranger Things uitstraling houdt.
+
+**1. Artikel:**
+Een grid is een soort onzichtbare indeling waarmee je bepaalt waar onderdelen op een pagina komen te staan. Een grid bestaat uit kolommen, tussenruimtes en marges. Een grid helpt de ontwerper om alles netjes uit te lijnen. Voor de bezoeker zorgt het ervoor dat een website makkelijker te lezen en scannen is. Je ogen kunnen sneller zien waar belangrijke informatie staat.
+
+Er zijn verschillende soorten grids:
+**- Kolomgrid:** de pagina wordt verdeeld in verticale kolommen.
+**- Modulair grid:** kolommen worden gecombineerd met rijen.
+**- Hiërarchisch grid:** belangrijke onderdelen krijgen meer ruimte dan minder belangrijke onderdelen. Nielsen Norman Group
+Een grid hoeft je ontwerp niet minder te maken. Je kunt nog steeds creatief zijn en soms buiten het grid gaan. Het is alleen belangrijk dat je daar een reden voor hebt.
+
+**2. Artikel:**
+Rhythm, oftewel ritme betekent dat je bepaalde onderdelen in je ontwerp herhaalt. Denk bijvoorbeeld aan dezelfde letters, vormen, afstanden, lettertypes of afbeeldingen. Door herhaling ontstaat er een soort ritme. 
+Ritme helpt de ogen van de bezoeker door het ontwerp te leiden. Het kan er ook voor zorgen dat een ontwerp meer samenhang krijgt. 
+
+Er zijn drie belangrijke soorten ritme:
+**- Regelmatig ritme:** steeds hetzelfde onderdeel met dezelfde afstand.
+**- Afwisselend ritme:** twee of meer onderdelen worden steeds afgewisseld.
+**- Willekeurig ritme:** onderdelen verschillen in grootte of afstand.
 
 
+**3. Video:**
+Een grid is een hulpmiddel om je ontwerp structuur te geven. Je verdeelt je pagina in verschillende delen en gebruikt deze verdeling om teksten en andere elementen netjes te plaatsen.
 
-
+**Het grid zorgt ervoor dat:**
+- onderdelen goed op elkaar aansluiten;
+- je ontwerp overzichtelijk blijft;
+- er een duidelijke hiërarchie ontstaat;
+- je makkelijker verschillende onderdelen kunt plaatsen;
+- je toch ruimte houdt om creatief te zijn.
+  
+Een grid betekent dus niet dat alles precies hetzelfde moet staan. 
+Je kunt juist binnen het grid spelen met grootte, positie en typografie.
 
 
 
