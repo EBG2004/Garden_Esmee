@@ -351,6 +351,10 @@ Een grid is een hulpmiddel om je ontwerp structuur te geven. Je verdeelt je pagi
 Een grid betekent dus niet dat alles precies hetzelfde moet staan. 
 Je kunt juist binnen het grid spelen met grootte, positie en typografie.
 
+Mijn eerste ontwerp was best simpel en vlak. Na de les van Justus ben ik zelf gaan proberen met rotatie, schaal en positie. Daardoor is mijn ontwerp nu veel speelser geworden. Ik heb geprobeerd om de tekst meer te laten bewegen, maar het wel duidelijk te houden.
+
+<img width="394" height="555" alt="Scherm­afbeelding 2026-10-07 om 14 35 59" src="https://github.com/user-attachments/assets/2a5c4372-22bd-4de3-865c-7e03c4fa5cc0" />
+
 
 
 
