@@ -283,6 +283,18 @@ Door AI wordt het makkelijker om heel veel content te maken. Hierdoor wordt het 
 
 ### 7 okt (Werkgroep)
 
+1.Bepaal de line-height bij je gekozen font-size:
+
+**Font-size:** 20px
+**Line-height:** 30px
+**30px x 20px** = 600px
+**600px : 16px** = 37,5em
+
+2.Baseer je column-width op een veelvoud van je line-height:
+**600px : 16px = 37,5em** 
+
+
+
 
 
 
