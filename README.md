@@ -300,7 +300,7 @@ Door AI wordt het makkelijker om heel veel content te maken. Hierdoor wordt het 
 **Checkout**
 
 **Waarom is het goed om een grid in je ontwerp toe te passen?**
-**Voor de ontwerper:** Je kunt alles goed positioneren en het ontwerp overzichtelijk opbouwen.
+**Voor de ontwerper:** Je kunt alles goed positioneren en het ontwerp overzichtelijk maken.
 **Voor de bezoeker:** Het is fijn om een gestructureerd en overzichtelijk ontwerp te zien, maar het hangt af van het doel. 
 
 **Noem drie manieren om chaos in je ontwerp te voorkomen.**
