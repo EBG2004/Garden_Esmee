@@ -297,6 +297,21 @@ Door AI wordt het makkelijker om heel veel content te maken. Hierdoor wordt het 
 - 
 <img width="553" height="701" alt="Scherm­afbeelding 2026-10-07 om 10 47 06" src="https://github.com/user-attachments/assets/83c02939-373a-4da7-9b9b-82409e333c1e" />
 
+**Checkout**
+
+**Waarom is het goed om een grid in je ontwerp toe te passen?**
+**Voor de ontwerper:** Je kunt alles goed positioneren en het ontwerp overzichtelijk opbouwen.
+**Voor de bezoeker:** Het is fijn om een gestructureerd en overzichtelijk ontwerp te zien.
+
+**Noem drie manieren om chaos in je ontwerp te voorkomen.**
+1. Gebruik een grid zodat alles op een logische plek staat.
+2. Gebruik niet te veel verschillende lettertypes en lettergroottes.
+3. Zorg voor genoeg witruimte tussen de verschillende onderdelen.
+   
+**Hoeveel gekkigheid moet er in je werk zitten?**
+Er mag best wat gekkigheid en creativiteit in mijn ontwerp zitten, maar het moet wel leesbaar en overzichtelijk blijven. De gekkigheid moet dus passen bij het onderwerp en niet ervoor zorgen dat de bezoeker niet meer weet waar hij moet kijken.
+
+
 
 
 
