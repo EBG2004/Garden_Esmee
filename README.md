@@ -292,6 +292,12 @@ Door AI wordt het makkelijker om heel veel content te maken. Hierdoor wordt het 
 
 2.Baseer je column-width op een veelvoud van je line-height:
 **600px : 16px = 37,5em** 
+- grid-template-columns: 37,5em;
+- grid-column: 3;
+- 
+<img width="553" height="701" alt="Scherm­afbeelding 2026-10-07 om 10 47 06" src="https://github.com/user-attachments/assets/83c02939-373a-4da7-9b9b-82409e333c1e" />
+
+
 
 
 
