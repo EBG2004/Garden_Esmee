@@ -1,0 +1,1166 @@
+/* ========================================
+   FONTS
+======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Libre+Caslon+Display&display=swap');
+
+
+/* ========================================
+   BASIS
+======================================== */
+
+:root {
+  --paper: #f4eee2;
+  --paper2: #fffaf0;
+  --ink: #251b1b;
+  --muted: #5d5651;
+
+  --red: #a9151d;
+  --bright: #e0000b;
+
+  --line: rgba(90, 20, 20, 0.22);
+
+  --filter: none;
+
+  --shadow:
+    0 8px 25px rgba(35, 20, 20, 0.16);
+}
+
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+
+  --paper: #050709;
+  --paper2: #090d10;
+  --ink: #e9e5df;
+  --muted: #a8adb0;
+
+  --red: #e0000b;
+  --bright: #ff101b;
+
+  --line: rgba(224, 0, 11, 0.35);
+
+  --filter:
+    brightness(0.62)
+    contrast(1.18)
+    saturate(1.18);
+
+  --shadow:
+    0 0 28px rgba(224, 0, 11, 0.18);
+}
+
+
+/* ========================================
+   ALGEMEEN
+======================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family:
+    "Libre Caslon Display",
+    Georgia,
+    serif;
+
+  background: var(--paper);
+  color: var(--ink);
+
+  transition:
+    background 0.35s ease,
+    color 0.35s ease;
+}
+
+
+/* Rode Upside Down gloed */
+
+body::before {
+  content: "";
+
+  position: fixed;
+  inset: 0;
+
+  pointer-events: none;
+  z-index: 20;
+
+  opacity: 0;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(180, 0, 0, 0.13),
+      transparent 45%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0,
+      transparent 3px,
+      rgba(255, 0, 0, 0.025) 4px
+    );
+
+  transition:
+    opacity 0.35s ease;
+}
+
+html.dark body::before {
+  opacity: 1;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+
+  filter: var(--filter);
+
+  transition:
+    filter 0.35s ease,
+    transform 0.35s ease;
+}
+
+.site {
+  width: min(1180px, calc(100% - 28px));
+  margin: auto;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.site-header {
+  display: grid;
+
+  grid-template-columns:
+    150px 1fr;
+
+  align-items: center;
+
+  min-height: 82px;
+
+  border-bottom:
+    1px solid var(--line);
+}
+
+
+/* ========================================
+   STRANGER THINGS LOGO'S
+======================================== */
+
+/* Klein logo in de header */
+.brand img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+
+  filter: none;
+
+  transition:
+    filter 0.35s ease;
+}
+
+
+/* Groot logo op de indexpagina */
+.hero-logo {
+  width: min(800px, 85vw);
+  height: auto;
+
+  filter: none;
+
+  transition:
+    filter 0.35s ease;
+}
+
+
+/* ========================================
+   UPSIDE DOWN — LOGO'S WORDEN WIT
+======================================== */
+
+/* Klein logo + groot logo */
+html.dark .brand img,
+html.dark .hero-logo {
+  filter:
+    brightness(0)
+    invert(1)
+    drop-shadow(
+      0 0 18px
+      rgba(255, 0, 0, 0.45)
+    );
+
+}
+
+
+/* ========================================
+   NAVIGATIE
+======================================== */
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap:
+    clamp(20px, 4vw, 55px);
+
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  font-family:
+    "Libre Caslon Display",
+    Georgia,
+    serif;
+
+  text-decoration: none;
+
+  color: var(--muted);
+
+  font-size: 13px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+
+  transition:
+    color 0.25s ease;
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+  color: var(--red);
+}
+
+
+/* ========================================
+   HOME HERO
+======================================== */
+
+.home-hero {
+  width: 100vw;
+
+  margin-left:
+    calc(50% - 50vw);
+
+  min-height: 650px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  display: grid;
+
+  place-items: center;
+
+  background: #10171b;
+
+  box-shadow:
+    var(--shadow);
+}
+
+.hero-photo {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  /* Foto blijft normaal */
+  filter: none;
+}
+
+
+/* ========================================
+   HERO TEKST
+======================================== */
+
+.hero-copy {
+  position: relative;
+
+  z-index: 2;
+
+  text-align: center;
+
+  color: white;
+
+  width:
+    min(800px, 90%);
+}
+
+.hero-kicker {
+  margin: 0 0 18px;
+
+  font-family:
+    "Libre Caslon Display",
+    Georgia,
+    serif;
+
+  font-size: 13px;
+
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
+}
+
+.hero-title {
+  margin: 0;
+
+  color: #ef1720;
+
+  font-family:
+    "DM Serif Display",
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(64px, 10vw, 125px);
+
+  line-height: 0.75;
+
+  text-transform: uppercase;
+
+  letter-spacing: -0.06em;
+
+  text-shadow:
+    0 0 2px #ff333b,
+    0 0 16px rgba(255, 0, 0, 0.55),
+    0 4px 0 rgba(60, 0, 0, 0.9);
+}
+
+.hero-subtitle {
+  margin: 30px 0 0;
+
+  font-family:
+    "Libre Caslon Display",
+    Georgia,
+    serif;
+
+  font-size: 14px;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+}
+
+.down-arrow {
+  position: absolute;
+
+  z-index: 3;
+
+  bottom: 18px;
+
+  left: 50%;
+
+  transform:
+    translateX(-50%);
+
+  color: white;
+
+  font-size: 22px;
+}
+
+
+/* ========================================
+   PAGINA'S
+======================================== */
+
+.page {
+  padding:
+    70px 0;
+}
+
+.section-heading {
+  color: var(--red);
+
+  font-family:
+    "DM Serif Display",
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(38px, 6vw, 68px);
+
+  line-height: 0.9;
+
+  margin:
+    0 0 35px;
+
+  text-transform: uppercase;
+}
+
+.two-column {
+  display: grid;
+
+  grid-template-columns:
+    0.8fr 1.6fr;
+
+  gap: 55px;
+
+  align-items: start;
+}
+
+.number,
+.series-number {
+  color: var(--red);
+
+  font-family:
+    "DM Serif Display",
+    Georgia,
+    serif;
+
+  line-height: 0.8;
+}
+
+.number {
+  font-size:
+    clamp(55px, 8vw, 100px);
+}
+
+.label {
+  color: var(--muted);
+
+  font-family:
+    "Libre Caslon Display",
+    Georgia,
+    serif;
+
+  font-size: 12px;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+.description {
+  color: var(--muted);
+
+  font-family:
+    "Libre Caslon Display",
+    Georgia,
+    serif;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  max-width: 540px;
+}
+
+.red-link {
+  display: inline-block;
+
+  margin-top: 8px;
+
+  color: var(--red);
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+
+  font-family:
+    "Libre Caslon Display",
+    Georgia,
+    serif;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.red-link:hover {
+  color: var(--bright);
+}
+
+.red-button {
+  display: inline-block;
+
+  padding:
+    11px 17px;
+
+  background:
+    var(--red);
+
+  color: white;
+
+  text-decoration: none;
+
+  font-family:
+    "Libre Caslon Display",
+    Georgia,
+    serif;
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+}
+
+
+/* ========================================
+   PERSONAGES
+======================================== */
+
+.character-feature {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1.45fr;
+
+  min-height: 430px;
+
+  border-top:
+    1px solid var(--line);
+
+  border-bottom:
+    1px solid var(--line);
+}
+
+.character-text {
+  padding:
+    45px 35px 45px 0;
+}
+
+.character-photo {
+  min-height: 430px;
+
+  overflow: hidden;
+}
+
+.character-photo img {
+  height: 100%;
+}
+
+.character-photo img:hover {
+  transform:
+    scale(1.025);
+}
+
+.character-strip {
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, 1fr);
+
+  gap: 7px;
+
+  margin-top: 22px;
+}
+
+.character-strip img {
+  aspect-ratio:
+    1.45 / 1;
+
+  border:
+    1px solid var(--line);
+}
+
+.character-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap:
+    28px 18px;
+
+  margin-top: 55px;
+}
+
+.character-card {
+  border-top:
+    1px solid var(--line);
+
+  padding-top: 14px;
+}
+
+.card-image {
+  aspect-ratio:
+    16 / 9;
+
+  overflow: hidden;
+
+  margin-bottom: 13px;
+}
+
+.character-card h2 {
+  color: var(--red);
+
+  font-family:
+    "DM Serif Display",
+    Georgia,
+    serif;
+
+  font-size: 30px;
+
+  margin: 0;
+
+  text-transform: uppercase;
+}
+
+.character-card p {
+  color: var(--muted);
+
+  font-family:
+    "Libre Caslon Display",
+    Georgia,
+    serif;
+
+  line-height: 1.6;
+
+  font-size: 16px;
+}
+
+
+/* ========================================
+   SERIES
+======================================== */
+
+.series-list {
+  border-top:
+    1px solid var(--line);
+}
+
+.series-item {
+  display: grid;
+
+  grid-template-columns:
+    90px 1fr 1.45fr;
+
+  gap: 25px;
+
+  align-items: center;
+
+  padding:
+    25px 0;
+
+  border-bottom:
+    1px solid var(--line);
+}
+
+.series-number {
+  font-size: 56px;
+}
+
+.series-info h2 {
+  margin:
+    0 0 8px;
+
+  font-family:
+    "DM Serif Display",
+    Georgia,
+    serif;
+
+  font-size: 20px;
+
+  text-transform: uppercase;
+}
+
+.series-info p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-family:
+    "Libre Caslon Display",
+    Georgia,
+    serif;
+
+  font-size: 16px;
+
+  line-height: 1.55;
+}
+
+.series-image {
+  aspect-ratio:
+    2.2 / 1;
+
+  overflow: hidden;
+}
+
+
+/* ========================================
+   FOTO'S
+======================================== */
+
+.photo-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 5px;
+}
+
+.photo-grid figure {
+  margin: 0;
+
+  overflow: hidden;
+
+  aspect-ratio:
+    1.45 / 1;
+
+  background: #111;
+}
+
+.photo-grid img {
+  height: 100%;
+}
+
+.photo-grid figure:hover img {
+  transform:
+    scale(1.04);
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.site-footer {
+  margin-top:
+    70px;
+
+  padding:
+    25px 0 32px;
+
+  border-top:
+    1px solid var(--line);
+
+  display: grid;
+
+  grid-template-columns:
+    1fr auto 1fr;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.footer-location {
+  font-family:
+    "Libre Caslon Display",
+    Georgia,
+    serif;
+
+  font-size: 13px;
+
+  color: var(--muted);
+
+  text-transform: uppercase;
+}
+
+.footer-socials {
+  display: flex;
+
+  gap: 18px;
+
+  justify-content: center;
+
+  color: var(--red);
+}
+
+
+/* ========================================
+   DARK MODE SCHUIFJE
+======================================== */
+
+.theme-toggle {
+  justify-self: end;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-family:
+    "Libre Caslon Display",
+    Georgia,
+    serif;
+
+  font-size: 13px;
+
+  text-transform: uppercase;
+
+  color: var(--muted);
+}
+
+.switch {
+  position: relative;
+
+  width: 42px;
+  height: 22px;
+
+  border:
+    1px solid var(--ink);
+
+  border-radius: 99px;
+
+  background:
+    var(--paper2);
+
+  cursor: pointer;
+
+  padding: 0;
+}
+
+.switch::after {
+  content: "";
+
+  position: absolute;
+
+  width: 16px;
+  height: 16px;
+
+  left: 2px;
+  top: 2px;
+
+  border-radius: 50%;
+
+  background:
+    var(--ink);
+
+  transition:
+    0.3s;
+}
+
+html.dark .switch {
+  border-color:
+    var(--red);
+
+  background:
+    #120609;
+}
+
+html.dark .switch::after {
+  transform:
+    translateX(20px);
+
+  background:
+    var(--bright);
+
+  box-shadow:
+    0 0 10px
+    rgba(255, 0, 0, 0.8);
+}
+
+
+/* ========================================
+   COOKIE
+======================================== */
+
+.cookie-button {
+  border: 0;
+
+  background:
+    transparent;
+
+  color:
+    var(--muted);
+
+  font-size: 15px;
+
+   font-family:
+    "Libre Caslon Display",
+    Georgia,
+    serif;
+
+  cursor: pointer;
+}
+
+
+/* ========================================
+   UPSIDE DOWN MODE
+======================================== */
+
+html.dark .home-hero {
+  box-shadow:
+    inset 0 0 120px
+    rgba(255, 0, 0, 0.16),
+
+    0 0 30px
+    rgba(255, 0, 0, 0.12);
+}
+
+html.dark .section-heading,
+html.dark .number,
+html.dark .series-number {
+  text-shadow:
+    0 0 16px
+    rgba(255, 0, 0, 0.25);
+}
+
+
+/* ========================================
+   DEMOGORGON JUMPSCARE
+======================================== */
+
+.demogorgon-popup {
+  position: fixed;
+
+  left: 50%;
+  top: 50%;
+
+  width:
+    min(650px, 90vw);
+
+  transform:
+    translate(-50%, -50%)
+    scale(0);
+
+  z-index: 9999;
+
+  pointer-events: none;
+
+  opacity: 0;
+}
+
+.demogorgon-popup img {
+  width: 100%;
+
+  height: auto;
+
+  object-fit: contain;
+
+  filter:
+    drop-shadow(
+      0 0 20px
+      rgba(255, 0, 0, 0.8)
+    )
+
+    drop-shadow(
+      0 0 60px
+      rgba(255, 0, 0, 0.5)
+    );
+}
+
+.demogorgon-popup::before {
+  content: "";
+
+  position: fixed;
+
+  inset:
+    -100vh -100vw;
+
+  background:
+    rgba(180, 0, 0, 0.15);
+
+  z-index: -1;
+
+  pointer-events: none;
+}
+
+.demogorgon-popup.show {
+  animation:
+    demogorgonJump
+    5s
+    ease
+    forwards;
+}
+
+@keyframes demogorgonJump {
+  0% {
+    opacity: 0;
+
+    transform:
+      translate(-50%, -50%)
+      scale(0.05)
+      rotate(-8deg);
+  }
+
+  8% {
+    opacity: 1;
+
+    transform:
+      translate(-50%, -50%)
+      scale(1.15)
+      rotate(3deg);
+  }
+
+  16% {
+    transform:
+      translate(-50%, -50%)
+      scale(0.95)
+      rotate(-2deg);
+  }
+
+  24% {
+    transform:
+      translate(-50%, -50%)
+      scale(1.05)
+      rotate(1deg);
+  }
+
+  35% {
+    transform:
+      translate(-50%, -50%)
+      scale(1)
+      rotate(0deg);
+  }
+
+  80% {
+    opacity: 1;
+
+    transform:
+      translate(-50%, -50%)
+      scale(1)
+      rotate(0deg);
+  }
+
+  100% {
+    opacity: 0;
+
+    transform:
+      translate(-50%, -50%)
+      scale(0.85)
+      rotate(0deg);
+  }
+}
+
+
+/* ========================================
+   MOBIEL
+======================================== */
+
+@media (max-width: 800px) {
+
+  .site {
+    width:
+      min(
+        100% - 20px,
+        1180px
+      );
+  }
+
+  .site-header {
+    grid-template-columns:
+      1fr;
+
+    gap: 18px;
+
+    padding:
+      18px 0;
+  }
+
+  .brand {
+    margin: auto;
+  }
+
+  .main-nav ul {
+    flex-wrap:
+      wrap;
+
+    gap:
+      14px 22px;
+  }
+
+  .home-hero {
+    min-height:
+      540px;
+  }
+
+  .two-column,
+  .character-feature {
+    grid-template-columns:
+      1fr;
+  }
+
+  .character-text {
+    padding:
+      35px 0;
+  }
+
+  .character-photo {
+    min-height:
+      300px;
+  }
+
+  .character-grid {
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+  .series-item {
+    grid-template-columns:
+      60px 1fr;
+  }
+
+  .series-image {
+    grid-column:
+      2;
+  }
+
+  .photo-grid {
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+  .site-footer {
+    grid-template-columns:
+      1fr;
+
+    text-align:
+      center;
+  }
+
+  .theme-toggle {
+    justify-self:
+      center;
+  }
+}
+
+
+/* ========================================
+   KLEINE MOBIEL
+======================================== */
+
+@media (max-width: 520px) {
+
+  .hero-title {
+    font-size:
+      58px;
+  }
+
+  .character-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+  .character-strip {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+  .photo-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+  .demogorgon-popup {
+    width:
+      95vw;
+  }
+}

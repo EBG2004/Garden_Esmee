@@ -1,0 +1,380 @@
+<!doctype html>
+
+<html lang="nl">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="author"
+    content="Esmée Gravemaker"
+  >
+
+  <meta
+    name="color-scheme"
+    content="dark light"
+  >
+
+  <title>Stranger Things — Hawkins</title>
+
+  <link
+    rel="stylesheet"
+    href="./normal.css"
+  >
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+
+  <script
+    data-page="https://gardenbyesmee.nl/"
+    src="http://digitaaltuintje.nl/webring.js"
+    defer
+  ></script>
+
+</head>
+
+
+<body>
+
+
+  <!-- ========================================
+       DEMOGORGON
+  ======================================== -->
+
+  <div
+    id="demogorgonPopup"
+    class="demogorgon-popup"
+  >
+
+    <img
+      src="./afbeeldingen/demogorgon.png"
+      alt="Demogorgon"
+    >
+
+  </div>
+
+
+
+  <div class="site">
+
+
+    <!-- ========================================
+         HEADER
+    ======================================== -->
+
+    <header class="site-header">
+
+
+      <!-- Stranger Things logo -->
+
+      <a
+  class="brand"
+  href="./index.html"
+>
+  <img
+    src="./afbeeldingen/stranger-things-logo.png"
+    alt="Stranger Things"
+  >
+</a>
+
+
+      <!-- Navigatie -->
+
+      <nav class="main-nav">
+
+        <ul>
+
+          <li>
+
+            <a
+              href="./index.html"
+              aria-current="page"
+            >
+              Home
+            </a>
+
+          </li>
+
+
+          <li>
+
+            <a href="https://github.com/EBG2004/Garden_Esmee/blob/main/README.md" target="_blank" rel="noopener noreferrer" >
+              Learning Log
+            </a>
+
+          </li>
+
+
+          <li>
+
+            <a href="./personages.html">
+              Personages
+            </a>
+
+          </li>
+
+
+          <li>
+
+            <a href="./series.html">
+              Series
+            </a>
+
+          </li>
+
+
+          <li>
+
+            <a href="./fotos.html">
+              Foto's
+            </a>
+
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+    </header>
+
+
+
+    <!-- ========================================
+         HOME
+    ======================================== -->
+
+    <main>
+
+
+      <!-- HERO -->
+
+      <section class="home-hero">
+
+
+        <!-- Hawkins afbeelding -->
+
+        <div class="hero-photo">
+
+          <img
+            id="hawkinsImage"
+            src="./afbeeldingen/hawkins.jpg"
+            alt="Hawkins, Indiana"
+          >
+
+        </div>
+
+
+
+        <!-- Tekst over de afbeelding -->
+<div class="hero-copy">
+
+  <img
+    class="hero-logo"
+    src="./afbeeldingen/stranger-things-logo.png"
+    alt="Stranger Things"
+  >
+
+</div>
+
+        <!-- Pijltje -->
+
+        <div class="down-arrow">
+          ↓
+        </div>
+
+
+      </section>
+
+
+
+      <!-- ========================================
+           WELCOME TO HAWKINS
+      ======================================== -->
+
+      <section class="page">
+
+
+        <div class="two-column">
+
+
+          <!-- Nummer -->
+
+          <div>
+
+            <div class="label">
+              Welcome to Hawkins
+            </div>
+
+          </div>
+
+
+
+          <!-- Tekst -->
+
+          <div>
+
+            <p class="description">
+
+              Welkom in Hawkins, Indiana.
+              Een klein stadje waar vreemde
+              dingen gebeuren. Ontdek de
+              personages, series en foto's
+              uit de wereld van Stranger Things.
+
+            </p>
+
+
+            <a
+              class="red-button"
+              href="./personages.html"
+            >
+              Ontdek de personages
+            </a>
+
+          </div>
+
+
+        </div>
+
+
+      </section>
+
+
+    </main>
+
+
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+
+    <footer class="site-footer">
+
+
+      <!-- Locatie -->
+
+      <div class="footer-location">
+
+        Hawkins, Indiana · 1983
+
+      </div>
+
+
+
+      <!-- THEME SCHUIFJE -->
+
+      <div class="theme-toggle">
+
+
+        <span>
+          Hawkins
+        </span>
+
+
+        <button
+          class="switch"
+          onclick="toggleTheme(); updateThemeSwitch();"
+          aria-label="Light of Upside Down"
+          aria-pressed="false"
+        ></button>
+
+
+        <span>
+          Upside Down
+        </span>
+
+
+      </div>
+
+
+
+      <!-- Cookies -->
+
+      <button
+        class="cookie-button"
+        commandfor="cookieModal"
+        command="show-modal"
+      >
+        Allow cookies?
+      </button>
+
+
+    </footer>
+
+
+  </div>
+
+
+
+  <!-- ========================================
+       COOKIE POP-UP
+  ======================================== -->
+
+  <dialog id="cookieModal">
+
+
+    <form method="dialog">
+
+
+      <p>
+        Wil je cookies toestaan voor
+        dit schoolproject?
+      </p>
+
+
+      <button onclick="setCookie()">
+        Allow
+      </button>
+
+
+      <button onclick="unsetCookie()">
+        Deny
+      </button>
+
+
+    </form>
+
+
+  </dialog>
+
+
+
+  <!-- ========================================
+       JAVASCRIPT
+  ======================================== -->
+
+  <script src="./script.js"></script>
+
+
+
+  <script>
+
+    function setCookie() {
+
+      document.cookie =
+        "schoolProjectCookies=allowed; max-age=31536000; path=/";
+
+    }
+
+
+    function unsetCookie() {
+
+      document.cookie =
+        "schoolProjectCookies=; max-age=0; path=/";
+
+    }
+
+  </script>
+
+
+</body>
+
+</html>
