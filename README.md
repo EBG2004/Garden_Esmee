@@ -447,6 +447,46 @@ Je bepaalt bijvoorbeeld hoe de animatie begint en eindigt. Daarna koppel je de a
 De tekst gaat dan steeds:
 dun → dik → dun → dik
 
+**Opdracht 1:**
+
+Bij deze oefening heb ik geleerd hoe ik variabele fonts kan gebruiken in CSS. Ik heb drie verschillende fonts gebruikt: Dyna Puff, Honk en Rocher Color. Met `@font-face` heb ik de fonts aan mijn website toegevoegd.
+
+Bij Dyna Puff heb ik de dikte en breedte van de letters aangepast met `font-weight` en `font-stretch`. Bij Honk heb ik de custom axes `MORF` en `SHLN` gebruikt om de vorm en schaduw van de letters te veranderen. Bij Rocher Color heb ik gewerkt met `BVEL`, `SHDW` en verschillende color palettes.
+
+Wat ik lastig vond, was het uitzoeken welke waarden en namen ik precies moest gebruiken voor de custom axes. Vooral bij Honk en Rocher Color moest ik goed opletten welke waarde bij welke eigenschap hoorde. Ook vond ik het in het begin lastig om te begrijpen hoe `font-variation-settings` en `font-palette` werken. Door de fonts uit te proberen en de code stap voor stap in te vullen, begon ik het steeds beter te begrijpen.
+
+Ik heb hierdoor geleerd dat je met variabele fonts veel meer kunt aanpassen dan alleen het lettertype. Ik vond het vooral interessant om te zien hoe kleine veranderingen in de waarden meteen een ander uiterlijk van de letters geven.
+
+<img width="424" height="696" alt="Scherm­afbeelding 2026-10-08 om 14 08 41" src="https://github.com/user-attachments/assets/a98878af-a9e9-413c-92ef-aa28cebbd0f3" />
+
+
+**Opdracht 2:**
+Bij deze oefening heb ik geleerd hoe ik variabele fonts kan gebruiken in CSS. Ik heb vier verschillende fonts gebruikt: Saira Stencil, Kablammo, Plastic en Cheeeze. Met `@font-face` heb ik de fonts aan mijn website toegevoegd.
+
+Bij Saira Stencil heb ik de dikte en breedte van de letters aangepast met `font-weight` en `font-stretch`. Bij Kablammo heb ik de custom axis `MORF` gebruikt om het uiterlijk van de letters te veranderen. Bij Plastic heb ik gewerkt met `font-weight` en de custom axis `SRIF`. Bij Cheeeze heb ik gewerkt met de custom axes `yest`, `grvt` en `temp`.
+
+Ik vond Wakamai Fondue bij deze opdracht super handig. Hiermee kon ik makkelijk zien welke variabele assen een font heeft en welke namen en waarden ik moest gebruiken. Onderaan stond ook de CSS code uitgeschreven, waardoor ik goed kon zien hoe ik de fonts in mijn eigen CSS kon gebruiken. Dat maakte het een stuk makkelijker om de code te begrijpen en over te nemen.
+
+Wat ik eerst lastig vond was het begrijpen van `font-variation-settings` en hoe de verschillende waarden werken. Door de code van Wakamai Fondue te bekijken en de fonts zelf uit te proberen, werd dit steeds makkelijker.
+
+Ik heb hierdoor geleerd dat je met variabele fonts veel meer kunt aanpassen dan alleen het lettertype. Ik vond het vooral interessant om te zien hoe kleine veranderingen in de waarden het uiterlijk van de letters kunnen veranderen. Ook weet ik nu beter hoe ik Wakamai Fondue kan gebruiken om informatie over een variabel font te vinden.
+
+<img width="535" height="184" alt="Scherm­afbeelding 2026-10-08 om 14 29 36" src="https://github.com/user-attachments/assets/86e0e59f-d583-46ae-b81b-8ec2eaa4fa60" />
+
+**Opdracht 3:**
+
+Bij deze oefening heb ik geleerd hoe ik variabele fonts kan gebruiken om een gestapelde transition te maken. Ik heb vier verschillende fonts gebruikt: Noto Serif, Climate Crisis, Nabla en Poo. Met `@font-face` heb ik de fonts aan mijn CSS toegevoegd.
+
+Bij Noto Serif heb ik de dikte aangepast met `font-weight`. Bij Climate Crisis heb ik de custom axis `YEAR` gebruikt met `font-variation-settings`. Bij Nabla heb ik de custom axes `EDPT` en `EHLT` gebruikt. Bij Poo heb ik de custom axis `crap` gebruikt. Ook heb ik `transition`, `calc()` en `sibling-index()` gebruikt om de letters na elkaar te laten veranderen.
+
+Ik heb zelf de CSS stap voor stap ingevuld en verschillende waarden aangepast om te kijken wat er gebeurde. Wakamai Fondue vond ik hierbij weer erg handig, omdat ik daar kon zien welke custom axes de fonts hebben. Onderaan stond ook de CSS code uitgeschreven waardoor ik beter kon begrijpen welke code ik nodig had.
+
+Ik vond dit de lastigste oefening van de drie. Vooral het werken met de verschillende custom axes en het maken van de gestapelde transition vond ik lastig. Bij mijn eigen versie zag ik uiteindelijk alleen bij Noto Serif duidelijk dat het font veranderde. Bij Climate Crisis, Nabla en Poo zag ik de verandering niet goed.
+
+Ik heb hierdoor wel veel geleerd over variabele fonts en `font-variation-settings`. Ook begrijp ik nu beter hoe `calc()` en `sibling-index()` kunnen worden gebruikt om letters na elkaar te laten veranderen. Ondanks dat ik het lastig vond en niet alles meteen werkte zoals ik wilde heb ik door zelf dingen aan te passen en uit te proberen beter geleerd hoe variabele fonts werken.
+
+<img width="306" height="530" alt="Scherm­afbeelding 2026-10-08 om 14 41 04" src="https://github.com/user-attachments/assets/b4cf9a8b-32e9-49d3-a9f1-c4187ae5d168" />
+
 
 
 
