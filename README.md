@@ -355,6 +355,97 @@ Je kunt juist binnen het grid spelen met grootte, positie en typografie.
 
 <img width="394" height="555" alt="Scherm­afbeelding 2026-10-07 om 14 35 59" src="https://github.com/user-attachments/assets/2a5c4372-22bd-4de3-865c-7e03c4fa5cc0" />
 
+### S3 - Variabele fonts 
+
+**1. Wat zijn variabele fonts?**
+Een variabel font is een lettertype waarin meerdere varianten van een font in één bestand zitten.
+Bij een normaal font heb je bijvoorbeeld aparte bestanden voor:
+- Thin
+- Regular
+- Bold
+- Black
+- Italic
+Bij een variabel font zitten veel van deze mogelijkheden in één bestand.
+Je hoeft daarom bijvoorbeeld niet alleen 400 of 700 gebruiken, maar het kan ook ook iets tussen in zijn.
+
+**2. Variabele assen (axes)**
+Een variabel font kan verschillende assen hebben. Een as bepaalt welke eigenschap van het lettertype je kunt aanpassen.
+Bekende assen zijn:
+- wght → dikte
+- wdth → breedte
+- ital → schuin/italic
+- opsz → aanpassing aan tekstgrootte
+
+Niet ieder font heeft dezelfde assen. Sommige fonts hebben daarnaast custom axes.
+
+**3. Custom axes**
+Custom axes zijn speciale eigenschappen die de maker van een font heeft toegevoegd.
+Bijvoorbeeld bij het font Nabla:
+- EDPT → Extrusion Depth, dus de diepte van het 3D-effect
+- EHLT → Edge Highlight, dus de sterkte van de highlight
+
+Je kunt ook meerdere custom axes tegelijk gebruiken. De namen en waardes van de axes verschillen per font.
+
+**4. Variabele fonts gebruiken met @font-face**
+Een variabel font voeg je meestal één keer toe met @font-face. Een fallback font is handig voor als het variabele font niet geladen kan worden.
+
+**Waar vind je variabele fonts?**
+Je kunt variabele fonts op verschillende websites vinden:
+- Google Fonts → gratis
+- Typotheque → meestal betaald
+- V-Fonts → gespecialiseerd in variabele fonts
+- Fonts.xyz → fonts van onafhankelijke ontwerpers en foundries
+
+**5. Wakamaifondue**
+
+Wakamaifondue is handig om te onderzoeken wat een variabel font allemaal kan.
+Je kunt het fontbestand naar de website slepen.
+Je krijgt dan informatie over:
+- beschikbare assen
+- custom axes
+- waardes
+- font weights
+- kleurpaletten
+- andere mogelijkheden
+Dit is vooral handig bij fonts zoals Honk en Kalnia Glaze, omdat je daar moet uitzoeken welke custom axes beschikbaar zijn.
+
+**6. Transitions**
+Een transition zorgt ervoor dat een verandering vloeiend gebeurt.
+Als je met je muis over de tekst gaat, verandert het gewicht geleidelijk van 100 naar 900.
+Dus:
+dun → iets dikker → dik
+in plaats van:
+dun → BOEM → dik
+
+**7. Staggered transitions**
+Een staggered transition betekent dat elementen niet allemaal tegelijk, maar één voor één animeren.
+Bijvoorbeeld:
+S → T → R → A → N → G → E → R
+met steeds een kleine pauze ertussen.
+
+**8. Spannify**
+Om letters afzonderlijk te kunnen animeren, zet je iedere letter in een <span>.
+Dit noemen we spannify-en.
+Daarna kun je iedere letter apart stylen en animeren.
+
+**9. transition-delay**
+Om de letters na elkaar te laten beginnen, kun je een verschillende vertraging gebruiken.
+
+**10. sibling-index()**
+Het nadeel van nth-of-type() is dat je voor iedere letter CSS moet schrijven.
+Met sibling-index() kan CSS automatisch bepalen op welke plek een element staat.
+Bijvoorbeeld:
+- eerste <span> → 1
+- tweede <span> → 2
+- derde <span> → 3
+Hierdoor kun je de vertraging automatisch laten oplopen.
+Het voordeel is dat je code makkelijker werkt als je later letters toevoegt of verwijdert.
+
+**11. Animaties met @keyframes**
+Met @keyframes kun je uitgebreidere CSS-animaties maken.
+Je bepaalt bijvoorbeeld hoe de animatie begint en eindigt. Daarna koppel je de animatie aan een element.
+De tekst gaat dan steeds:
+dun → dik → dun → dik
 
 
 
