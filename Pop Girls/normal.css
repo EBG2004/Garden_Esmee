@@ -1,4 +1,5 @@
 
+/* ALGEMENE OPMAAK */
 
 * {
   box-sizing: border-box;
@@ -16,119 +17,114 @@ body {
   line-height: 1.6;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, serif;
+}
+
+
+/* HEADER */
 
 header {
   background: #fffaff;
-  border-bottom: 2px solid #f1c5dc;
-  padding: 35px 20px 20px;
+  border-bottom: 0.125rem solid #f1c5dc;
+  padding: 2rem 1rem 1.25rem;
   text-align: center;
 }
 
 .header-inner {
-  max-width: 1100px;
-  margin: auto;
+  max-width: 68.75rem;
+  margin: 0 auto;
 }
 
 .kleine-titel {
   margin: 0;
   color: #b65a91;
-  font-size: 13px;
-  letter-spacing: 4px;
+  font-size: 0.8rem;
   font-weight: bold;
+  letter-spacing: 0.2em;
 }
 
 h1 {
-  margin: 5px 0;
+  margin: 0.5rem 0;
   color: #d43c88;
-  font-family: Georgia, serif;
-  font-size: clamp(48px, 9vw, 100px);
+  font-size: clamp(3rem, 9vw, 6.25rem);
   line-height: 1;
-  letter-spacing: 3px;
-}
-
-.ondertitel {
-  margin: 15px auto 25px;
-  max-width: 600px;
-  color: #725d6d;
+  letter-spacing: 0.05em;
 }
 
 
-/* ------------------------------
-   NAVIGATIE
------------------------------- */
+/* NAVIGATIE */
 
 nav ul {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  padding: 0;
-  margin: 25px 0 0;
-  list-style: none;
   flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
 }
 
 nav a {
   color: #6f3260;
-  text-decoration: none;
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
 }
 
 nav a:hover {
   color: #d43c88;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 0.15rem solid #9d2865;
+  outline-offset: 0.2rem;
+}
 
-/* ------------------------------
-   MAIN
------------------------------- */
+
+/* HOOFDINHOUD */
 
 main {
-  width: min(1100px, 92%);
-  margin: auto;
+  width: min(92%, 68.75rem);
+  margin: 0 auto;
 }
 
 section {
-  scroll-margin-top: 30px;
+  scroll-margin-top: 2rem;
 }
 
 
-/* ------------------------------
-   HERO
------------------------------- */
+/* HERO */
 
 .hero {
-  min-height: 600px;
-  margin: 50px 0;
-  padding: 50px;
-  background: #f9dce9;
-  border: 1px solid #eebbd4;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
   align-items: center;
-  overflow: hidden;
+  gap: 2.5rem;
+  margin: 3rem 0;
+  padding: 3rem;
+  background: #f9dce9;
+  border: 0.0625rem solid #eebbd4;
 }
 
 .hero-tekst {
-  max-width: 500px;
-}
-
-.label {
-  color: #b44782;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  margin-bottom: 10px;
+  max-width: 31.25rem;
 }
 
 .hero h2 {
-  margin: 0 0 20px;
-  font-family: Georgia, serif;
-  font-size: clamp(40px, 6vw, 70px);
-  line-height: 1;
+  margin: 0 0 1.25rem;
   color: #542744;
+  font-size: clamp(2.5rem, 6vw, 4.375rem);
+  line-height: 1;
 }
 
 .hero p {
@@ -136,32 +132,32 @@ section {
 }
 
 .hero-foto {
-  transform: rotate(3deg);
+  margin: 0;
+  transform: rotate(2deg);
 }
 
 .hero-foto img {
   width: 100%;
-  height: 480px;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  border: 10px solid white;
-  box-shadow: 0 10px 30px #b98ba5;
+  border: 0.6rem solid white;
+  box-shadow: 0.4rem 0.6rem 1.5rem #b98ba5;
 }
 
 
-/* ------------------------------
-   KNOP
------------------------------- */
+/* KNOP */
 
 .knop {
   display: inline-block;
-  margin-top: 20px;
-  padding: 13px 20px;
+  margin-top: 1.25rem;
+  padding: 0.8rem 1.25rem;
   background: #d43c88;
   color: white;
-  text-decoration: none;
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: bold;
-  letter-spacing: 1px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
 }
 
 .knop:hover {
@@ -169,186 +165,273 @@ section {
 }
 
 
-/* ------------------------------
-   PAGINA'S
------------------------------- */
+/* PAGINA-ONDERDELEN */
 
 .pagina {
-  margin: 80px 0;
-  padding: 45px;
+  margin: 4rem 0;
+  padding: 2.5rem;
   background: #fffaff;
-  border: 1px solid #efc8dc;
-  box-shadow: 0 8px 25px rgba(130, 70, 105, 0.08);
+  border: 0.0625rem solid #efc8dc;
+  box-shadow: 0 0.5rem 1.5rem rgba(130, 70, 105, 0.08);
 }
 
 .pagina h2 {
   margin: 0;
-  font-family: Georgia, serif;
-  font-size: clamp(40px, 6vw, 65px);
   color: #542744;
-  line-height: 1;
+  font-size: clamp(2.5rem, 6vw, 4.0625rem);
+  line-height: 1.1;
 }
 
 .intro {
-  max-width: 650px;
+  max-width: 40rem;
+  margin-bottom: 2rem;
   color: #725d6d;
-  margin-bottom: 35px;
 }
 
 
-/* ------------------------------
-   ARTIESTEN
------------------------------- */
+/* SFEERWOORDEN */
+
+.sfeer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sfeer li {
+  padding: 0.75rem 1.25rem;
+  background: #f9dce9;
+  border: 0.0625rem solid #efc4d9;
+  border-radius: 2rem;
+  color: #542744;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+}
+
+
+/* ARTIESTEN */
 
 .artiest-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
 }
 
 .artiest-kaart {
   display: grid;
-  grid-template-columns: 150px 1fr;
-  min-height: 180px;
+  grid-template-columns: minmax(7rem, 0.7fr) 1fr;
   background: white;
-  border: 1px solid #efc4d9;
-  text-decoration: none;
+  border: 0.0625rem solid #efc4d9;
   color: #29222a;
+  text-decoration: none;
   overflow: hidden;
-  transition: 0.2s;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .artiest-kaart:hover {
-  transform: translateY(-6px) rotate(-1deg);
-  box-shadow: 0 12px 25px rgba(120, 50, 90, 0.15);
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.75rem 1.5rem rgba(120, 50, 90, 0.15);
 }
 
 .artiest-kaart img {
-  width: 150px;
-  height: 180px;
+  width: 100%;
+  height: 100%;
+  min-height: 11rem;
   object-fit: cover;
 }
 
-.artiest-kaart div {
-  padding: 25px;
+.kaart-inhoud {
+  padding: 1.25rem;
 }
 
 .artiest-kaart h3 {
-  margin: 0 0 5px;
-  font-family: Georgia, serif;
-  font-size: 25px;
+  margin: 0 0 0.3rem;
   color: #a83273;
+  font-size: 1.5rem;
 }
 
 .artiest-kaart p {
   margin: 0;
   color: #88717f;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
 
-/* ------------------------------
-   FOTO'S
------------------------------- */
+/* FOTO'S */
 
 .foto-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.75rem;
 }
 
 .foto-grid img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1;
   object-fit: cover;
   background: #f2d8e5;
-  transition: 0.2s;
+  transition: transform 0.2s ease;
 }
 
 .foto-grid img:hover {
-  transform: scale(1.04) rotate(1deg);
+  transform: scale(1.03);
 }
 
 
-/* ------------------------------
-   LINKS
------------------------------- */
+/* LINKS */
 
 .links-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
 }
 
 .links-grid a {
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 20px;
+  gap: 1rem;
+  padding: 1.25rem;
   background: white;
-  border: 1px solid #efc4d9;
+  border: 0.0625rem solid #efc4d9;
   color: #542744;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .links-grid a:hover {
   background: #f9dce9;
 }
 
-.links-grid span {
+
+
+
+/* POP GIRLS COOKIEVENSTER */
+
+dialog#cookieModal {
+  box-sizing: border-box;
+  width: min(90%, 32rem);
+  max-width: 100%;
+  padding: 2rem;
+  border: 0.125rem solid #e27396;
+  border-radius: 1rem;
+  background-color: #fffaff;
+  color: #542744;
+  box-shadow: 0 0.5rem 2rem rgba(84, 39, 68, 0.2);
+}
+
+dialog#cookieModal::backdrop {
+  background-color: rgba(84, 39, 68, 0.6);
+}
+
+dialog#cookieModal h2 {
+  margin-top: 0;
   color: #d43c88;
   font-family: Georgia, serif;
-  font-size: 22px;
+  font-size: 2rem;
+}
+
+dialog#cookieModal form {
+  display: grid;
+  gap: 1rem;
+}
+
+dialog#cookieModal form p {
+  margin: 0;
+  color: #725d6d;
+  font-size: 1rem;
+}
+
+dialog#cookieModal button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 0.0625rem solid #d43c88;
+  border-radius: 0.5rem;
+  background: #f9dce9;
+  color: #542744;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+dialog#cookieModal button[value="allowed"] {
+  background: #d43c88;
+  color: white;
+}
+
+dialog#cookieModal button:hover {
+  background: #f1c5dc;
+  color: #542744;
+}
+
+dialog#cookieModal button[value="allowed"]:hover {
+  background: #9d2865;
+  color: white;
 }
 
 
-/* ------------------------------
-   FOOTER
------------------------------- */
+
+
+/* FOOTER */
 
 footer {
-  margin-top: 80px;
-  padding: 30px;
+  margin-top: 4rem;
+  padding: 2rem 1rem;
   background: #542744;
   color: white;
   text-align: center;
-  font-size: 13px;
+  font-size: 0.85rem;
 }
 
 
-/* ------------------------------
-   MOBIEL
------------------------------- */
+/* MOBIELE WEERGAVE */
 
-@media (max-width: 750px) {
-
+@media (max-width: 46.875rem) {
   .hero {
     grid-template-columns: 1fr;
-    padding: 30px;
+    gap: 2rem;
+    padding: 1.5rem;
   }
 
-  .hero-foto img {
-    height: 350px;
+  .hero-foto {
+    max-width: 32rem;
   }
 
   .pagina {
-    padding: 30px 20px;
+    padding: 1.5rem;
   }
 
-  .artiest-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .foto-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
+  .artiest-grid,
   .links-grid {
     grid-template-columns: 1fr;
   }
 
+  .foto-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   nav ul {
-    gap: 15px;
+    gap: 0.75rem 1rem;
   }
 }
+
+
+/* ANIMATIES AANPASSEN AAN VOORKEUR */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+

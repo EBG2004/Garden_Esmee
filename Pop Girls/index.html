@@ -1,120 +1,128 @@
+
 <!doctype html>
 <html lang="nl">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Esmée Gravemaker" />
-    <meta name="color-scheme" content="light" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Esmée Gravemaker">
+    <meta name="color-scheme" content="light">
 
-    <title>Pop Girls – DigitaL Garden</title>
+    <title>Pop Girls – Digital Garden</title>
 
-    <link rel="stylesheet" href="./assets/style/normal.css" />  
+    <link rel="stylesheet" href="./assets/style/normal.css">
+    <script src="./assets/script/cookies.js" defer></script>
   </head>
 
   <body>
     <header>
       <div class="header-inner">
-        <p class="kleine-titel">⭐️ MY DIGITAL GARDEN ⭐️</p>
-       <p></p> <h1>POP GIRLS</h1><p></p>
-       <p> 
-        <nav>
+        <p class="kleine-titel">⭐ MY DIGITAL GARDEN ⭐</p>
+        <h1>POP GIRLS</h1>
+
+        <nav aria-label="Hoofdnavigatie">
           <ul>
-            <li><a href="./index.html">HOME</a></li>
-            <li><a href="./artiesten.html">ARTIESTEN</a></li>
-            <li><a href="./fotos.html"> INSPIRATIE FOTO'S</a></li>
-            <li><a href="./links.html">LINKS</a></li>
+            <li><a href="./index.html" aria-current="page">Home</a></li>
+            <li><a href="./artiesten.html">Artiesten</a></li>
+            <li><a href="./fotos.html">Inspiratiefoto's</a></li>
+            <li><a href="./README.md">Learning Log</a></li>
           </ul>
         </nav>
-        </p>
-
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" aria-labelledby="intro-titel">
         <div class="hero-tekst">
-          <h2>Mijn favoriete<br>popartiesten</h2>
+          <h2 id="intro-titel">Mijn favoriete popartiesten</h2>
+
           <p>
             Welkom in mijn Digital Garden! ✨
-            <p>Dit is mijn eigen POP GIRLS wereld, vol met mijn favoriete vrouwelijke popartiesten. Van Ariana Grande en Sabrina Carpenter tot Olivia Rodrigo, Roxy Dekker en Tate McRae.
-            Ontdek hun muziek, stijl, foto's en leuke weetjes. Elke artiest heeft haar eigen uitstraling en style en samen vormen ze mijn favoriete popwereld.
           </p>
-        
+
+          <p>
+            Dit is mijn eigen POP GIRLS wereld, vol met mijn favoriete
+            vrouwelijke popartiesten. Van Ariana Grande en Sabrina Carpenter
+            tot Olivia Rodrigo, Roxy Dekker en Tate McRae.
           </p>
+
+          <p>
+            Ontdek hun muziek, stijl, foto's en leuke weetjes.
+            Iedere artiest heeft een eigen uitstraling. Samen vormen ze
+            mijn favoriete popwereld.
+          </p>
+
           <a href="./artiesten.html" class="knop">
-            ONTDEK MIJN FAVORIETEN →
+            Ontdek mijn favorieten →
           </a>
         </div>
-        <div class="hero-foto">
-          <img src="./afbeeldingen/samen.jpg" alt="samen">
-        </div>
+
+        <figure class="hero-foto">
+          <img
+            src="./afbeeldingen/samen.jpg"
+            alt="Collage met mijn favoriete popartiesten"
+            width="800"
+            height="1000"
+          >
+        </figure>
       </section>
-      <section class="pagina welkom">
-        <h2>Over mijn project</h2>
+
+      <section class="pagina welkom" aria-labelledby="project-titel">
+        <h2 id="project-titel">Over mijn project</h2>
+
         <p>
-        Ik heb gekozen voor vrouwelijke popsterren omdat ik erg van dat soort genre muziek hou. 
-        Ik vind het leuk om te kijken naar hun muziek, kleding, stijl en uitstraling. 
-        Ook vind ik het interessant hoe iedere artiest zich op een andere manier presenteert. 
-        Daarom heb ik gekozen voor Ariana Grande, Sabrina Carpenter, Olivia Rodrigo, Roxy Dekker en Tate McRae. 
-        Ik vind hun muziek leuk en ze hebben allemaal hun eigen stijl. 
-        Met mijn Digital Garden wil ik meer over deze artiesten laten zien en verschillende foto's en links verzamelen.
-          Ik heb informatie, foto's en links verzameld om een digitale
-          verzameling te maken die ik steeds verder kan uitbreiden.    </p>
-          Hieronder staan mijn sfeerwoorden: 
+          Ik heb gekozen voor vrouwelijke popartiesten omdat ik erg
+          van popmuziek houd. Ik vind het leuk om te kijken naar hun
+          muziek, kleding, stijl en uitstraling. Ook vind ik het interessant
+          hoe iedere artiest zich op een andere manier presenteert.
         </p>
 
-        <div class="sfeer">
-          <div>
-            <strong>GLAMOUREUS</strong>
-          </div>
-          <div>
-            <strong>CREATIEF</strong>
-          </div>
-          <div>
-            <strong>ENERGIEK</strong>
-          </div>
-        </div>
+        <p>
+          Daarom heb ik gekozen voor Ariana Grande, Sabrina Carpenter,
+          Olivia Rodrigo, Roxy Dekker en Tate McRae. Ik vind hun muziek
+          leuk en ze hebben allemaal hun eigen stijl.
+        </p>
+
+        <p>
+          Met mijn Digital Garden wil ik meer over deze artiesten laten
+          zien en verschillende foto's en links verzamelen. Mijn website
+          is een digitale verzameling die ik steeds verder kan uitbreiden.
+        </p>
+
+        <p>Mijn drie sfeerwoorden zijn:</p>
+
+        <ul class="sfeer">
+          <li>Glamoureus</li>
+          <li>Creatief</li>
+          <li>Energiek</li>
+        </ul>
       </section>
     </main>
 
-    
-<footer>
-      <nav>
-        <button commandfor="cookieModal" command="show-modal">
-          <span>Allow cookies?</span>
-        </button>
-      </nav>
-    </footer>
-
-    <dialog id="cookieModal">
-      <form method="dialog">
-        <p>
-          We use cookies to personalise content and ads, to provide social media
-          features and to analyse our traffic. We also share information about
-          your use of our site with our social media, advertising and analytics
-          partners who may combine it with other information that you’ve
-          provided to them or that they’ve collected from your use of their
-          services.
-        </p>
-        <button onclick="setCookie()">Allow</button>
-        <button onclick="unsetCookie()">Deny</button>
-      </form>
-    </dialog>
-  </body>
-</html>
-
-
-
-
-
-
-
-
-
-
     <footer>
       <p>♡ Digital Garden 2026 — Esmée Gravemaker</p>
+
+      <button type="button" commandfor="cookieModal" command="show-modal">
+        Cookievoorkeuren
+      </button>
     </footer>
 
+    <dialog id="cookieModal" aria-labelledby="cookie-titel">
+      <form method="dialog">
+        <h2 id="cookie-titel">Cookievoorkeuren</h2>
+
+        <p>
+          Kies of je cookies wilt toestaan. Je keuze wordt gebruikt
+          om je cookievoorkeur op te slaan.
+        </p>
+
+        <button type="submit" value="allowed" name="cookie-choice">
+          Toestaan
+        </button>
+
+        <button type="submit" value="denied" name="cookie-choice">
+          Weigeren
+        </button>
+      </form>
+    </dialog>
   </body>
 </html>
