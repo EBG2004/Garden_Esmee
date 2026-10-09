@@ -210,7 +210,7 @@
           <div>
 
             <div class="label">
-              Welcome to Hawkins
+              Welcome in Hawkins
             </div>
 
           </div>
@@ -296,85 +296,77 @@
 
 
 
-      <!-- Cookies -->
+     
+<!-- COOKIES -->
+
+<button
+  class="cookie-button"
+  commandfor="cookieModal"
+  command="show-modal"
+>
+  Cookies
+</button>
+
+</footer>
+</div>
+
+
+<!-- ========================================
+     COOKIE POP-UP — STRANGER THINGS
+======================================== -->
+
+<dialog id="cookieModal" class="cookie-modal">
+
+  <div class="cookie-content">
+
+    <p class="cookie-label">
+      HAWKINS LABORATORY · CLASSIFIED
+    </p>
+
+    <h2>Cookies van the Upside Down</h2>
+
+    <p class="cookie-description">
+      Er gebeuren vreemde dingen in Hawkins...
+      Ook deze website gebruikt cookies.
+      Wil je cookies toestaan of weigeren?
+    </p>
+
+    <div class="cookie-actions">
 
       <button
-        class="cookie-button"
-        commandfor="cookieModal"
-        command="show-modal"
+        type="button"
+        class="cookie-allow"
+        onclick="setCookie(); document.getElementById('cookieModal').close();"
       >
-        Allow cookies?
+        Accepteer alles 
       </button>
 
+      <button
+        type="button"
+        class="cookie-deny"
+        onclick="unsetCookie(); document.getElementById('cookieModal').close();"
+      >
+        Weiger alles
+      </button>
 
-    </footer>
+    </div>
 
+    <p class="cookie-footer">
+      VRIENDELIJK DANK NAMES HAWKINS LAB
+    </p>
 
   </div>
 
-
-
-  <!-- ========================================
-       COOKIE POP-UP
-  ======================================== -->
-
-  <dialog id="cookieModal">
-
-
-    <form method="dialog">
-
-
-      <p>
-        Wil je cookies toestaan voor
-        dit schoolproject?
-      </p>
-
-
-      <button onclick="setCookie()">
-        Allow
-      </button>
-
-
-      <button onclick="unsetCookie()">
-        Deny
-      </button>
-
-
-    </form>
-
-
-  </dialog>
+</dialog>
 
 
 
-  <!-- ========================================
-       JAVASCRIPT
-  ======================================== -->
+<!-- ========================================
+     JAVASCRIPT
+======================================== -->
 
-  <script src="./script.js"></script>
-
-
-
-  <script>
-
-    function setCookie() {
-
-      document.cookie =
-        "schoolProjectCookies=allowed; max-age=31536000; path=/";
-
-    }
-
-
-    function unsetCookie() {
-
-      document.cookie =
-        "schoolProjectCookies=; max-age=0; path=/";
-
-    }
-
-  </script>
-
+<script src="./script.js"></script>
 
 </body>
-
 </html>
+

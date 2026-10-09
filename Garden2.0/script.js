@@ -184,3 +184,15 @@ function showDemogorgon() {
   }, 5000);
 
 }
+
+/* ========================================
+   STRANGER THINGS — COOKIES
+======================================== */
+
+function setCookie() {
+  localStorage.setItem("schoolProjectCookies", "allowed");
+}
+
+function unsetCookie() {
+  localStorage.setItem("schoolProjectCookies", "denied");
+}
