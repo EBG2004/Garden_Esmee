@@ -487,6 +487,32 @@ Ik heb hierdoor wel veel geleerd over variabele fonts en `font-variation-setting
 
 <img width="306" height="530" alt="Scherm­afbeelding 2026-10-08 om 14 41 04" src="https://github.com/user-attachments/assets/b4cf9a8b-32e9-49d3-a9f1-c4187ae5d168" />
 
+### 9 okt - [Werkgroep]
+
+
+
+
+
+
+
+
+
+**Checkout**
+
+**1. Welke variabelen van Seraphs gebruik je in de opmaak van je songtekst?**
+Ik gebruik verschillende variabelen om mijn songtekst vorm te geven. Denk aan de grootte, dikte en breedte van de letters. Ook kan ik de afstand tussen letters aanpassen. Hiermee kan ik bepaalde woorden meer laten opvallen en mijn ontwerp speelser maken.
+
+**2. Wat voegt iedere variabele toe aan je ontwerp?**
+**- Grootte (font-size):** maakt belangrijke woorden groter zodat ze meer opvallen.
+**- Dikte (font-weight):** zorgt ervoor dat woorden beter of juist minder overkomen.
+**- Breedte (font-stretch):** maakt letters breder of smaller en geeft de tekst een ander beeld.
+**- Letterafstand (letter-spacing):** zorgt voor meer of minder ruimte tussen de letters.
+Door deze variabelen te combineren kan ik een duidelijke hiërarchie maken. De belangrijkste woorden vallen dan het meeste op.
+
+**3. Hoe zou je animatie kunnen toepassen?**
+Ik kan animaties gebruiken om woorden of letters mee te laten bewegen met het ritme van de muziek. Ik kan ook letters één voor één laten verschijnen of woorden laten bewegen op de beat.Zo wordt de songtekst speels en sluit de vormgeving beter aan bij de muziek. Ik wil de animaties niet te druk maken zodat de tekst wel goed leesbaar blijft.
+
+
 
 
 
