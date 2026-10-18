@@ -489,10 +489,16 @@ Ik heb hierdoor wel veel geleerd over variabele fonts en `font-variation-setting
 
 ### 9 okt - [Werkgroep]
 
-
-
-
-
+**Feedback:** 
+* Leuke tekst op Digi tuin
+* 1 article met verschillende sections voor de delen songtekst
+* h1 = "YMCA", "its fun to stay" = h2
+* Stukje van de tekst is weggelaten de "i said young man" in de lyric staat er niet
+* Lyric past goed bij het liedje
+* Als je gaat animeren kan je "ACMY" "YMCA" maken met de letters groter maken met animatie
+* Tuintje persoonlijker maken, meer Esmee
+* Heel cool dat je nieuw tuintje begonnen bent
+* Gebruikt veel divs enn classes, moet minder
 
 
 
@@ -512,6 +518,87 @@ Door deze variabelen te combineren kan ik een duidelijke hiërarchie maken. De b
 **3. Hoe zou je animatie kunnen toepassen?**
 Ik kan animaties gebruiken om woorden of letters mee te laten bewegen met het ritme van de muziek. Ik kan ook letters één voor één laten verschijnen of woorden laten bewegen op de beat.Zo wordt de songtekst speels en sluit de vormgeving beter aan bij de muziek. Ik wil de animaties niet te druk maken zodat de tekst wel goed leesbaar blijft.
 
+
+### 18 okt - Huiswerk
+
+## Samenvatting deep dive CSS-animaties:
+
+**1. Transitions VS animations**
+- Transitions: laten een element geleidelijk veranderen van de ene status naar de andere bijvoorbeeld: groter worden, van kleur veranderen of verplaatsen.
+- Animations: gebruik je voor herhalende bewegingen of complexere animaties met meerdere stappen.
+**2. @keyframes**
+Met @keyframes definieer je de belangrijkste stappen van een animatie. Deze stappen heten keyframes. De browser berekent automatisch de tussenliggende bewegingen. Dit heet tweening.
+
+**3. Een animatie koppelen aan een element**
+Met CSS properties bepaal je hoe de animatie wordt afgespeeld.
+
+**De belangrijkste properties zijn:**
+
+animation-name → De naam van de animatie
+animation-duration → Hoe lang de animatie duurt
+animation-iteration-count → Hoe vaak de animatie afspeelt
+animation-timing-function → Het tempo en de versnelling
+animation-direction → De afspeelrichting
+animation-delay → Hoe lang de animatie wacht met starten
+animation-play-state → De animatie pauzeren of hervatten
+animation-fill-mode → Bepaalt welke stijl geldt vóór of na de animatie
+
+**4. Meerdere keyframes gebruiken**
+Voor complexere bewegingen voeg je extra keyframes toe. Je kunt een element bijvoorbeeld eerst naar boven, dan naar rechts en vervolgens weer naar beneden laten bewegen.
+Eigenschappen zoals translate, rotate en scale gebruik je om elementen te verplaatsen, draaien of vergroten.
+
+**5. Toegankelijkheid: prefers-reduced-motion**
+Niet iedereen vindt bewegende elementen prettig. Sommige mensen kunnen last krijgen van animaties. Met prefers-reduced-motion houd je rekening met de bewegingsvoorkeur van bezoekers.
+
+**6. Custom easing**
+Met animation-timing-function bepaal je hoe een animatie versnelt en vertraagt.
+- linear: de beweging verloopt met een constante snelheid.
+- ease-in-out: de beweging begint en eindigt geleidelijk.
+- cubic-bezier(): hiermee stel je zelf een bewegingscurve in.
+- linear(): hiermee kun je complexere snelheidsveranderingen maken, zoals een stuiter- of veereffect.
+Je kunt hulpmiddelen zoals CSS Bézier Curve Generator gebruiken om eigen curves te maken.
+
+**7. Toepassing op mijn YMCA ontwerp**
+Ik kan CSS animaties gebruiken om mijn songtekst ontwerp leuker te maken:
+- De letters Y, M, C en A om de beurt groter laten worden met scale.
+- De letters omhoog en omlaag laten bewegen met translate.
+- De songtekst regel voor regel laten verschijnen met opacity en animation-delay.
+- De letters van positie laten veranderen met meerdere keyframes.
+- prefers-reduced-motion gebruiken om rekening te houden met toegankelijkheid.
+
+**YMCA verbeteren** 
+
+Ik heb mijn ontwerp aangepast met de feedback van mijn docent en medestudenten. Ik heb mijn HTML verbeterd door één article te gebruiken met verschillende sections voor de songtekst. Ook heb ik de koppen aangepast. De grote YMCA onderaan is de h1 en ‘It's Fun to Stay’ is de h2. Ik heb de ontbrekende tekstregels toegevoegd, zodat mijn ontwerp beter bij het liedje past.
+Verder heb ik de tekst en de posities aangepast om mijn poster mooier te maken. Ik heb ook mijn CSS voor mobiel verbeterd, zodat de tekst minder snel verspringt en beter op het scherm past. Ik wil later nog animaties toevoegen, bijvoorbeeld door de letters van ACMY naar YMCA te laten veranderen en groter te laten worden.
+
+**Animatie ideeën:**
+
+Letters wisselen: ACMY verandert in YMCA.
+Groter worden: YMCA groeit en krimpt.
+Dansende letters: de letters bewegen op en neer.
+Titel verschijnt: “IT'S FUN TO STAY” groeit in beeld.
+Schuivende songtekst: de tekstblokken draaien heen en weer.
+
+<img width="800" height="676" alt="Scherm­afbeelding 2026-10-18 om 14 46 37" src="https://github.com/user-attachments/assets/b5f91494-b003-4d1a-b115-9967bbe5df9a" />
+
+
+**POP GIRLS verbeteren** 
+
+
+**1. Grote titels gebruiken**
+Ik wil titels zoals MY DIGITAL GARDEN en MIJN INSPIRATIE groter en opvallender maken. De namen van de artiesten mogen ook opvallen, terwijl de gewone tekst kleiner blijft. Zo is het duidelijk welke tekst het belangrijkst is.
+
+**2. Spelen met de ruimte tussen letters**
+Ik wil kijken wat er gebeurt als ik meer of minder ruimte tussen de letters zet. Bij de tekst POP GIRLS kan ik bijvoorbeeld meer ruimte gebruiken. Dit geeft de tekst een andere uitstraling.
+
+**3. De tekst anders plaatsen**
+Ik wil proberen om titels op verschillende plekken te zetten, bijvoorbeeld naast een afbeelding of boven een tekstblok. Zo wordt mijn website interessanter om naar te kijken.
+
+**4. Dikke en dunne letters gebruiken**
+Ik wil dikke letters gebruiken voor de namen van artiesten en dunnere letters voor de uitleg. Hierdoor vallen de namen meer op en blijft de tekst overzichtelijk.
+
+**5. Meer ruimte tussen de onderdelen**
+Ik wil mijn afbeeldingen, teksten en artiestenkaarten genoeg ruimte geven. Hierdoor wordt mijn website rustiger en komen de afbeeldingen en roze details beter naar voren.
 
 
 
