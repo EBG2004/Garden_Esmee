@@ -1,15 +1,29 @@
 
-const cookieModal = document.querySelector("#cookieModal");
-const cookieButton = document.querySelector("[data-cookie-open]");
+document.addEventListener("DOMContentLoaded", () => {
+  const cookieModal = document.querySelector("#cookieModal");
+  const cookieButton = document.querySelector("[data-cookie-open]");
 
-cookieButton.addEventListener("click", () => {
-  cookieModal.showModal();
-});
+  if (cookieModal) {
+    // Automatisch openen bij het laden van de pagina
+    cookieModal.showModal();
+  }
 
-cookieModal.addEventListener("close", () => {
-  const keuze = cookieModal.returnValue;
+  // De knop onderaan kan het venster ook openen
+  if (cookieButton && cookieModal) {
+    cookieButton.addEventListener("click", () => {
+      if (!cookieModal.open) {
+        cookieModal.showModal();
+      }
+    });
+  }
 
-  if (keuze === "allowed" || keuze === "denied") {
-    localStorage.setItem("schoolProjectCookies", keuze);
+  if (cookieModal) {
+    cookieModal.addEventListener("close", () => {
+      const keuze = cookieModal.returnValue;
+
+      if (keuze === "allowed" || keuze === "denied") {
+        localStorage.setItem("schoolProjectCookies", keuze);
+      }
+    });
   }
 });

@@ -102,28 +102,28 @@
     <footer>
       <p>♡ Digital Garden 2026 — Esmée Gravemaker</p>
 
-      <button type="button" commandfor="cookieModal" command="show-modal">
-        Cookievoorkeuren
-      </button>
-    </footer>
+     
+<button type="button" commandfor="cookieModal" command="show-modal">
+  🎀 Cookievoorkeuren
+</button>
+</footer>
 
-    <dialog id="cookieModal" aria-labelledby="cookie-titel">
-      <form method="dialog">
-        <h2 id="cookie-titel">Cookievoorkeuren</h2>
+<dialog id="cookieModal">
+  <form method="dialog">
+    <h2 id="cookieTitel">A little cookie moment!</h2>
+    <p>
+      Hey Pop Girl! 
+      Mijn Digital Garden gebruikt een beetje lokale opslag.
+      <p> We onthouden hiermee jouw cookievoorkeur.</p>
+      Kies hieronder wat bij jou past! xoxo
+    </p>
 
-        <p>
-          Kies of je cookies wilt toestaan. Je keuze wordt gebruikt
-          om je cookievoorkeur op te slaan.
-        </p>
+    <button type="submit" value="allowed">♡ Accepteren</button>
+    <button type="submit" value="denied"> Weigeren</button>
+  </form>
+</dialog>
 
-        <button type="submit" value="allowed" name="cookie-choice">
-          Toestaan
-        </button>
-
-        <button type="submit" value="denied" name="cookie-choice">
-          Weigeren
-        </button>
-      </form>
-    </dialog>
-  </body>
+<script src="./cookies.js"></script>
+</body>
 </html>
+
