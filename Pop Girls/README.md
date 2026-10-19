@@ -603,6 +603,7 @@ Ik wil mijn afbeeldingen, teksten en artiestenkaarten genoeg ruimte geven. Hierd
 
 ### 19 okt - [Werkgroep]
 
+<img width="500" height="300" alt="Website Webby" src="https://github.com/user-attachments/assets/a57fd9df-5cb7-4893-86ee-3bc7ddaa3b69" />
 
 
 
