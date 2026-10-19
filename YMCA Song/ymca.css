@@ -1,0 +1,362 @@
+/* ========================================
+   BASIS
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    background: white;
+    color: black;
+}
+
+
+/* ========================================
+   LETTERTYPES
+======================================== */
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.oswald-light {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+/* ========================================
+   GRID
+======================================== */
+
+.ymca {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 90vh;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 120px 600px 120px;
+    grid-template-rows: auto 1fr;
+
+    justify-content: center;
+    column-gap: 30px;
+
+    position: relative;
+}
+
+
+/* ========================================
+   LINKERKANT
+======================================== */
+
+.ymca-left {
+    grid-column: 1;
+    grid-row: 1 / 3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Anton", sans-serif;
+    font-size: 55px;
+
+    line-height: 0.8;
+}
+
+
+/* losse letters speelser maken */
+
+.ymca-left span:nth-child(1) {
+    transform: rotate(-8deg) scale(1.2);
+}
+
+.ymca-left span:nth-child(2) {
+    transform: scale(0.7);
+}
+
+.ymca-left span:nth-child(3) {
+    transform: rotate(5deg) scale(0.9);
+}
+
+.ymca-left span:nth-child(4) {
+    transform: rotate(-10deg) scale(0.6);
+}
+
+.ymca-left span:nth-child(5) {
+    transform: rotate(7deg) scale(1.15);
+}
+
+.ymca-left span:nth-child(6) {
+    transform: scale(0.7);
+}
+
+.ymca-left span:nth-child(7) {
+    transform: rotate(-5deg) scale(1.3);
+}
+
+
+/* ========================================
+   SONGTEKST
+======================================== */
+
+.lyrics {
+    grid-column: 2;
+    grid-row: 1 / 3;
+
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 40px 0;
+}
+
+
+/* ========================================
+   HOOFDTITEL
+======================================== */
+
+.lyrics h1 {
+    margin: 0;
+
+    font-family: "Anton", sans-serif;
+    font-size: 85px;
+    line-height: 0.9;
+
+    text-align: center;
+
+    letter-spacing: 2px;
+
+    transform: rotate(-2deg) scale(1.05);
+}
+
+
+/* ========================================
+   SUBTITEL
+======================================== */
+
+.lyrics h2 {
+    margin: 15px 0 50px;
+
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+
+    font-size: 42px;
+    line-height: 30px;
+
+    text-align: center;
+
+    letter-spacing: 8px;
+
+    transform: rotate(2deg) scale(0.9);
+}
+
+
+/* ========================================
+   SONGTEKST
+======================================== */
+
+.verse {
+    width: 600px;
+    margin: 15px auto;
+}
+
+
+/* normale tekst */
+
+.verse p {
+    margin: 12px 0;
+
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    letter-spacing: 0.5px;
+
+    transition: transform 0.2s;
+}
+
+
+/* ========================================
+   SPELEN MET DE TEKST
+======================================== */
+
+/* regel 1 */
+
+.verse:nth-of-type(1) p:nth-child(1) {
+    transform: translateX(-20px) rotate(-1deg);
+}
+
+
+/* regel 2 */
+
+.verse:nth-of-type(1) p:nth-child(2) {
+    transform: translateX(25px) scale(1.05);
+}
+
+
+/* regel 3 */
+
+.verse:nth-of-type(1) p:nth-child(3) {
+    transform: translateX(-10px) rotate(1deg);
+}
+
+
+/* regel 4 */
+
+.verse:nth-of-type(1) p:nth-child(4) {
+    transform: translateX(35px) scale(0.95);
+}
+
+
+/* tweede stukje tekst */
+
+.verse:nth-of-type(2) p:nth-child(1) {
+    transform: translateX(20px) scale(1.08);
+}
+
+
+.verse:nth-of-type(2) p:nth-child(2) {
+    transform: translateX(-25px) rotate(-1deg);
+}
+
+
+.verse:nth-of-type(2) p:nth-child(3) {
+    transform: translateX(15px) scale(0.9);
+}
+
+
+.verse:nth-of-type(2) p:nth-child(4) {
+    transform: translateX(-10px) rotate(1deg) scale(1.05);
+}
+
+
+/* ========================================
+   GROTE YMCA ONDERAAN
+======================================== */
+
+.lyrics h3 {
+    margin: 55px 0 0;
+
+    font-family: "Anton", sans-serif;
+
+    font-size: 110px;
+    line-height: 0.8;
+
+    text-align: center;
+
+    letter-spacing: 5px;
+
+    transform: rotate(-2deg) scale(1.05);
+}
+
+
+/* ========================================
+   RECHTERKANT
+======================================== */
+
+.ymca-right {
+    grid-column: 3;
+    grid-row: 1 / 3;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Anton", sans-serif;
+    font-size: 55px;
+
+    line-height: 0.8;
+}
+
+
+/* rechterkant andere beweging */
+
+.ymca-right span:nth-child(1) {
+    transform: rotate(7deg) scale(1.3);
+}
+
+.ymca-right span:nth-child(2) {
+    transform: scale(0.6);
+}
+
+.ymca-right span:nth-child(3) {
+    transform: rotate(-5deg) scale(0.9);
+}
+
+.ymca-right span:nth-child(4) {
+    transform: rotate(10deg) scale(0.7);
+}
+
+.ymca-right span:nth-child(5) {
+    transform: rotate(-7deg) scale(1.15);
+}
+
+.ymca-right span:nth-child(6) {
+    transform: scale(0.6);
+}
+
+.ymca-right span:nth-child(7) {
+    transform: rotate(5deg) scale(1.25);
+}
+
+
+/* ========================================
+   MOBIEL
+======================================== */
+
+@media (max-width: 850px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .ymca {
+        grid-template-columns: 50px minmax(0, 1fr) 50px;
+        column-gap: 10px;
+    }
+
+    .lyrics {
+        width: 100%;
+    }
+
+    .verse {
+        width: 100%;
+    }
+
+    .lyrics h1 {
+        font-size: 55px;
+    }
+
+    .lyrics h2 {
+        font-size: 30px;
+    }
+
+    .lyrics h3 {
+        font-size: 70px;
+    }
+
+    .ymca-left,
+    .ymca-right {
+        font-size: 35px;
+    }
+
+    .verse p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
