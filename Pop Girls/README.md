@@ -601,6 +601,8 @@ Ik wil dikke letters gebruiken voor de namen van artiesten en dunnere letters vo
 Ik wil mijn afbeeldingen, teksten en artiestenkaarten genoeg ruimte geven. Hierdoor wordt mijn website rustiger en komen de afbeeldingen en roze details beter naar voren.
 
 
+### 19 okt - [Werkgroep]
+
 
 
 
