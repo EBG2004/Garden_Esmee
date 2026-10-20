@@ -605,7 +605,13 @@ Ik wil mijn afbeeldingen, teksten en artiestenkaarten genoeg ruimte geven. Hierd
 
 <img width="500" height="300" alt="Website Webby" src="https://github.com/user-attachments/assets/a57fd9df-5cb7-4893-86ee-3bc7ddaa3b69" />
 
+**Feedback Teresa:**
 
+- Checken Contrast kleuren goed
+- knop maken?
+- GitHub er gewoon inlinken.
+- Dark mode aanpassen kleur
+- plaat laat draaien 
 
 
 
