@@ -21,7 +21,7 @@
 
         <nav aria-label="Hoofdnavigatie">
           <ul>
-             <li><a href="./index.html" aria-current="page">HOME</a></li>
+            <li><a href="./index.html" aria-current="page">HOME</a></li>
             <li><a href="./artiesten.html">ARTIESTEN</a></li>
             <li><a href="./fotos.html">FAN JOURNAL</a></li>
             <li><a href="./README.md">LEARNING LOG</a></li>
@@ -37,9 +37,7 @@
         <div class="hero-tekst">
           <h2 id="intro-titel">Mijn favoriete popartiesten</h2>
 
-          <p>
-            Welkom in mijn Digital Garden! ✨
-          </p>
+          <p>Welkom in mijn Digital Garden! ✨</p>
 
           <p>
             Dit is mijn eigen POP GIRLS wereld, vol met mijn favoriete
@@ -103,28 +101,33 @@
     <footer>
       <p>♡ Digital Garden 2026 — Esmée Gravemaker</p>
 
-     
-<button type="button" commandfor="cookieModal" command="show-modal">
-  🎀 Cookievoorkeuren
-</button>
-</footer>
+      <button
+        type="button"
+        commandfor="cookieModal"
+        command="show-modal"
+      >
+        🎀 Cookievoorkeuren
+      </button>
+    </footer>
 
-<dialog id="cookieModal">
-  <form method="dialog">
-    <h2 id="cookieTitel">A little cookie moment!</h2>
-    <p>
-      Hey Pop Girl! 
-      Mijn Digital Garden gebruikt een beetje lokale opslag.
-      <p> We onthouden hiermee jouw cookievoorkeur.</p>
-      Kies hieronder wat bij jou past! xoxo
-    </p>
+    <dialog id="cookieModal" aria-labelledby="cookieTitel">
+      <form method="dialog">
+        <h2 id="cookieTitel">A little cookie moment!</h2>
 
-    <button type="submit" value="allowed">♡ Accepteren</button>
-    <button type="submit" value="denied"> Weigeren</button>
-  </form>
-</dialog>
+        <p>
+          Hey Pop Girl! Mijn Digital Garden gebruikt een beetje lokale
+          opslag. We onthouden hiermee jouw cookievoorkeur.
+          Kies hieronder wat bij jou past! xoxo
+        </p>
 
-<script src="./cookies.js"></script>
-</body>
+        <button type="submit" value="allowed">
+          ♡ Accepteren
+        </button>
+
+        <button type="submit" value="denied">
+          Weigeren
+        </button>
+      </form>
+    </dialog>
+  </body>
 </html>
-

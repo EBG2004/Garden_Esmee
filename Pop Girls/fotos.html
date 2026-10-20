@@ -1,240 +1,192 @@
 
 <!doctype html>
 <html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Esmée Gravemaker">
+    <meta name="color-scheme" content="dark light">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark light">
+    <title>Fan Journal – Pop Girls</title>
 
-  <title>Mijn inspiratie</title>
+    <link rel="stylesheet" href="./assets/style/normal.css">
+  </head>
 
-  <link rel="stylesheet" href="./assets/style/normal.css">
-  <script src="./assets/script/vinyl.js" defer></script>
-</head>
+  <body>
+    <header>
+      <p class="kleine-titel">⭐️ MY DIGITAL GARDEN ⭐️</p>
+      <h1>FAN JOURNAL</h1>
 
-<body>
+      <nav aria-label="Hoofdnavigatie">
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./artiesten.html">ARTIESTEN</a></li>
+          <li><a href="./fotos.html" aria-current="page">FAN JOURNAL</a></li>
+          <li><a href="./README.md">LEARNING LOG</a></li>
+          <li><a href="./links.html">LINKS</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <header>
-    <p class="kleine-titel">⭐️ MY DIGITAL GARDEN ⭐️</p>
+    <main>
+      <section class="pagina" aria-labelledby="ariana-titel">
+        <div class="artiest-kop">
+          <h2 id="ariana-titel">01. Ariana Grande ♡</h2>
 
-    <h1>FAN JOURNAL</h1>
-
-    <nav aria-label="Hoofdnavigatie">
-      <ul>
-         <li><a href="./index.html" aria-current="page">HOME</a></li>
-            <li><a href="./artiesten.html">ARTIESTEN</a></li>
-            <li><a href="./fotos.html">FAN JOURNAL</a></li>
-            <li><a href="./README.md">LEARNING LOG</a></li>
-            <li><a href="./links.html">LINKS</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-   
-
-<!-- FAN JOURNAL -->
-
-
-<!-- ARIANA GRANDE -->
-
-<section class="pagina">
-  <div class="artiest-kop">
-    <h2>01. Ariana Grande ♡</h2>
-
-    <div class="artiest-vinyl">
-      <div class="vinyl-plaat">
-        <div class="vinyl-midden">AG ♡</div>
-      </div>
-
-      <button class="vinyl-knop" type="button"
-        aria-pressed="true">
-        Ⅱ Pauzeer plaat
-      </button>
-    </div>
-  </div>
-
-  <div class="favorieten">
-    <article>
-      <h3>🎧 Favoriete liedje</h3>
-      <p>Vul hier je favoriete liedje in.</p>
-    </article>
-
-    <article>
-      <h3>💿 Favoriete album</h3>
-      <p>Vul hier je favoriete album in.</p>
-    </article>
-
-    <article>
-      <h3>👗 Favoriete outfit</h3>
-      <p>Vul hier je favoriete outfit in.</p>
-      <img src="./afbeeldingen/ariana-outfit.jpg"
-        alt="Mijn favoriete outfit van Ariana Grande">
-    </article>
-  </div>
-</section>
-
-
-<!-- SABRINA CARPENTER -->
-
-    <section class="pagina">
-      <div class="artiest-kop">
-        <h2>02. Sabrina Carpenter ♡</h2>
-
-        <div class="artiest-vinyl">
-          <div class="vinyl-plaat">
-            <div class="vinyl-midden">SC ♡</div>
+          <div class="artiest-vinyl">
+            <input class="vinyl-toggle" type="checkbox" id="vinyl-ariana">
+            <label class="vinyl-plaat" for="vinyl-ariana" aria-label="Draai de vinylplaat van Ariana Grande">
+              <span class="vinyl-midden">AG ♡</span>
+            </label>
           </div>
-
-          <button class="vinyl-knop" type="button"
-            aria-pressed="true">
-            Ⅱ Pauzeer plaat
-          </button>
         </div>
-      </div>
 
-      <div class="favorieten">
-        <article>
-          <h3>🎧 Favoriete liedje</h3>
-          <p>Vul hier je favoriete liedje in.</p>
-        </article>
+        <div class="favorieten">
+          <article>
+            <h3>🎧 Favoriete liedje</h3>
+            <p>Vul hier je favoriete liedje in.</p>
+          </article>
 
-        <article>
-          <h3>💿 Favoriete album</h3>
-          <p>Vul hier je favoriete album in.</p>
-        </article>
+          <article>
+            <h3>💿 Favoriete album</h3>
+            <p>Vul hier je favoriete album in.</p>
+          </article>
 
-        <article>
-          <h3>👗 Favoriete outfit</h3>
-          <p>Vul hier je favoriete outfit in.</p>
-          <img src="./afbeeldingen/sabrina-outfit.jpg"
-            alt="Mijn favoriete outfit van Sabrina Carpenter">
-        </article>
-      </div>
-    </section>
+          <article>
+            <h3>👗 Favoriete outfit</h3>
+            <p>Vul hier je favoriete outfit in.</p>
+            <img src="./afbeeldingen/ariana-outfit.jpg" alt="Mijn favoriete outfit van Ariana Grande">
+          </article>
+        </div>
+      </section>
 
-<!-- OLIVIA RODRIGO -->
+      <section class="pagina" aria-labelledby="sabrina-titel">
+        <div class="artiest-kop">
+          <h2 id="sabrina-titel">02. Sabrina Carpenter ♡</h2>
 
-    <section class="pagina">
-      <div class="artiest-kop">
-        <h2>03. Olivia Rodrigo ♡</h2>
-
-        <div class="artiest-vinyl">
-          <div class="vinyl-plaat">
-            <div class="vinyl-midden">OR ♡</div>
+          <div class="artiest-vinyl">
+            <input class="vinyl-toggle" type="checkbox" id="vinyl-sabrina">
+            <label class="vinyl-plaat" for="vinyl-sabrina" aria-label="Draai de vinylplaat van Sabrina Carpenter">
+              <span class="vinyl-midden">SC ♡</span>
+            </label>
           </div>
-
-          <button class="vinyl-knop" type="button"
-            aria-pressed="true">
-            Ⅱ Pauzeer plaat
-          </button>
         </div>
-      </div>
 
-      <div class="favorieten">
-        <article>
-          <h3>🎧 Favoriete liedje</h3>
-          <p>Vul hier je favoriete liedje in.</p>
-        </article>
+        <div class="favorieten">
+          <article>
+            <h3>🎧 Favoriete liedje</h3>
+            <p>Vul hier je favoriete liedje in.</p>
+          </article>
 
-        <article>
-          <h3>💿 Favoriete album</h3>
-          <p>Vul hier je favoriete album in.</p>
-        </article>
+          <article>
+            <h3>💿 Favoriete album</h3>
+            <p>Vul hier je favoriete album in.</p>
+          </article>
 
-        <article>
-          <h3>👗 Favoriete outfit</h3>
-          <p>Vul hier je favoriete outfit in.</p>
-          <img src="./afbeeldingen/olivia-outfit.jpg"
-            alt="Mijn favoriete outfit van Olivia Rodrigo">
-        </article>
-      </div>
-    </section>
+          <article>
+            <h3>👗 Favoriete outfit</h3>
+            <p>Vul hier je favoriete outfit in.</p>
+            <img src="./afbeeldingen/sabrina-outfit.jpg" alt="Mijn favoriete outfit van Sabrina Carpenter">
+          </article>
+        </div>
+      </section>
 
+      <section class="pagina" aria-labelledby="olivia-titel">
+        <div class="artiest-kop">
+          <h2 id="olivia-titel">03. Olivia Rodrigo ♡</h2>
 
- <!-- ROXY DEKKER -->
-
-    <section class="pagina">
-      <div class="artiest-kop">
-        <h2>04. Roxy Dekker ♡</h2>
-
-        <div class="artiest-vinyl">
-          <div class="vinyl-plaat">
-            <div class="vinyl-midden">RD ♡</div>
+          <div class="artiest-vinyl">
+            <input class="vinyl-toggle" type="checkbox" id="vinyl-olivia">
+            <label class="vinyl-plaat" for="vinyl-olivia" aria-label="Draai de vinylplaat van Olivia Rodrigo">
+              <span class="vinyl-midden">OR ♡</span>
+            </label>
           </div>
-
-          <button class="vinyl-knop" type="button"
-            aria-pressed="true">
-            Ⅱ Pauzeer plaat
-          </button>
         </div>
-      </div>
 
-      <div class="favorieten">
-        <article>
-          <h3>🎧 Favoriete liedje</h3>
-          <p>Vul hier je favoriete liedje in.</p>
-        </article>
+        <div class="favorieten">
+          <article>
+            <h3>🎧 Favoriete liedje</h3>
+            <p>Vul hier je favoriete liedje in.</p>
+          </article>
 
-        <article>
-          <h3>💿 Favoriete album</h3>
-          <p>Vul hier je favoriete album in.</p>
-        </article>
+          <article>
+            <h3>💿 Favoriete album</h3>
+            <p>Vul hier je favoriete album in.</p>
+          </article>
 
-        <article>
-          <h3>👗 Favoriete outfit</h3>
-          <p>Vul hier je favoriete outfit in.</p>
-          <img src="./afbeeldingen/roxy-outfit.jpg"
-            alt="Mijn favoriete outfit van Roxy Dekker">
-        </article>
-      </div>
-    </section>
+          <article>
+            <h3>👗 Favoriete outfit</h3>
+            <p>Vul hier je favoriete outfit in.</p>
+            <img src="./afbeeldingen/olivia-outfit.jpg" alt="Mijn favoriete outfit van Olivia Rodrigo">
+          </article>
+        </div>
+      </section>
 
- <!-- TATE MCRAE -->
+      <section class="pagina" aria-labelledby="roxy-titel">
+        <div class="artiest-kop">
+          <h2 id="roxy-titel">04. Roxy Dekker ♡</h2>
 
-    <section class="pagina">
-      <div class="artiest-kop">
-        <h2>05. Tate McRae ♡</h2>
-
-        <div class="artiest-vinyl">
-          <div class="vinyl-plaat">
-            <div class="vinyl-midden">TM ♡</div>
+          <div class="artiest-vinyl">
+            <input class="vinyl-toggle" type="checkbox" id="vinyl-roxy">
+            <label class="vinyl-plaat" for="vinyl-roxy" aria-label="Draai de vinylplaat van Roxy Dekker">
+              <span class="vinyl-midden">RD ♡</span>
+            </label>
           </div>
-
-          <button class="vinyl-knop" type="button"
-            aria-pressed="true">
-            Ⅱ Pauzeer plaat
-          </button>
         </div>
-      </div>
 
-      <div class="favorieten">
-        <article>
-          <h3>🎧 Favoriete liedje</h3>
-          <p>Vul hier je favoriete liedje in.</p>
-        </article>
+        <div class="favorieten">
+          <article>
+            <h3>🎧 Favoriete liedje</h3>
+            <p>Vul hier je favoriete liedje in.</p>
+          </article>
 
-        <article>
-          <h3>💿 Favoriete album</h3>
-          <p>Vul hier je favoriete album in.</p>
-        </article>
+          <article>
+            <h3>💿 Favoriete album</h3>
+            <p>Vul hier je favoriete album in.</p>
+          </article>
 
-        <article>
-          <h3>👗 Favoriete outfit</h3>
-          <p>Vul hier je favoriete outfit in.</p>
-          <img src="./afbeeldingen/tate-outfit.jpg"
-            alt="Mijn favoriete outfit van Tate McRae">
-        </article>
-      </div>
-    </section>
+          <article>
+            <h3>👗 Favoriete outfit</h3>
+            <p>Vul hier je favoriete outfit in.</p>
+            <img src="./afbeeldingen/roxy-outfit.jpg" alt="Mijn favoriete outfit van Roxy Dekker">
+          </article>
+        </div>
+      </section>
 
+      <section class="pagina" aria-labelledby="tate-titel">
+        <div class="artiest-kop">
+          <h2 id="tate-titel">05. Tate McRae ♡</h2>
 
+          <div class="artiest-vinyl">
+            <input class="vinyl-toggle" type="checkbox" id="vinyl-tate">
+            <label class="vinyl-plaat" for="vinyl-tate" aria-label="Draai de vinylplaat van Tate McRae">
+              <span class="vinyl-midden">TM ♡</span>
+            </label>
+          </div>
+        </div>
 
-  <footer>
-    <p>♡ Digital Garden 2026 — Esmée Gravemaker</p>
-  </footer>
+        <div class="favorieten">
+          <article>
+            <h3>🎧 Favoriete liedje</h3>
+            <p>Vul hier je favoriete liedje in.</p>
+          </article>
 
-</body>
+          <article>
+            <h3>💿 Favoriete album</h3>
+            <p>Vul hier je favoriete album in.</p>
+          </article>
+
+          <article>
+            <h3>👗 Favoriete outfit</h3>
+            <p>Vul hier je favoriete outfit in.</p>
+            <img src="./afbeeldingen/tate-outfit.jpg" alt="Mijn favoriete outfit van Tate McRae">
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>♡ Digital Garden 2026 — Esmée Gravemaker</p>
+    </footer>
+  </body>
 </html>

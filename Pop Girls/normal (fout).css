@@ -491,6 +491,9 @@ footer {
 
 /* DRAAIENDE VINYLPLATEN - FAN JOURNAL */
 
+
+/* VINYLPLATEN - FAN JOURNAL */
+
 .artiest-kop {
   display: flex;
   align-items: center;
@@ -515,37 +518,18 @@ footer {
 .vinyl-plaat {
   display: grid;
   place-items: center;
-  width: clamp(5rem, 12vw, 8rem);
-  aspect-ratio: 1;
+  width: 8rem;
+  height: 8rem;
+  flex-shrink: 0;
+  border: 4px solid #f1c5dc;
   border-radius: 50%;
   background: repeating-radial-gradient(
     circle,
-    #29222a 0,
-    #29222a 2px,
+    #29222a 0 2px,
     #594352 3px,
     #29222a 5px
   );
-  border: 4px solid #f1c5dc;
   box-shadow: 4px 4px 0 #d43c88;
-  animation: vinyl-draaien 5s linear infinite;
-}
-
-.vinyl-midden {
-  display: grid;
-  place-items: center;
-  width: 38%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: #f6a8ce;
-  border: 2px solid #fff3f8;
-  color: #7b2453;
-  font-family: Georgia, serif;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.vinyl-plaat.gestopt {
-  animation-play-state: paused;
 }
 
 .vinyl-knop {
@@ -564,16 +548,6 @@ footer {
   background: #f1c5dc;
 }
 
-@keyframes vinyl-draaien {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @media (max-width: 35rem) {
   .artiest-kop {
     gap: 0.75rem;
@@ -581,6 +555,7 @@ footer {
 
   .vinyl-plaat {
     width: 5rem;
+    height: 5rem;
   }
 
   .vinyl-knop {
@@ -588,3 +563,4 @@ footer {
     padding: 0.5rem;
   }
 }
+

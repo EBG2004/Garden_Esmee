@@ -475,6 +475,7 @@ main {
 }
 
 
+
 /* ========================================
    LINKS
    ======================================== */
@@ -484,6 +485,13 @@ main {
     grid-template-columns: 1fr;
     gap: 1rem;
     width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.links-grid li {
     min-width: 0;
 }
 
@@ -502,10 +510,10 @@ main {
     color: var(--burgundy);
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1.5;
 
     transition: 0.2s;
-
-    /* Zorgt dat lange tekst/URL's niet uit het scherm gaan */
     overflow-wrap: anywhere;
     word-break: break-word;
 }
@@ -516,18 +524,45 @@ main {
     box-shadow: 0.25rem 0.25rem 0 var(--burgundy);
 }
 
-.links-grid span {
+/* Nummers */
+.links-grid .link-nummer {
     flex-shrink: 0;
     color: var(--pink);
     font-family: Georgia, serif;
-    font-size: 1.4rem;
+    font-size: 1.9rem;
 }
 
-.links-grid a strong,
-.links-grid a {
+/* Tekstgroep */
+.links-grid .link-tekst {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    min-width: 0;
+    flex: 1;
+}
+
+/* Linktitels */
+.links-grid .link-tekst strong {
+    font-size: 1.6rem;
+    line-height: 1.4;
     overflow-wrap: anywhere;
     word-break: break-word;
 }
+
+/* Tekst onder de titel */
+.links-grid .link-tekst small {
+    font-size: 1.15rem;
+    line-height: 1.5;
+    font-weight: normal;
+    color: var(--text);
+}
+
+/* Pijltje */
+.links-grid .link-pijl {
+    flex-shrink: 0;
+    font-size: 1.3rem;
+}
+
 
 
 /* ========================================
@@ -1277,31 +1312,31 @@ body:has(.artist-profile img[src*="tate"]) .waarom {
     }
 
 
-    /* ARTIESTENKAARTEN */
+       /* ARTIESTENKAARTEN - DARK MODE */
 
     .kaart-ariana {
-        background: #49313b;
-        border-color: #d99aae;
+        background: #694354;
+        border-color: #e6a5c1;
     }
 
     .kaart-sabrina {
-        background: #294044;
-        border-color: #91cbd2;
+        background: #365866;
+        border-color: #a6dce8;
     }
 
     .kaart-olivia {
-        background: #403548;
-        border-color: #c19bd1;
+        background: #594365;
+        border-color: #d3b1ed;
     }
 
     .kaart-roxy {
-        background: #45412e;
-        border-color: #d6c67c;
+        background: #62552f;
+        border-color: #f0d98b;
     }
 
     .kaart-tate {
-        background: #49372f;
-        border-color: #d9a183;
+        background: #70434c;
+        border-color: #efb0a5;
     }
 
     .artiesten-pagina .artiest-kaart h3 {
@@ -1709,3 +1744,231 @@ body:has(.artist-profile img[src*="tate"]) .waarom {
         background: #704c3b;
     }
 }
+
+/* EXTRA POP GIRLS OPMAAK */
+
+/* Focus voor toetsenbordgebruik */
+a:focus-visible,
+button:focus-visible {
+  outline: 0.15rem solid #9d2865;
+  outline-offset: 0.2rem;
+}
+
+/* Sfeerwoorden */
+.sfeer li {
+  padding: 0.75rem 1.25rem;
+  background: var(--light-pink);
+  border: 0.0625rem solid var(--burgundy);
+  border-radius: 2rem;
+  color: var(--burgundy);
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+}
+
+/* Verbeterde linkkaarten */
+.link-tekst {
+  flex: 1;
+  min-width: 0;
+}
+
+.link-tekst strong {
+  display: block;
+  color: var(--burgundy);
+  font-size: 0.8rem;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.link-tekst > span {
+  display: block;
+  color: var(--text);
+  font-size: 0.7rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.links-grid a > span:first-child {
+  flex: 0 0 1.25rem;
+  font-size: 0.7rem;
+}
+
+.links-grid .link-pijl {
+  display: none;
+}
+
+/* Cookievenster */
+dialog#cookieModal {
+  box-sizing: border-box;
+  width: min(90%, 32rem);
+  max-width: 100%;
+  padding: 2rem;
+  border: 0.125rem solid var(--burgundy);
+  border-radius: 1rem;
+  background: var(--white);
+  color: var(--text);
+  box-shadow: 0 0.5rem 2rem rgba(84, 39, 68, 0.2);
+}
+
+dialog#cookieModal::backdrop {
+  background: rgba(84, 39, 68, 0.6);
+}
+
+dialog#cookieModal h2 {
+  margin-top: 0;
+  color: var(--burgundy);
+  font-family: Georgia, serif;
+  font-size: 2rem;
+}
+
+dialog#cookieModal form {
+  display: grid;
+  gap: 1rem;
+}
+
+dialog#cookieModal form p {
+  margin: 0;
+  color: var(--text);
+}
+
+dialog#cookieModal button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 0.0625rem solid var(--burgundy);
+  border-radius: 0.5rem;
+  background: var(--light-pink);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+dialog#cookieModal button[value="allowed"] {
+  background: var(--burgundy);
+  color: white;
+}
+
+dialog#cookieModal button:hover {
+  background: var(--pink);
+}
+
+/* Vinylplaten */
+.artiest-kop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.artiest-kop h2 {
+  flex: 1;
+  min-width: 0;
+}
+
+.artiest-vinyl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.vinyl-plaat {
+  display: grid;
+  place-items: center;
+  width: 10rem;
+  height: 10rem;
+  flex-shrink: 0;
+  border: 4px solid #f1c5dc;
+  border-radius: 50%;
+  background: repeating-radial-gradient(
+    circle,
+    #29222a 0 2px,
+    #594352 3px,
+    #29222a 5px
+  );
+  box-shadow: 4px 4px 0 #d43c88;
+}
+
+.vinyl-knop {
+  padding: 0.6rem 0.8rem;
+  background: var(--white);
+  color: var(--burgundy);
+  border: 2px solid var(--burgundy);
+  border-radius: 2rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.vinyl-knop:hover {
+  background: var(--light-pink);
+}
+
+@media (max-width: 35rem) {
+  .artiest-kop {
+    gap: 0.75rem;
+  }
+
+  .vinyl-plaat {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .vinyl-knop {
+    max-width: 7rem;
+    padding: 0.5rem;
+  }
+}
+
+
+/* VINYLPLATEN - KLIK OM TE PAUZEREN */
+
+.vinyl-toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.vinyl-plaat {
+  animation: vinyl-draaien 5s linear infinite;
+  cursor: pointer;
+}
+
+.vinyl-toggle:checked + .vinyl-plaat {
+  animation-play-state: paused;
+}
+
+.vinyl-toggle:focus-visible + .vinyl-plaat {
+  outline: 0.15rem solid var(--burgundy);
+  outline-offset: 0.3rem;
+}
+
+@keyframes vinyl-draaien {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* KLEUR VAN DE LETTERS OP DE VINYLPLATEN */
+.vinyl-midden {
+  display: grid;
+  place-items: center;
+  width: 38%;
+  aspect-ratio: 1;
+  border: 2px solid #fff3f8;
+  border-radius: 50%;
+  background: #ffd6e8;
+  color: #d43c88;
+  font-family: Georgia, serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
