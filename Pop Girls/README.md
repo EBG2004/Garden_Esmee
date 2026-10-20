@@ -613,6 +613,10 @@ Ik wil mijn afbeeldingen, teksten en artiestenkaarten genoeg ruimte geven. Hierd
 - Dark mode aanpassen kleur (check)
 - plaat laat draaien (Check)
 
+### 19 okt - Thuis 
+
+Ik heb alle feedback van gister verwerkt in mijn site + een animatie toegevoegd. 
+
 
 
 
