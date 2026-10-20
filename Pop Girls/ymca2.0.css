@@ -8,14 +8,33 @@
 
 body {
     margin: 0;
-    padding: 30px;
-
-    background: white;
+    padding: 0;
+    background: #fff3f8;
     color: black;
-
     overflow-x: hidden;
 }
 
+body > main {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Geen extra vlak over de poster */
+body .poster {
+    background: transparent;
+    box-shadow: none;
+}
+
+body .poster .small-ymca {
+    position: absolute;
+    z-index: 10;
+}
+
+body .poster .title h1 {
+    color: var(--text);
+}
 
 /* ========================================
    POSTER / GRID
@@ -166,7 +185,7 @@ body {
 ======================================== */
 
 .box-top {
-    top: 300px;
+    top: 360px;
     right: 80px;
 
     transform:
@@ -480,3 +499,354 @@ body {
     }
 }
 
+/* ========================================
+   KNOPPEN
+   ======================================== */
+
+.knop {
+  display: inline-block;
+  margin-top: 1.25rem;
+  padding: 0.8rem 1.4rem;
+  background: var(--burgundy);
+  border: 0.15rem solid var(--burgundy);
+  border-radius: 1.5rem;
+  color: var(--button-text);
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.06rem;
+  text-decoration: none;
+}
+
+.knop:hover {
+  background: var(--pink);
+  transform: translateY(-0.2rem);
+  box-shadow: 0.3rem 0.3rem 0 var(--burgundy);
+}
+
+
+/* Light/dark-knop */
+
+#theme-toggle {
+  display: block;
+  margin: 0 0 1rem auto;
+  padding: 0.7em 1em;
+  background: var(--white);
+  border: 0.15em solid var(--burgundy);
+  border-radius: 2em;
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  background: var(--light-pink);
+}
+
+/* ========================================
+   NAVIGATIE
+   ======================================== */
+
+nav {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 0.6rem;
+  background: var(--light-pink);
+  border-block: 0.15rem solid var(--burgundy);
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  border: 0.15rem solid transparent;
+  color: var(--burgundy);
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.08rem;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  background: var(--cream);
+  border-color: var(--burgundy);
+  border-radius: 1.25rem;
+}
+
+nav a:hover {
+  transform: translateY(-0.15rem);
+}
+
+
+/* ========================================
+   POP GIRLS — BASIS KLEUREN
+   ======================================== */
+
+:root {
+  color-scheme: light;
+  --pink: #f2a2bc;
+  --light-pink: #ffcddb;
+  --cream: #ffe4f5;
+  --blue: #d8fcff;
+  --lilac: #f4d9ff;
+  --yellow: #fff3b8;
+  --burgundy: #c75d86;
+  --text: #765d60;
+  --white: #fffdf8;
+  --border: var(--burgundy);
+  --shadow: var(--light-pink);
+  --button-text: #fffdf8;
+}
+
+/* ========================================
+   ALGEMEEN
+   ======================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  transition: 0.3s ease;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, serif;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible + .vinyl-plaat {
+  outline: 0.15rem solid var(--burgundy);
+  outline-offset: 0.2rem;
+}
+
+/* ========================================
+   HEADER
+   ======================================== */
+
+header {
+  padding: 2rem 1rem 1.5rem;
+  background: var(--white);
+  border-bottom: 0.15rem solid var(--pink);
+  text-align: center;
+}
+
+.header-inner {
+  width: min(92%, 68.75rem);
+  margin-inline: auto;
+}
+
+.kleine-titel {
+  margin: 0;
+  color: var(--burgundy);
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.25rem;
+}
+
+h1 {
+  margin: 0.5rem 0;
+  color: var(--burgundy);
+  font-size: clamp(3rem, 9vw, 6.25rem);
+  line-height: 1;
+  letter-spacing: 0.15rem;
+}
+
+.ondertitel {
+  max-width: 37.5rem;
+  margin: 1rem auto 1.5rem;
+  color: var(--text);
+}
+/* ========================================
+   HOOFDINHOUD EN PAGINAKAARTEN
+   ======================================== */
+
+main {
+  width: min(92%, 68.75rem);
+  margin-inline: auto;
+}
+
+.pagina {
+  margin: 3rem 0;
+  padding: 2rem 1.25rem;
+  background: var(--white);
+  border: 0.15rem solid var(--border);
+  border-radius: 1.4rem;
+  box-shadow: 0.4rem 0.4rem 0 var(--shadow);
+}
+
+.pagina h2 {
+  margin: 0;
+  color: var(--burgundy);
+  font-size: clamp(2.5rem, 6vw, 4.1rem);
+  line-height: 1;
+}
+
+.pagina h3 {
+  color: var(--burgundy);
+  font-size: 1.5rem;
+}
+
+.intro {
+  max-width: 40.6rem;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+/* ========================================
+   HOME / HERO
+   ======================================== */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 2rem;
+  margin: 2.5rem 0;
+  padding: 2rem 1.25rem;
+  background: var(--light-pink);
+  border: 0.15rem solid var(--border);
+  border-radius: 1.5rem;
+}
+
+.hero-tekst {
+  max-width: 31.25rem;
+}
+
+.label {
+  margin-bottom: 0.6rem;
+  color: var(--burgundy);
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+.hero h2 {
+  margin: 0 0 1.25rem;
+  color: var(--burgundy);
+  font-size: clamp(2.5rem, 6vw, 4.4rem);
+  line-height: 1;
+}
+
+.hero p {
+  color: var(--text);
+}
+
+.hero-foto {
+  margin: 0;
+  transform: rotate(3deg);
+}
+
+.hero-foto img {
+  width: 100%;
+  height: 22rem;
+  border: 0.6rem solid var(--white);
+  border-radius: 0.3rem;
+  object-fit: cover;
+  box-shadow: 0.5rem 0.5rem 0 var(--burgundy);
+}
+/* ========================================
+   ARTIESTENKLEUREN — DONKERE MODE
+   ======================================== */
+
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+
+html[data-theme="dark"] body {
+  --pink: #d99aae;
+  --light-pink: #443039;
+  --cream: #211c20;
+  --blue: #293c40;
+  --lilac: #38303d;
+  --yellow: #45402e;
+  --burgundy: #e7a6bd;
+  --text: #f0e4e9;
+  --white: #2d272b;
+  --border: var(--burgundy);
+  --shadow: #443039;
+  --button-text: #211c20;
+}
+/* ========================================
+   FOOTER
+   ======================================== */
+
+footer {
+  margin-top: 5rem;
+  padding: 2rem 1rem;
+  background: var(--burgundy);
+  color: var(--button-text);
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+footer a {
+  color: inherit;
+}
+
+/* Extra witte vlakken binnen het YMCA-ontwerp verwijderen */
+body > main {
+    background: transparent;
+}
+
+body .poster {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+body .poster > .title {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* De kleine Village People-tekst blijft zichtbaar */
+body .poster .small-ymca {
+    background: transparent;
+    color: var(--text);
+    border: none;
+    box-shadow: none;
+    z-index: 10;
+}
+
+/* De YMCA-titel krijgt dezelfde donkere kleur als de andere tekst */
+body .poster .title h1 {
+    color: var(--text);
+}

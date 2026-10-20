@@ -10,14 +10,35 @@
     <title>Pop Girls – Digital Garden</title>
 
     <link rel="stylesheet" href="./assets/style/normal.css">
-    <script src="./assets/script/cookies.js" defer></script>
+    <script src="./assets/style/cookies.js" defer></script>
   </head>
+
 
   <body>
     <header>
+
+            <button type="button" id="theme-toggle">🌙 Dark mode</button>
+
+<script>
+  const knop = document.querySelector("#theme-toggle");
+
+  knop.addEventListener("click", function () {
+    const donker =
+      document.documentElement.dataset.theme !== "dark";
+
+    document.documentElement.dataset.theme =
+      donker ? "dark" : "light";
+
+    knop.textContent = donker
+      ? "☀️ Light mode"
+      : "🌙 Dark mode";
+  });
+</script>
       <div class="header-inner">
+
         <p class="kleine-titel">⭐ MY DIGITAL GARDEN ⭐</p>
         <h1>POP GIRLS</h1>
+        
 
         <nav aria-label="Hoofdnavigatie">
           <ul>
@@ -26,11 +47,12 @@
             <li><a href="./fotos.html">FAN JOURNAL</a></li>
             <li><a href="./README.md">LEARNING LOG</a></li>
             <li><a href="./links.html">LINKS</a></li>
-            <li><a href="./ymca2.0.html">EXPERIMENTEN</a></li>
+            <li><a href="./experiment.html">EXPERIMENTEN</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
 
     <main>
       <section class="hero" aria-labelledby="intro-titel">
@@ -101,6 +123,9 @@
     <footer>
       <p>♡ Digital Garden 2026 — Esmée Gravemaker</p>
 
+   
+
+
       <button
         type="button"
         commandfor="cookieModal"
@@ -114,6 +139,7 @@
       <form method="dialog">
         <h2 id="cookieTitel">A little cookie moment!</h2>
 
+    
         <p>
           Hey Pop Girl! Mijn Digital Garden gebruikt een beetje lokale
           opslag. We onthouden hiermee jouw cookievoorkeur.

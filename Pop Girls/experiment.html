@@ -1,30 +1,116 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiment</title>
+    <meta name="color-scheme" content="dark light">
+
+    <title>Experiment — Pop Girls</title>
+
+    <link rel="stylesheet" href="./assets/style/normal.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./ymca2.0.css">
 </head>
+
 <body>
-    
+
+    <!-- Pop Girls-header en navigatie -->
+    <header class="site-header">
+        <button type="button" id="theme-toggle">🌙 Dark mode</button>
+
+        <p class="kleine-titel">⭐️ MY DIGITAL GARDEN ⭐️</p>
+        <h1>EXPERIMENT</h1>
+
+        <nav aria-label="Hoofdnavigatie">
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./artiesten.html">ARTIESTEN</a></li>
+                <li><a href="./fotos.html">FAN JOURNAL</a></li>
+                <li><a href="./README.md">LEARNING LOG</a></li>
+                <li><a href="./links.html">LINKS</a></li>
+                <li><a href="./experiment.html" aria-current="page">EXPERIMENTEN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="poster">
+
+            <div class="ymca-left" aria-hidden="true">
+                <span>Y</span>
+                <span>.</span>
+                <span>M</span>
+                <span>.</span>
+                <span>C</span>
+                <span>.</span>
+                <span>A</span>
+            </div>
+
+            <header class="title">
+                <h1>IT'S FUN TO STAY</h1>
+                <p class="at-the">at the.....</p>
+            </header>
+
+            <section class="lyric-box box-top">
+                <p>Young man, there's no need to feel down, I said</p>
+                <p>Young man, pick yourself off the ground, I said</p>
+                <p>Young man, 'cause you're in a new town</p>
+                <p class="emphasis">There's no need to be unhappy</p>
+            </section>
+
+            <section class="lyric-box box-bottom">
+                <p>Young man, there's a place you can go, I said</p>
+                <p>Young man, when you're short on your dough you can</p>
+                <p>Stay there and I'm sure you will find</p>
+                <p class="emphasis">Many ways to have a good time</p>
+            </section>
+
+            <h2 class="big-ymca">Y.M.C.A.</h2>
+
+            <div class="ymca-right" aria-hidden="true">
+                <span>Y</span>
+                <span>.</span>
+                <span>M</span>
+                <span>.</span>
+                <span>C</span>
+                <span>.</span>
+                <span>A</span>
+            </div>
+
+            <div class="small-ymca" aria-hidden="true">
+                Village People - Y.M.C.A.
+            </div>
+
+        </article>
+    </main>
+
+    <footer>
+        <p>♡ Digital Garden 2026 — Esmée Gravemaker</p>
+    </footer>
+
+    <!-- Darkmode zonder apart JavaScript-bestand -->
+    <script>
+        const knop = document.querySelector("#theme-toggle");
+
+        knop.addEventListener("click", function () {
+            const donker =
+                document.documentElement.dataset.theme !== "dark";
+
+            document.documentElement.dataset.theme =
+                donker ? "dark" : "light";
+
+            knop.textContent = donker
+                ? "☀️ Light mode"
+                : "🌙 Dark mode";
+        });
+    </script>
+
 </body>
 </html>
-
-
-  <header>
-    <p class="kleine-titel">⭐️ MY DIGITAL GARDEN ⭐️</p>
-
-    <h1>FAN JOURNAL</h1>
-
-    <nav aria-label="Hoofdnavigatie">
-      <ul>
-         <li><a href="./index.html" aria-current="page">HOME</a></li>
-            <li><a href="./artiesten.html">ARTIESTEN</a></li>
-            <li><a href="./fotos.html">FAN JOURNAL</a></li>
-            <li><a href="./README.md">LEARNING LOG</a></li>
-            <li><a href="./links.html">LINKS</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>

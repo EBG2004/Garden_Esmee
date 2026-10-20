@@ -1,1817 +1,866 @@
 
 /* ========================================
-   BASIS KLEUREN
+   POP GIRLS — BASIS KLEUREN
    ======================================== */
 
 :root {
-    --pink: #f2a2bc;
-    --light-pink: #ffcddb;
-    --cream: #ffe4f5;
-    --blue: #d8fcff;
-    --lilac: #f4d9ff;
-    --yellow: #fff3b8;
-    --burgundy: #e58aa8;
-    --text: #765d60;
-    --white: #fffdf8;
+  color-scheme: light;
+  --pink: #f2a2bc;
+  --light-pink: #ffcddb;
+  --cream: #ffe4f5;
+  --blue: #d8fcff;
+  --lilac: #f4d9ff;
+  --yellow: #fff3b8;
+  --burgundy: #c75d86;
+  --text: #765d60;
+  --white: #fffdf8;
+  --border: var(--burgundy);
+  --shadow: var(--light-pink);
+  --button-text: #fffdf8;
 }
-
 
 /* ========================================
    ALGEMEEN
    ======================================== */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    background: var(--cream);
-    color: var(--text);
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  margin: 0;
+  background: var(--cream);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.25s, color 0.25s;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-    transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 h1,
 h2,
 h3 {
-    font-family: Georgia, serif;
+  font-family: Georgia, serif;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible + .vinyl-plaat {
+  outline: 0.15rem solid var(--burgundy);
+  outline-offset: 0.2rem;
+}
 
 /* ========================================
    HEADER
    ======================================== */
 
 header {
-    background: var(--white);
-    border-bottom: 0.15rem solid var(--pink);
-    padding: 2rem 1rem 1.5rem;
-    text-align: center;
+  padding: 2rem 1rem 1.5rem;
+  background: var(--white);
+  border-bottom: 0.15rem solid var(--pink);
+  text-align: center;
 }
 
 .header-inner {
-    width: min(92%, 68.75rem);
-    margin-inline: auto;
+  width: min(92%, 68.75rem);
+  margin-inline: auto;
 }
 
 .kleine-titel {
-    margin: 0;
-    color: var(--burgundy);
-    font-size: 0.8rem;
-    letter-spacing: 0.25rem;
-    font-weight: bold;
+  margin: 0;
+  color: var(--burgundy);
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.25rem;
 }
 
 h1 {
-    margin: 0.5rem 0;
-    color: var(--burgundy);
-    font-size: clamp(3rem, 9vw, 6.25rem);
-    line-height: 1;
-    letter-spacing: 0.15rem;
+  margin: 0.5rem 0;
+  color: var(--burgundy);
+  font-size: clamp(3rem, 9vw, 6.25rem);
+  line-height: 1;
+  letter-spacing: 0.15rem;
 }
 
 .ondertitel {
-    margin: 1rem auto 1.5rem;
-    max-width: 37.5rem;
-    color: var(--text);
+  max-width: 37.5rem;
+  margin: 1rem auto 1.5rem;
+  color: var(--text);
 }
-
 
 /* ========================================
    NAVIGATIE
    ======================================== */
 
 nav {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    background: var(--light-pink);
-    padding: 0.6rem;
-    border-top: 0.15rem solid var(--burgundy);
-    border-bottom: 0.15rem solid var(--burgundy);
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 0.6rem;
+  background: var(--light-pink);
+  border-block: 0.15rem solid var(--burgundy);
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 nav a {
-    display: inline-block;
-    padding: 0.5rem 0.9rem;
-    color: var(--burgundy);
-    text-decoration: none;
-    font-size: 0.8rem;
-    font-weight: bold;
-    letter-spacing: 0.12rem;
-    border: 0.15rem solid transparent;
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  border: 0.15rem solid transparent;
+  color: var(--burgundy);
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.08rem;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  background: var(--cream);
+  border-color: var(--burgundy);
+  border-radius: 1.25rem;
 }
 
 nav a:hover {
-    color: var(--burgundy);
-    background: var(--cream);
-    border-color: var(--burgundy);
-    border-radius: 1.25rem;
-    transform: translateY(-0.2rem) rotate(-1deg);
+  transform: translateY(-0.15rem);
 }
 
-
 /* ========================================
-   PAGINA
+   HOOFDINHOUD EN PAGINAKAARTEN
    ======================================== */
 
 main {
-    width: min(92%, 68.75rem);
-    margin-inline: auto;
+  width: min(92%, 68.75rem);
+  margin-inline: auto;
 }
 
 .pagina {
-    margin: 3rem 0;
-    padding: 2rem 1.25rem;
-    background: var(--white);
-    border: 0.15rem solid var(--burgundy);
-    border-radius: 1.4rem;
-    box-shadow: 0.4rem 0.4rem 0 var(--light-pink);
+  margin: 3rem 0;
+  padding: 2rem 1.25rem;
+  background: var(--white);
+  border: 0.15rem solid var(--border);
+  border-radius: 1.4rem;
+  box-shadow: 0.4rem 0.4rem 0 var(--shadow);
 }
 
 .pagina h2 {
-    margin: 0;
-    font-size: clamp(2.5rem, 6vw, 4.1rem);
-    color: var(--burgundy);
-    line-height: 1;
+  margin: 0;
+  color: var(--burgundy);
+  font-size: clamp(2.5rem, 6vw, 4.1rem);
+  line-height: 1;
 }
 
 .pagina h3 {
-    color: var(--burgundy);
-    font-size: 1.5rem;
+  color: var(--burgundy);
+  font-size: 1.5rem;
 }
 
 .intro {
-    max-width: 40.6rem;
-    color: var(--text);
-    margin-bottom: 2rem;
+  max-width: 40.6rem;
+  margin-bottom: 2rem;
+  color: var(--text);
 }
-
 
 /* ========================================
    HOME / HERO
    ======================================== */
 
 .hero {
-    margin: 2.5rem 0;
-    padding: 2rem 1.25rem;
-    background: var(--light-pink);
-    border: 0.15rem solid var(--burgundy);
-    border-radius: 1.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 2rem;
+  margin: 2.5rem 0;
+  padding: 2rem 1.25rem;
+  background: var(--light-pink);
+  border: 0.15rem solid var(--border);
+  border-radius: 1.5rem;
 }
 
 .hero-tekst {
-    max-width: 31.25rem;
+  max-width: 31.25rem;
 }
 
 .label {
-    color: var(--burgundy);
-    font-size: 0.75rem;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
-    margin-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
+  color: var(--burgundy);
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
 }
 
 .hero h2 {
-    margin: 0 0 1.25rem;
-    font-size: clamp(2.5rem, 6vw, 4.4rem);
-    line-height: 1;
-    color: var(--burgundy);
+  margin: 0 0 1.25rem;
+  color: var(--burgundy);
+  font-size: clamp(2.5rem, 6vw, 4.4rem);
+  line-height: 1;
 }
 
 .hero p {
-    color: var(--text);
+  color: var(--text);
 }
 
 .hero-foto {
-    transform: rotate(3deg);
+  margin: 0;
+  transform: rotate(3deg);
 }
 
 .hero-foto img {
-    width: 100%;
-    height: 22rem;
-    object-fit: cover;
-    border: 0.6rem solid white;
-    border-radius: 0.3rem;
-    box-shadow: 0.5rem 0.5rem 0 var(--burgundy);
+  width: 100%;
+  height: 22rem;
+  border: 0.6rem solid var(--white);
+  border-radius: 0.3rem;
+  object-fit: cover;
+  box-shadow: 0.5rem 0.5rem 0 var(--burgundy);
 }
-
 
 /* ========================================
    KNOPPEN
    ======================================== */
 
 .knop {
-    display: inline-block;
-    margin-top: 1.25rem;
-    padding: 0.8rem 1.4rem;
-    background: var(--burgundy);
-    color: var(--cream);
-    text-decoration: none;
-    font-size: 0.75rem;
-    font-weight: bold;
-    letter-spacing: 0.06rem;
-    border: 0.15rem solid var(--burgundy);
-    border-radius: 1.5rem;
+  display: inline-block;
+  margin-top: 1.25rem;
+  padding: 0.8rem 1.4rem;
+  background: var(--burgundy);
+  border: 0.15rem solid var(--burgundy);
+  border-radius: 1.5rem;
+  color: var(--button-text);
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.06rem;
+  text-decoration: none;
 }
 
 .knop:hover {
-    background: var(--pink);
-    color: var(--cream);
-    transform: translateY(-0.25rem);
-    box-shadow: 0.3rem 0.3rem 0 var(--burgundy);
+  background: var(--pink);
+  transform: translateY(-0.2rem);
+  box-shadow: 0.3rem 0.3rem 0 var(--burgundy);
+}
+
+
+/* Light/dark-knop */
+
+#theme-toggle {
+  display: block;
+  margin: 0 0 1rem auto;
+  padding: 0.7em 1em;
+  background: var(--white);
+  border: 0.15em solid var(--burgundy);
+  border-radius: 2em;
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  background: var(--light-pink);
 }
 
 
 /* ========================================
-   ARTIESTEN KAARTEN
+   ARTIESTENKAARTEN
    ======================================== */
 
 .artiest-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
 .artiest-kaart {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    min-height: 11rem;
-    background: var(--white);
-    border: 0.15rem solid var(--burgundy);
-    border-radius: 1.1rem;
-    text-decoration: none;
-    color: var(--text);
-    overflow: hidden;
-    transition: 0.3s ease;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  min-height: 11rem;
+  overflow: hidden;
+  background: var(--white);
+  border: 0.15rem solid var(--border);
+  border-radius: 1.1rem;
+  color: var(--text);
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
 .artiest-kaart:hover {
-    transform: translateY(-0.4rem) rotate(-1deg);
-    box-shadow: 0.4rem 0.4rem 0 var(--pink);
+  transform: translateY(-0.3rem);
+  box-shadow: 0.4rem 0.4rem 0 var(--shadow);
 }
 
 .artiest-kaart img {
-    width: 100%;
-    height: 100%;
-    min-height: 11rem;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 11rem;
+  object-fit: cover;
 }
 
-.artiest-kaart-inhoud {
-    padding: 1.25rem;
+.artiest-kaart-inhoud,
+.kaart-inhoud {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.25rem;
 }
 
 .artiest-kaart h3 {
-    margin: 0 0 0.3rem;
-    font-size: 1.5rem;
-    color: var(--burgundy);
+  margin: 0 0 0.3rem;
+  color: var(--burgundy);
+  font-size: 1.5rem;
 }
 
 .artiest-kaart p {
-    margin: 0;
-    color: var(--text);
-    font-size: 0.9rem;
+  margin: 0;
+  color: var(--text);
+  font-size: 0.9rem;
 }
 
-
 /* ========================================
-   ARTIESTEN BANNER
+   ARTIESTENOVERZICHT
    ======================================== */
 
 .artiesten-pagina {
-    width: min(92%, 68.75rem);
-    margin: 2.5rem auto;
+  width: min(92%, 68.75rem);
+  margin: 2.5rem auto;
 }
 
 .artiesten-banner {
-    padding: 2rem 1.25rem;
-    background: var(--blue);
-    border: 0.15rem solid var(--burgundy);
-    border-radius: 1.5rem;
+  padding: 2rem 1.25rem;
+  background: var(--blue);
+  border: 0.15rem solid var(--border);
+  border-radius: 1.5rem;
 }
 
 .artiesten-banner h2 {
-    font-size: clamp(3rem, 8vw, 6.25rem);
-    line-height: 0.9;
-    margin: 0 0 1.5rem;
-    color: var(--burgundy);
+  margin: 0 0 1.5rem;
+  color: var(--burgundy);
+  font-size: clamp(3rem, 8vw, 6.25rem);
+  line-height: 0.9;
 }
 
-
-/* ========================================
-   ARTIESTEN PAGINA
-   ======================================== */
-
 .artiesten-pagina .artiest-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-    margin: 1.25rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin: 1.25rem 0;
 }
 
 .artiesten-pagina .artiest-kaart {
-    display: grid;
-    grid-template-columns: 45% 55%;
-    min-height: 17.5rem;
-    overflow: hidden;
-    color: var(--burgundy);
+  grid-template-columns: 45% 55%;
+  min-height: 17.5rem;
+  color: var(--burgundy);
 }
 
 .artiesten-pagina .artiest-kaart img {
-    width: 100%;
-    height: 100%;
-    min-height: 17.5rem;
-    object-fit: cover;
-    transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  min-height: 17.5rem;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .kaart-inhoud {
-    padding: 1.5rem 1.25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  padding: 1.5rem 1.25rem;
 }
 
 .kaart-nummer {
-    margin-bottom: 0.8rem;
-    display: inline-block;
-    width: fit-content;
-    background: var(--cream);
-    padding: 0.3rem 0.5rem;
-    font-size: 0.75rem;
-    font-weight: bold;
-    border: 0.08rem solid var(--burgundy);
+  display: inline-block;
+  width: fit-content;
+  margin-bottom: 0.8rem;
+  padding: 0.3rem 0.5rem;
+  background: var(--cream);
+  border: 0.08rem solid var(--burgundy);
+  color: var(--burgundy);
+  font-size: 0.75rem;
+  font-weight: bold;
 }
 
 .kaart-label {
-    font-size: 0.65rem;
-    font-weight: bold;
-    letter-spacing: 0.12rem;
-    margin: 0 0 0.9rem;
+  margin: 0 0 0.9rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.12rem;
 }
 
 .artiesten-pagina .artiest-kaart h3 {
-    font-size: 2rem;
-    line-height: 1;
-    margin: 0 0 0.9rem;
-    color: var(--burgundy);
+  margin: 0 0 0.9rem;
+  color: var(--burgundy);
+  font-size: 2rem;
+  line-height: 1;
 }
 
 .artiesten-pagina .artiest-kaart p {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
 }
 
 .kaart-link {
-    display: inline-block;
-    margin-top: 0.9rem;
-    font-size: 0.7rem;
-    font-weight: bold;
-    letter-spacing: 0.06rem;
+  display: inline-block;
+  margin-top: 0.9rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 0.06rem;
 }
 
-
-/* ========================================
-   KLEUREN ARTIESTENKAARTEN
-   ======================================== */
-
-.kaart-ariana {
-    background: #ffcddb;
-}
-
-.kaart-sabrina {
-    background: #d8fcff;
-}
-
-.kaart-olivia {
-    background: #f4d9ff;
-}
-
-.kaart-roxy {
-    background: #fff3b8;
-}
-
-.kaart-tate {
-    background: #ffd9c2;
-}
+.kaart-ariana { background: #ffcddb; }
+.kaart-sabrina { background: #d8fcff; }
+.kaart-olivia { background: #f4d9ff; }
+.kaart-roxy { background: #fff3b8; }
+.kaart-tate { background: #ffd9c2; }
 
 .artiesten-pagina .artiest-kaart:hover {
-    transform: translateY(-0.3rem);
-    box-shadow: 0.4rem 0.4rem 0 var(--burgundy);
+  transform: translateY(-0.3rem);
+  box-shadow: 0.4rem 0.4rem 0 var(--burgundy);
 }
 
 .artiesten-pagina .artiest-kaart:hover img {
-    transform: scale(1.04);
+  transform: scale(1.04);
 }
 
-
 /* ========================================
-   FOTO'S / INSPIRATIE
+   FOTO'S EN MOODBOARDS
    ======================================== */
 
 .foto-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
 }
 
 .foto-grid img {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    background: var(--light-pink);
-    border: 0.2rem solid var(--burgundy);
-    border-radius: 0.75rem;
-    transition: 0.3s ease;
+  width: 100%;
+  aspect-ratio: 1;
+  background: var(--light-pink);
+  border: 0.2rem solid var(--border);
+  border-radius: 0.75rem;
+  object-fit: cover;
+  transition: 0.3s ease;
 }
 
 .foto-grid img:hover {
-    transform: scale(1.04) rotate(1deg);
-    box-shadow: 0.25rem 0.25rem 0 var(--pink);
+  transform: scale(1.03);
+  box-shadow: 0.25rem 0.25rem 0 var(--shadow);
 }
 
 .moodboards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin-top: 1.8rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.8rem;
 }
 
 .moodboards img {
-    width: 100%;
-    height: 90%;
-    border: 0.3rem solid white;
-    border-radius: 0.9rem;
-    box-shadow: 0.3rem 0.3rem 0 var(--pink);
+  width: 100%;
+  border: 0.3rem solid var(--white);
+  border-radius: 0.9rem;
+  box-shadow: 0.3rem 0.3rem 0 var(--shadow);
 }
-
-
 
 /* ========================================
    LINKS
    ======================================== */
 
 .links-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    width: 100%;
-    min-width: 0;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .links-grid li {
-    min-width: 0;
+  min-width: 0;
 }
 
 .links-grid a {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.9rem;
-    width: 100%;
-    min-width: 0;
-    padding: 1rem;
-
-    background: var(--yellow);
-    border: 0.15rem solid var(--burgundy);
-    border-radius: 0.9rem;
-
-    color: var(--burgundy);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    line-height: 1.5;
-
-    transition: 0.2s;
-    overflow-wrap: anywhere;
-    word-break: break-word;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  width: 100%;
+  min-width: 0;
+  padding: 1rem;
+  background: var(--yellow);
+  border: 0.15rem solid var(--border);
+  border-radius: 0.9rem;
+  color: var(--burgundy);
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: 0.2s ease;
 }
 
 .links-grid a:hover {
-    background: var(--light-pink);
-    transform: translateX(0.3rem);
-    box-shadow: 0.25rem 0.25rem 0 var(--burgundy);
+  background: var(--light-pink);
+  transform: translateX(0.2rem);
+  box-shadow: 0.25rem 0.25rem 0 var(--burgundy);
 }
 
-/* Nummers */
 .links-grid .link-nummer {
-    flex-shrink: 0;
-    color: var(--pink);
-    font-family: Georgia, serif;
-    font-size: 1.9rem;
+  flex-shrink: 0;
+  color: var(--burgundy);
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
 }
 
-/* Tekstgroep */
 .links-grid .link-tekst {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-    min-width: 0;
-    flex: 1;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 0;
 }
 
-/* Linktitels */
 .links-grid .link-tekst strong {
-    font-size: 1.6rem;
-    line-height: 1.4;
-    overflow-wrap: anywhere;
-    word-break: break-word;
+  display: block;
+  color: var(--burgundy);
+  font-size: 1.1rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
 }
 
-/* Tekst onder de titel */
-.links-grid .link-tekst small {
-    font-size: 1.15rem;
-    line-height: 1.5;
-    font-weight: normal;
-    color: var(--text);
+.links-grid .link-tekst small,
+.links-grid .link-tekst > span {
+  display: block;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
 }
 
-/* Pijltje */
 .links-grid .link-pijl {
-    flex-shrink: 0;
-    font-size: 1.3rem;
+  flex-shrink: 0;
+  font-size: 1.2rem;
 }
-
-
 
 /* ========================================
-   SFEER
+   SFEERWOORDEN
    ======================================== */
 
 .sfeer {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 0;
+  list-style: none;
 }
 
+.sfeer li,
 .sfeer div {
-    background: var(--light-pink);
-    border: 0.15rem solid var(--burgundy);
-    padding: 1.25rem;
-    text-align: center;
-    border-radius: 1.1rem;
-    transition: 0.3s;
+  padding: 0.75rem 1.25rem;
+  background: var(--light-pink);
+  border: 0.1rem solid var(--border);
+  border-radius: 2rem;
+  color: var(--burgundy);
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.06rem;
+  text-align: center;
 }
 
+.sfeer li:nth-child(2),
 .sfeer div:nth-child(2) {
-    background: var(--blue);
+  background: var(--blue);
 }
 
+.sfeer li:nth-child(3),
 .sfeer div:nth-child(3) {
-    background: var(--yellow);
-}
-
-.sfeer div:hover {
-    transform: translateY(-0.3rem) rotate(-1deg);
-    box-shadow: 0.3rem 0.3rem 0 var(--burgundy);
+  background: var(--yellow);
 }
 
 .sfeer strong {
-    color: var(--burgundy);
-    font-family: Georgia, serif;
-    letter-spacing: 0.06rem;
+  color: var(--burgundy);
+  font-family: Georgia, serif;
 }
 
 .sfeer p {
-    margin-bottom: 0;
-    color: var(--text);
-    font-size: 0.9rem;
+  margin-bottom: 0;
+  color: var(--text);
+  font-size: 0.9rem;
 }
 
-
-/* =====================================================
+/* ========================================
    ARTIEST PROFIELPAGINA
-   ===================================================== */
+   ======================================== */
 
 .artist-profile {
-    margin: 3.5rem 0 2rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    background: var(--light-pink);
-    border: 0.15rem solid var(--burgundy);
-    border-radius: 1.4rem;
-    min-height: 34rem;
-    overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 34rem;
+  margin: 3.5rem 0 2rem;
+  overflow: hidden;
+  background: var(--light-pink);
+  border: 0.15rem solid var(--border);
+  border-radius: 1.4rem;
 }
 
 .artist-profile-foto {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 .artist-profile-foto img {
-    width: 100%;
-    height: 25rem;
-    object-fit: cover;
-    border: 0.6rem solid white;
-    border-radius: 0.3rem;
-    box-shadow: 0.5rem 0.5rem 0 var(--burgundy);
-    transform: rotate(-2deg);
-    transition: 0.3s ease;
+  width: 100%;
+  height: 25rem;
+  border: 0.6rem solid var(--white);
+  border-radius: 0.3rem;
+  object-fit: cover;
+  box-shadow: 0.5rem 0.5rem 0 var(--burgundy);
+  transform: rotate(-2deg);
+  transition: 0.3s ease;
 }
 
 .artist-profile-foto img:hover {
-    transform: rotate(1deg) scale(1.02);
+  transform: rotate(1deg) scale(1.02);
 }
 
 .foto-label {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 0.9rem;
-    background: var(--cream);
-    color: var(--burgundy);
-    font-size: 0.7rem;
-    font-weight: bold;
-    letter-spacing: 0.12rem;
-    transform: rotate(-2deg);
-    border: 0.15rem solid var(--burgundy);
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 0.9rem;
+  background: var(--cream);
+  border: 0.15rem solid var(--border);
+  color: var(--burgundy);
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 0.12rem;
+  transform: rotate(-2deg);
 }
 
 .artist-profile-info {
-    padding: 2.5rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem 1.5rem;
 }
 
 .artist-profile-info h2 {
-    margin: 0.3rem 0 1rem;
-    font-size: clamp(3.4rem, 7vw, 5.6rem);
-    line-height: 0.9;
-    color: var(--burgundy);
+  margin: 0.3rem 0 1rem;
+  color: var(--burgundy);
+  font-size: clamp(3.4rem, 7vw, 5.6rem);
+  line-height: 0.9;
 }
 
 .artist-profile-info p {
-    max-width: 31.25rem;
-    color: var(--text);
+  max-width: 31.25rem;
+  color: var(--text);
 }
 
 .artist-quote {
-    color: var(--burgundy) !important;
-    font-size: 0.8rem;
-    font-weight: bold;
-    letter-spacing: 0.12rem;
-    text-transform: uppercase;
+  color: var(--burgundy) !important;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
 }
 
-
 /* ========================================
-   INFO BLOKKEN
+   INFORMATIEBLOKKEN
    ======================================== */
 
 .artist-info-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-    margin: 1.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
 }
 
 .info-box {
-    padding: 1.5rem;
-    background: var(--cream);
-    border: 0.15rem solid var(--burgundy);
-    border-radius: 1.1rem;
-    box-shadow: 0.3rem 0.3rem 0 var(--light-pink);
+  padding: 1.5rem;
+  background: var(--cream);
+  border: 0.15rem solid var(--border);
+  border-radius: 1.1rem;
+  box-shadow: 0.3rem 0.3rem 0 var(--shadow);
 }
 
 .box-number {
-    margin: 0;
-    color: var(--pink);
-    font-family: Georgia, serif;
-    font-size: 1.5rem;
+  margin: 0;
+  color: var(--burgundy);
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
 }
 
 .info-box h3 {
-    margin-top: 0.3rem;
-    font-size: 1.7rem;
-    color: var(--burgundy);
+  margin-top: 0.3rem;
+  color: var(--burgundy);
+  font-size: 1.7rem;
 }
 
-
 /* ========================================
-   ARTIEST SECTIES
+   ARTIEST SECTIES EN LIEDJES
    ======================================== */
 
 .artist-section {
-    margin: 3rem 0;
-    padding: 2rem 1.25rem;
-    background: var(--white);
-    border: 0.15rem solid var(--burgundy);
-    border-radius: 1.25rem;
-    box-shadow: 0.4rem 0.4rem 0 var(--light-pink);
+  margin: 3rem 0;
+  padding: 2rem 1.25rem;
+  background: var(--white);
+  border: 0.15rem solid var(--border);
+  border-radius: 1.25rem;
+  box-shadow: 0.4rem 0.4rem 0 var(--shadow);
 }
 
 .artist-section h2 {
-    margin-top: 0;
-    font-size: 2.8rem;
-    color: var(--burgundy);
+  margin-top: 0;
+  color: var(--burgundy);
+  font-size: clamp(2rem, 5vw, 2.8rem);
 }
 
 .songs {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.6rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
 }
 
+.songs p,
 .songs div {
-    padding: 1rem 1.25rem;
-    background: var(--light-pink);
-    border: 0.15rem solid var(--burgundy);
-    border-radius: 0.75rem;
-    font-weight: bold;
-    color: var(--burgundy);
+  margin: 0;
+  padding: 1rem 1.25rem;
+  background: var(--light-pink);
+  border: 0.15rem solid var(--border);
+  border-radius: 0.75rem;
+  color: var(--burgundy);
+  font-weight: bold;
 }
 
+.songs p:nth-child(even),
 .songs div:nth-child(even) {
-    background: var(--blue);
+  background: var(--blue);
 }
 
 .songs span {
-    margin-right: 0.9rem;
-    color: var(--pink);
-    font-family: Georgia, serif;
+  margin-right: 0.9rem;
+  color: var(--burgundy);
+  font-family: Georgia, serif;
 }
 
 .weetjes ul {
-    padding-left: 1.25rem;
-    max-width: 43.75rem;
+  max-width: 43.75rem;
+  padding-left: 1.25rem;
 }
 
 .weetjes li {
-    margin-bottom: 0.9rem;
-    padding-left: 0.5rem;
-    color: var(--text);
+  margin-bottom: 0.9rem;
+  padding-left: 0.5rem;
+  color: var(--text);
 }
-
 
 /* ========================================
    WAAROM IK HAAR LEUK VIND
    ======================================== */
 
 .waarom {
-    margin: 3rem 0;
-    padding: 2.25rem 1.5rem;
-    background: var(--burgundy);
-    color: var(--cream);
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    align-items: center;
-    border-radius: 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 3rem 0;
+  padding: 2.25rem 1.5rem;
+  background: var(--burgundy);
+  border-radius: 1.25rem;
+  color: var(--button-text);
 }
 
 .waarom h2 {
-    margin: 0;
-    font-size: 2.5rem;
-    line-height: 1.1;
-    color: var(--cream);
+  margin: 0;
+  color: var(--button-text);
+  font-size: 2.5rem;
+  line-height: 1.1;
 }
 
 .waarom .label {
-    color: var(--light-pink);
+  color: var(--light-pink);
 }
 
 .waarom p:last-child {
-    margin: 0;
-    color: var(--light-pink);
-    font-size: 1rem;
+  margin: 0;
+  color: var(--button-text);
+  font-size: 1rem;
 }
 
-
 /* ========================================
-   TERUG
+   TERUGLINK
    ======================================== */
 
 .terug {
-    text-align: center;
-    margin: 3rem 0 5rem;
+  margin: 3rem 0 5rem;
+  text-align: center;
 }
 
 .terug a {
-    color: var(--burgundy);
-    font-weight: bold;
-    text-decoration: none;
-    border-bottom: 0.15rem solid var(--burgundy);
+  color: var(--burgundy);
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 0.15rem solid var(--burgundy);
 }
-
 
 /* ========================================
    STERRETJES
    ======================================== */
 
 .ster {
-    color: var(--pink);
-    font-size: 1.5rem;
-    pointer-events: none;
-    opacity: 0.8;
+  color: var(--burgundy);
+  font-size: 1.5rem;
+  pointer-events: none;
+  opacity: 0.8;
 }
-
 
 /* ========================================
    FOOTER
    ======================================== */
 
 footer {
-    margin-top: 5rem;
-    padding: 2rem 1rem;
-    background: var(--burgundy);
-    color: var(--cream);
-    text-align: center;
-    font-size: 0.8rem;
-}
-
-
-/* =====================================================
-   ARIANA — ROZE PALET
-   ===================================================== */
-
-body:has(.artist-profile img[src*="ariana"]) {
-    --cream: #fff3f7;
-    --light-pink: #ffd6e3;
-    --pink: #efa1ba;
-    --burgundy: #d77b9d;
-    --blue: #edf8fa;
-    --lilac: #f4e3ee;
-    --yellow: #fff4d9;
-    --white: #fffafd;
-    --text: #725c65;
-}
-
-body:has(.artist-profile img[src*="ariana"]) .artist-profile {
-    background: #ffd6e3;
-    border-color: #d77b9d;
-    box-shadow: 0.5rem 0.5rem 0 #efb4c8;
-}
-
-body:has(.artist-profile img[src*="ariana"]) .info-box {
-    background: #fff0f5;
-    border-color: #d77b9d;
-    box-shadow: 0.3rem 0.3rem 0 #f2c4d5;
-}
-
-body:has(.artist-profile img[src*="ariana"]) .artist-section {
-    background: #f9e4ed;
-    border-color: #d77b9d;
-    box-shadow: 0.4rem 0.4rem 0 #efb4c8;
-}
-
-body:has(.artist-profile img[src*="ariana"]) .songs div {
-    background: #f4c5d7;
-    border-color: #d77b9d;
-}
-
-body:has(.artist-profile img[src*="ariana"]) .songs div:nth-child(even) {
-    background: #ffe8ef;
-}
-
-body:has(.artist-profile img[src*="ariana"]) .waarom {
-    background: #d77b9d;
-}
-
-
-/* =====================================================
-   SABRINA — BLAUW PALET
-   ===================================================== */
-
-body:has(.artist-profile img[src*="sabrina"]) {
-    --cream: #effcff;
-    --light-pink: #d8f5f8;
-    --blue: #bfeaf0;
-    --lilac: #dceff5;
-    --yellow: #eef8f5;
-    --pink: #91cfd8;
-    --burgundy: #65aeb9;
-    --white: #f9feff;
-    --text: #536f76;
-}
-
-body:has(.artist-profile img[src*="sabrina"]) .artist-profile {
-    background: #c8edf2;
-    border-color: #65aeb9;
-    box-shadow: 0.5rem 0.5rem 0 #9fd7df;
-}
-
-body:has(.artist-profile img[src*="sabrina"]) .info-box {
-    background: #e8f9fb;
-    border-color: #65aeb9;
-    box-shadow: 0.3rem 0.3rem 0 #b9e5eb;
-}
-
-body:has(.artist-profile img[src*="sabrina"]) .artist-section {
-    background: #d9f3f6;
-    border-color: #65aeb9;
-    box-shadow: 0.4rem 0.4rem 0 #a9dfe6;
-}
-
-body:has(.artist-profile img[src*="sabrina"]) .songs div {
-    background: #bde7ed;
-    border-color: #65aeb9;
-}
-
-body:has(.artist-profile img[src*="sabrina"]) .songs div:nth-child(even) {
-    background: #e5f8fa;
-}
-
-body:has(.artist-profile img[src*="sabrina"]) .waarom {
-    background: #78bbc5;
-}
-
-body:has(.artist-profile img[src*="sabrina"]) .waarom h2 {
-    color: white;
-}
-
-body:has(.artist-profile img[src*="sabrina"]) .waarom p:last-child {
-    color: #e8f9fb;
-}
-
-
-/* =====================================================
-   OLIVIA — LILA PALET
-   ===================================================== */
-
-body:has(.artist-profile img[src*="olivia"]) {
-    --cream: #faf4fd;
-    --light-pink: #ead9f5;
-    --pink: #c99bdc;
-    --burgundy: #a56dbb;
-    --blue: #e8f5f6;
-    --lilac: #ddc4ec;
-    --yellow: #f8f0da;
-    --white: #fdfaff;
-    --text: #66556d;
-}
-
-body:has(.artist-profile img[src*="olivia"]) .artist-profile {
-    background: #e4d0f0;
-    border-color: #a56dbb;
-    box-shadow: 0.5rem 0.5rem 0 #c6a4d8;
-}
-
-body:has(.artist-profile img[src*="olivia"]) .info-box {
-    background: #f5eafb;
-    border-color: #a56dbb;
-    box-shadow: 0.3rem 0.3rem 0 #dfc7ec;
-}
-
-body:has(.artist-profile img[src*="olivia"]) .artist-section {
-    background: #eee2f7;
-    border-color: #a56dbb;
-    box-shadow: 0.4rem 0.4rem 0 #cdb0dd;
-}
-
-body:has(.artist-profile img[src*="olivia"]) .songs div {
-    background: #dcc5ea;
-    border-color: #a56dbb;
-}
-
-body:has(.artist-profile img[src*="olivia"]) .songs div:nth-child(even) {
-    background: #f1e8f7;
-}
-
-body:has(.artist-profile img[src*="olivia"]) .waarom {
-    background: #a56dbb;
-}
-
-
-/* =====================================================
-   ROXY — LICHT PASTELGEEL
-   ===================================================== */
-
-body:has(.artist-profile img[src*="roxy"]) {
-    --cream: #fffdf3;
-    --light-pink: #fff8d9;
-    --pink: #e7d18c;
-    --burgundy: #c9ae65;
-    --blue: #eef8f6;
-    --lilac: #f8f3df;
-    --yellow: #fff4c2;
-    --white: #fffefa;
-    --text: #70674f;
-}
-
-body:has(.artist-profile img[src*="roxy"]) .artist-profile {
-    background: #fff6ce;
-    border-color: #c9ae65;
-    box-shadow: 0.5rem 0.5rem 0 #eadfae;
-}
-
-body:has(.artist-profile img[src*="roxy"]) .info-box {
-    background: #fffbea;
-    border-color: #c9ae65;
-    box-shadow: 0.3rem 0.3rem 0 #f0e6bd;
-}
-
-body:has(.artist-profile img[src*="roxy"]) .artist-section {
-    background: #fff8df;
-    border-color: #c9ae65;
-    box-shadow: 0.4rem 0.4rem 0 #eadfae;
-}
-
-body:has(.artist-profile img[src*="roxy"]) .songs div {
-    background: #fff0c0;
-    border-color: #c9ae65;
-}
-
-body:has(.artist-profile img[src*="roxy"]) .songs div:nth-child(even) {
-    background: #fffaf0;
-}
-
-body:has(.artist-profile img[src*="roxy"]) .waarom {
-    background: #d8bd70;
-}
-
-
-/* =====================================================
-   TATE — PASTEL ORANJE / PERZIK
-   ===================================================== */
-
-body:has(.artist-profile img[src*="tate"]) {
-    --cream: #fff8f2;
-    --light-pink: #ffdcca;
-    --pink: #f2ae8c;
-    --burgundy: #d98968;
-    --blue: #edf6f5;
-    --lilac: #f7e3da;
-    --yellow: #fff0d8;
-    --white: #fffdfb;
-    --text: #715d55;
-}
-
-body:has(.artist-profile img[src*="tate"]) .artist-profile {
-    background: #ffd8c2;
-    border-color: #d98968;
-    box-shadow: 0.5rem 0.5rem 0 #efb79d;
-}
-
-body:has(.artist-profile img[src*="tate"]) .info-box {
-    background: #fff0e6;
-    border-color: #d98968;
-    box-shadow: 0.3rem 0.3rem 0 #f3c5ad;
-}
-
-body:has(.artist-profile img[src*="tate"]) .artist-section {
-    background: #ffe8d9;
-    border-color: #d98968;
-    box-shadow: 0.4rem 0.4rem 0 #efb79d;
-}
-
-body:has(.artist-profile img[src*="tate"]) .songs div {
-    background: #f9ccb2;
-    border-color: #d98968;
-}
-
-body:has(.artist-profile img[src*="tate"]) .songs div:nth-child(even) {
-    background: #fff0e5;
-}
-
-body:has(.artist-profile img[src*="tate"]) .waarom {
-    background: #d98968;
-}
-
-
-/* =====================================================
-   GROTERE SCHERMEN
-   Mobile-first: eerst de kleine versie,
-   daarna wordt de layout groter gemaakt.
-   ===================================================== */
-
-@media (min-width: 47rem) {
-
-    header {
-        padding: 2.2rem 1.25rem 1.5rem;
-    }
-
-    nav ul {
-        gap: 1.5rem;
-    }
-
-    .pagina {
-        padding: 2.8rem;
-    }
-
-    .hero {
-        min-height: 36rem;
-        padding: 3rem;
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
-    }
-
-    .hero-foto img {
-        height: 28rem;
-    }
-
-    .artiest-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .artiest-kaart {
-        grid-template-columns: 9.4rem 1fr;
-    }
-
-    .artiest-kaart img {
-        width: 9.4rem;
-        min-height: 11rem;
-    }
-
-    .artiesten-banner {
-        padding: 2.8rem;
-    }
-
-    .artiesten-pagina .artiest-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .foto-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .moodboards {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .links-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .sfeer {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .artist-profile {
-        grid-template-columns: 45% 55%;
-    }
-
-    .artist-profile-foto {
-        padding: 2rem;
-    }
-
-    .artist-profile-foto img {
-        height: 30rem;
-    }
-
-    .artist-profile-info {
-        padding: 4rem 3rem;
-    }
-
-    .artist-info-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .artist-section {
-        padding: 2.5rem;
-    }
-
-    .songs {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .waarom {
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
-        padding: 2.8rem;
-    }
-}
-/* =====================================================
-   DARK MODE
-   ===================================================== */
-
-@media (prefers-color-scheme: dark) {
-
-    :root {
-        --pink: #d99aae;
-        --light-pink: #443039;
-        --cream: #211c20;
-        --blue: #293c40;
-        --lilac: #38303d;
-        --yellow: #45402e;
-        --burgundy: #df9ab0;
-        --text: #eee2e6;
-        --white: #2d272b;
-    }
-
-    body {
-        background: var(--cream);
-        color: var(--text);
-    }
-
-    header {
-        background: var(--white);
-        border-color: var(--pink);
-    }
-
-    .kleine-titel,
-    h1,
-    .pagina h2,
-    .pagina h3 {
-        color: var(--burgundy);
-    }
-
-    .ondertitel,
-    .intro,
-    .hero p,
-    .artist-profile-info p,
-    .weetjes li {
-        color: var(--text);
-    }
-
-
-    /* NAVIGATIE */
-
-    nav {
-        background: var(--light-pink);
-        border-color: var(--burgundy);
-    }
-
-    nav a {
-        color: var(--burgundy);
-    }
-
-    nav a:hover {
-        background: var(--cream);
-        color: var(--burgundy);
-        border-color: var(--burgundy);
-    }
-
-
-    /* PAGINA */
-
-    .pagina {
-        background: var(--white);
-        border-color: var(--burgundy);
-        box-shadow: 0.4rem 0.4rem 0 var(--light-pink);
-    }
-
-
-    /* HOME */
-
-    .hero {
-        background: var(--light-pink);
-        border-color: var(--burgundy);
-    }
-
-    .hero h2,
-    .label {
-        color: var(--burgundy);
-    }
-
-
-    /* KNOPPEN */
-
-    .knop {
-        background: var(--burgundy);
-        color: var(--cream);
-        border-color: var(--burgundy);
-    }
-
-    .knop:hover {
-        background: var(--pink);
-        color: #211c20;
-    }
-
-
-    /* ARTIESTENPAGINA */
-
-    .artiesten-banner {
-        background: var(--blue);
-        border-color: var(--burgundy);
-    }
-
-    .artiesten-banner h2 {
-        color: var(--burgundy);
-    }
-
-
-       /* ARTIESTENKAARTEN - DARK MODE */
-
-    .kaart-ariana {
-        background: #694354;
-        border-color: #e6a5c1;
-    }
-
-    .kaart-sabrina {
-        background: #365866;
-        border-color: #a6dce8;
-    }
-
-    .kaart-olivia {
-        background: #594365;
-        border-color: #d3b1ed;
-    }
-
-    .kaart-roxy {
-        background: #62552f;
-        border-color: #f0d98b;
-    }
-
-    .kaart-tate {
-        background: #70434c;
-        border-color: #efb0a5;
-    }
-
-    .artiesten-pagina .artiest-kaart h3 {
-        color: var(--burgundy);
-    }
-
-    .artiesten-pagina .artiest-kaart p {
-        color: var(--text);
-    }
-
-    .kaart-nummer {
-        background: var(--cream);
-        color: var(--burgundy);
-        border-color: var(--burgundy);
-    }
-
-    .kaart-link {
-        color: var(--burgundy);
-    }
-
-
-    /* FOTO'S */
-
-    .foto-grid img {
-        background: var(--light-pink);
-        border-color: var(--burgundy);
-    }
-
-    .moodboards img {
-        border-color: var(--white);
-    }
-
-
-    /* LINKS */
-
-    .links-grid a {
-        background: var(--yellow);
-        border-color: var(--burgundy);
-        color: var(--burgundy);
-    }
-
-    .links-grid a:hover {
-        background: var(--light-pink);
-    }
-
-
-    /* SFEER */
-
-    .sfeer div {
-        background: var(--light-pink);
-        border-color: var(--burgundy);
-    }
-
-    .sfeer div:nth-child(2) {
-        background: var(--blue);
-    }
-
-    .sfeer div:nth-child(3) {
-        background: var(--yellow);
-    }
-
-    .sfeer strong {
-        color: var(--burgundy);
-    }
-
-    .sfeer p {
-        color: var(--text);
-    }
-
-
-    /* ARTIEST PROFIEL */
-
-    .artist-profile {
-        background: var(--light-pink);
-        border-color: var(--burgundy);
-    }
-
-    .artist-profile-foto img {
-        border-color: var(--white);
-    }
-
-    .foto-label {
-        background: var(--cream);
-        color: var(--burgundy);
-        border-color: var(--burgundy);
-    }
-
-    .artist-profile-info h2 {
-        color: var(--burgundy);
-    }
-
-    .artist-quote {
-        color: var(--burgundy) !important;
-    }
-
-
-    /* INFO BLOKKEN */
-
-    .info-box {
-        background: var(--cream);
-        border-color: var(--burgundy);
-        box-shadow: 0.3rem 0.3rem 0 var(--light-pink);
-    }
-
-    .box-number,
-    .info-box h3 {
-        color: var(--burgundy);
-    }
-
-
-    /* ARTIEST SECTIES */
-
-    .artist-section {
-        background: var(--white);
-        border-color: var(--burgundy);
-        box-shadow: 0.4rem 0.4rem 0 var(--light-pink);
-    }
-
-    .artist-section h2 {
-        color: var(--burgundy);
-    }
-
-
-    /* LIEDJES */
-
-    .songs div {
-        background: var(--light-pink);
-        border-color: var(--burgundy);
-        color: var(--burgundy);
-    }
-
-    .songs div:nth-child(even) {
-        background: var(--blue);
-    }
-
-    .songs span {
-        color: var(--pink);
-    }
-
-
-    /* WAAROM IK HAAR LEUK VIND */
-
-    .waarom {
-        background: #49313b;
-        color: #f5e9ee;
-    }
-
-    .waarom h2 {
-        color: #fff0f5;
-    }
-
-    .waarom .label {
-        color: var(--pink);
-    }
-
-    .waarom p:last-child {
-        color: #eadde1;
-    }
-
-
-    /* TERUG */
-
-    .terug a {
-        color: var(--burgundy);
-        border-color: var(--burgundy);
-    }
-
-
-    /* STERRETJES */
-
-    .ster {
-        color: var(--pink);
-    }
-
-
-    /* FOOTER */
-
-    footer {
-        background: var(--white);
-        color: var(--text);
-    }
-
-
-    /* =================================================
-       ARIANA
-       ================================================= */
-
-    body:has(.artist-profile img[src*="ariana"]) {
-        --cream: #21191e;
-        --light-pink: #49313b;
-        --pink: #d99aae;
-        --burgundy: #e09aae;
-        --blue: #29383b;
-        --lilac: #3a303b;
-        --yellow: #45402e;
-        --white: #2d2429;
-        --text: #f0e2e7;
-    }
-
-    body:has(.artist-profile img[src*="ariana"]) .artist-profile {
-        background: #49313b;
-        border-color: #d99aae;
-    }
-
-    body:has(.artist-profile img[src*="ariana"]) .info-box {
-        background: #38272e;
-        border-color: #d99aae;
-    }
-
-    body:has(.artist-profile img[src*="ariana"]) .artist-section {
-        background: #32262c;
-        border-color: #d99aae;
-    }
-
-    body:has(.artist-profile img[src*="ariana"]) .songs div {
-        background: #49313b;
-        border-color: #d99aae;
-    }
-
-    body:has(.artist-profile img[src*="ariana"]) .songs div:nth-child(even) {
-        background: #38272e;
-    }
-
-    body:has(.artist-profile img[src*="ariana"]) .waarom {
-        background: #70445a;
-    }
-
-
-    /* =================================================
-       SABRINA
-       ================================================= */
-
-    body:has(.artist-profile img[src*="sabrina"]) {
-        --cream: #182225;
-        --light-pink: #294044;
-        --pink: #91cbd2;
-        --burgundy: #8bcbd2;
-        --blue: #26383b;
-        --lilac: #304044;
-        --yellow: #3d402f;
-        --white: #202c2f;
-        --text: #e5f2f4;
-    }
-
-    body:has(.artist-profile img[src*="sabrina"]) .artist-profile {
-        background: #294044;
-        border-color: #91cbd2;
-    }
-
-    body:has(.artist-profile img[src*="sabrina"]) .info-box {
-        background: #24363a;
-        border-color: #91cbd2;
-    }
-
-    body:has(.artist-profile img[src*="sabrina"]) .artist-section {
-        background: #25373a;
-        border-color: #91cbd2;
-    }
-
-    body:has(.artist-profile img[src*="sabrina"]) .songs div {
-        background: #294044;
-        border-color: #91cbd2;
-    }
-
-    body:has(.artist-profile img[src*="sabrina"]) .songs div:nth-child(even) {
-        background: #24363a;
-    }
-
-    body:has(.artist-profile img[src*="sabrina"]) .waarom {
-        background: #396a72;
-    }
-
-
-    /* =================================================
-       OLIVIA
-       ================================================= */
-
-    body:has(.artist-profile img[src*="olivia"]) {
-        --cream: #211c26;
-        --light-pink: #403548;
-        --pink: #c19bd1;
-        --burgundy: #c19bd1;
-        --blue: #2d3c3e;
-        --lilac: #403548;
-        --yellow: #45402e;
-        --white: #2d2732;
-        --text: #eee5f2;
-    }
-
-    body:has(.artist-profile img[src*="olivia"]) .artist-profile {
-        background: #403548;
-        border-color: #c19bd1;
-    }
-
-    body:has(.artist-profile img[src*="olivia"]) .info-box {
-        background: #332b3a;
-        border-color: #c19bd1;
-    }
-
-    body:has(.artist-profile img[src*="olivia"]) .artist-section {
-        background: #302937;
-        border-color: #c19bd1;
-    }
-
-    body:has(.artist-profile img[src*="olivia"]) .songs div {
-        background: #403548;
-        border-color: #c19bd1;
-    }
-
-    body:has(.artist-profile img[src*="olivia"]) .songs div:nth-child(even) {
-        background: #332b3a;
-    }
-
-    body:has(.artist-profile img[src*="olivia"]) .waarom {
-        background: #674b76;
-    }
-
-
-    /* =================================================
-       ROXY
-       ================================================= */
-
-    body:has(.artist-profile img[src*="roxy"]) {
-        --cream: #24231b;
-        --light-pink: #45412e;
-        --pink: #d6c67c;
-        --burgundy: #d6c67c;
-        --blue: #2d3938;
-        --lilac: #3c392c;
-        --yellow: #45412e;
-        --white: #302f25;
-        --text: #f0eddc;
-    }
-
-    body:has(.artist-profile img[src*="roxy"]) .artist-profile {
-        background: #45412e;
-        border-color: #d6c67c;
-    }
-
-    body:has(.artist-profile img[src*="roxy"]) .info-box {
-        background: #39382b;
-        border-color: #d6c67c;
-    }
-
-    body:has(.artist-profile img[src*="roxy"]) .artist-section {
-        background: #353429;
-        border-color: #d6c67c;
-    }
-
-    body:has(.artist-profile img[src*="roxy"]) .songs div {
-        background: #45412e;
-        border-color: #d6c67c;
-    }
-
-    body:has(.artist-profile img[src*="roxy"]) .songs div:nth-child(even) {
-        background: #39382b;
-    }
-
-    body:has(.artist-profile img[src*="roxy"]) .waarom {
-        background: #756633;
-    }
-
-
-    /* =================================================
-       TATE
-       ================================================= */
-
-    body:has(.artist-profile img[src*="tate"]) {
-        --cream: #241e1b;
-        --light-pink: #49372f;
-        --pink: #d9a183;
-        --burgundy: #d9a183;
-        --blue: #2d3938;
-        --lilac: #3c302b;
-        --yellow: #45402e;
-        --white: #302825;
-        --text: #f2e7e1;
-    }
-
-    body:has(.artist-profile img[src*="tate"]) .artist-profile {
-        background: #49372f;
-        border-color: #d9a183;
-    }
-
-    body:has(.artist-profile img[src*="tate"]) .info-box {
-        background: #3b2e29;
-        border-color: #d9a183;
-    }
-
-    body:has(.artist-profile img[src*="tate"]) .artist-section {
-        background: #382c28;
-        border-color: #d9a183;
-    }
-
-    body:has(.artist-profile img[src*="tate"]) .songs div {
-        background: #49372f;
-        border-color: #d9a183;
-    }
-
-    body:has(.artist-profile img[src*="tate"]) .songs div:nth-child(even) {
-        background: #3b2e29;
-    }
-
-    body:has(.artist-profile img[src*="tate"]) .waarom {
-        background: #704c3b;
-    }
-}
-
-/* EXTRA POP GIRLS OPMAAK */
-
-/* Focus voor toetsenbordgebruik */
-a:focus-visible,
-button:focus-visible {
-  outline: 0.15rem solid #9d2865;
-  outline-offset: 0.2rem;
-}
-
-/* Sfeerwoorden */
-.sfeer li {
-  padding: 0.75rem 1.25rem;
-  background: var(--light-pink);
-  border: 0.0625rem solid var(--burgundy);
-  border-radius: 2rem;
-  color: var(--burgundy);
+  margin-top: 5rem;
+  padding: 2rem 1rem;
+  background: var(--burgundy);
+  color: var(--button-text);
+  text-align: center;
   font-size: 0.8rem;
-  font-weight: bold;
-  letter-spacing: 0.08em;
 }
 
-/* Verbeterde linkkaarten */
-.link-tekst {
-  flex: 1;
-  min-width: 0;
+footer a {
+  color: inherit;
 }
 
-.link-tekst strong {
-  display: block;
-  color: var(--burgundy);
-  font-size: 0.8rem;
-  line-height: 1.3;
-  overflow-wrap: anywhere;
-}
+/* ========================================
+   COOKIEVENSTER
+   ======================================== */
 
-.link-tekst > span {
-  display: block;
-  color: var(--text);
-  font-size: 0.7rem;
-  line-height: 1.4;
-  overflow-wrap: anywhere;
-}
-
-.links-grid a > span:first-child {
-  flex: 0 0 1.25rem;
-  font-size: 0.7rem;
-}
-
-.links-grid .link-pijl {
-  display: none;
-}
-
-/* Cookievenster */
 dialog#cookieModal {
-  box-sizing: border-box;
   width: min(90%, 32rem);
   max-width: 100%;
   padding: 2rem;
-  border: 0.125rem solid var(--burgundy);
-  border-radius: 1rem;
   background: var(--white);
+  border: 0.125rem solid var(--border);
+  border-radius: 1rem;
   color: var(--text);
-  box-shadow: 0 0.5rem 2rem rgba(84, 39, 68, 0.2);
+  box-shadow: 0 0.5rem 2rem rgb(84 39 68 / 20%);
 }
 
 dialog#cookieModal::backdrop {
-  background: rgba(84, 39, 68, 0.6);
+  background: rgb(84 39 68 / 60%);
 }
 
 dialog#cookieModal h2 {
@@ -1834,9 +883,9 @@ dialog#cookieModal form p {
 dialog#cookieModal button {
   width: 100%;
   padding: 0.75rem 1rem;
-  border: 0.0625rem solid var(--burgundy);
-  border-radius: 0.5rem;
   background: var(--light-pink);
+  border: 0.0625rem solid var(--border);
+  border-radius: 0.5rem;
   color: var(--text);
   font-family: Arial, sans-serif;
   font-size: 1rem;
@@ -1846,14 +895,17 @@ dialog#cookieModal button {
 
 dialog#cookieModal button[value="allowed"] {
   background: var(--burgundy);
-  color: white;
+  color: var(--button-text);
 }
 
 dialog#cookieModal button:hover {
   background: var(--pink);
 }
 
-/* Vinylplaten */
+/* ========================================
+   FAN JOURNAL / VINYLPLATEN
+   ======================================== */
+
 .artiest-kop {
   display: flex;
   align-items: center;
@@ -1869,10 +921,19 @@ dialog#cookieModal button:hover {
 
 .artiest-vinyl {
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
   align-items: center;
   gap: 0.75rem;
-  flex-shrink: 0;
+}
+
+.vinyl-toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .vinyl-plaat {
@@ -1881,23 +942,48 @@ dialog#cookieModal button:hover {
   width: 10rem;
   height: 10rem;
   flex-shrink: 0;
-  border: 4px solid #f1c5dc;
-  border-radius: 50%;
   background: repeating-radial-gradient(
     circle,
     #29222a 0 2px,
     #594352 3px,
     #29222a 5px
   );
+  border: 4px solid #f1c5dc;
+  border-radius: 50%;
   box-shadow: 4px 4px 0 #d43c88;
+  cursor: pointer;
+  animation: vinyl-draaien 5s linear infinite;
+}
+
+.vinyl-toggle:checked + .vinyl-plaat {
+  animation-play-state: paused;
+}
+
+.vinyl-toggle:focus-visible + .vinyl-plaat {
+  outline: 0.15rem solid var(--burgundy);
+  outline-offset: 0.3rem;
+}
+
+.vinyl-midden {
+  display: grid;
+  place-items: center;
+  width: 38%;
+  aspect-ratio: 1;
+  background: #ffd6e8;
+  border: 2px solid #fff3f8;
+  border-radius: 50%;
+  color: #a52c68;
+  font-family: Georgia, serif;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .vinyl-knop {
   padding: 0.6rem 0.8rem;
   background: var(--white);
-  color: var(--burgundy);
   border: 2px solid var(--burgundy);
   border-radius: 2rem;
+  color: var(--burgundy);
   font-family: Arial, sans-serif;
   font-size: 0.7rem;
   font-weight: bold;
@@ -1906,6 +992,342 @@ dialog#cookieModal button:hover {
 
 .vinyl-knop:hover {
   background: var(--light-pink);
+}
+
+@keyframes vinyl-draaien {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+/* ========================================
+   ARTIESTENKLEUREN — LIGHT MODE
+   ======================================== */
+
+body:has(.artist-profile img[src*="ariana"]) {
+  --cream: #fff3f8;
+  --light-pink: #ffcddb;
+  --pink: #f2a2bc;
+  --burgundy: #e58aa8;
+  --blue: #d8fcff;
+  --lilac: #f4d9ff;
+  --yellow: #fff3b8;
+  --white: #fffdf8;
+  --text: #765d60;
+}
+
+body:has(.artist-profile img[src*="sabrina"]) {
+  --cream: #f0fcff;
+  --light-pink: #d8fcff;
+  --pink: #a9e5ec;
+  --burgundy: #4c9ca8;
+  --blue: #c8f2f6;
+  --lilac: #e3f4ff;
+  --yellow: #fff3b8;
+  --white: #faffff;
+  --text: #496b70;
+}
+
+body:has(.artist-profile img[src*="olivia"]) {
+  --cream: #faf4ff;
+  --light-pink: #ead7f8;
+  --pink: #d2a9e8;
+  --burgundy: #9868b1;
+  --blue: #d8fcff;
+  --lilac: #f0dcff;
+  --yellow: #fff3b8;
+  --white: #fffaff;
+  --text: #705b7b;
+}
+
+body:has(.artist-profile img[src*="roxy"]) {
+  --cream: #fffdf2;
+  --light-pink: #fff3b8;
+  --pink: #f0d77d;
+  --burgundy: #a38a38;
+  --blue: #d8fcff;
+  --lilac: #f4d9ff;
+  --yellow: #ffef9c;
+  --white: #fffef8;
+  --text: #75673e;
+}
+
+body:has(.artist-profile img[src*="tate"]) {
+  --cream: #fff7f1;
+  --light-pink: #ffddc9;
+  --pink: #f4b99b;
+  --burgundy: #b96e4c;
+  --blue: #d8fcff;
+  --lilac: #f4d9ff;
+  --yellow: #fff3b8;
+  --white: #fffdf8;
+  --text: #795b4e;
+}
+
+
+/* ========================================
+   ARTIESTENKLEUREN — DONKERE MODE
+   ======================================== */
+
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+
+html[data-theme="dark"] body {
+  --pink: #d99aae;
+  --light-pink: #443039;
+  --cream: #211c20;
+  --blue: #293c40;
+  --lilac: #38303d;
+  --yellow: #45402e;
+  --burgundy: #e7a6bd;
+  --text: #f0e4e9;
+  --white: #2d272b;
+  --border: var(--burgundy);
+  --shadow: #443039;
+  --button-text: #211c20;
+}
+
+html[data-theme="dark"] body:has(.artist-profile img[src*="ariana"]) {
+  --cream: #21191e;
+  --light-pink: #49313b;
+  --pink: #d99aae;
+  --burgundy: #efb4ca;
+  --blue: #29383b;
+  --lilac: #3a303b;
+  --yellow: #45402e;
+  --white: #2d2429;
+  --text: #f0e2e7;
+}
+
+html[data-theme="dark"] body:has(.artist-profile img[src*="sabrina"]) {
+  --cream: #182225;
+  --light-pink: #294044;
+  --pink: #91cbd2;
+  --burgundy: #a6e0e7;
+  --blue: #26383b;
+  --lilac: #304044;
+  --yellow: #3d402f;
+  --white: #202c2f;
+  --text: #e5f2f4;
+}
+
+html[data-theme="dark"] body:has(.artist-profile img[src*="olivia"]) {
+  --cream: #211c26;
+  --light-pink: #403548;
+  --pink: #c19bd1;
+  --burgundy: #d5b4e5;
+  --blue: #2d3c3e;
+  --lilac: #403548;
+  --yellow: #45402e;
+  --white: #2d2732;
+  --text: #eee5f2;
+}
+
+html[data-theme="dark"] body:has(.artist-profile img[src*="roxy"]) {
+  --cream: #24231b;
+  --light-pink: #45412e;
+  --pink: #d6c67c;
+  --burgundy: #ead990;
+  --blue: #2d3938;
+  --lilac: #3c392c;
+  --yellow: #45412e;
+  --white: #302f25;
+  --text: #f0eddc;
+}
+
+html[data-theme="dark"] body:has(.artist-profile img[src*="tate"]) {
+  --cream: #241e1b;
+  --light-pink: #49372f;
+  --pink: #d9a183;
+  --burgundy: #edb99e;
+  --blue: #2d3938;
+  --lilac: #3c302b;
+  --yellow: #45402e;
+  --white: #302825;
+  --text: #f2e7e1;
+}
+
+/* ========================================
+   DONKERE MODE — ALGEMENE AANPASSINGEN
+   ======================================== */
+
+html[data-theme="dark"] .artist-profile,
+html[data-theme="dark"] .hero {
+  background: var(--light-pink);
+}
+
+html[data-theme="dark"] .info-box {
+  background: var(--cream);
+}
+
+html[data-theme="dark"] .artist-section,
+html[data-theme="dark"] .pagina {
+  background: var(--white);
+}
+
+html[data-theme="dark"] .songs p,
+html[data-theme="dark"] .songs div {
+  background: var(--light-pink);
+}
+
+html[data-theme="dark"] .songs p:nth-child(even),
+html[data-theme="dark"] .songs div:nth-child(even) {
+  background: var(--blue);
+}
+
+html[data-theme="dark"] .waarom {
+  background: #49313b;
+}
+
+html[data-theme="dark"] .waarom h2,
+html[data-theme="dark"] .waarom p:last-child {
+  color: #fff0f5;
+}
+
+html[data-theme="dark"] .artiest-kaart {
+  border-color: var(--burgundy);
+  color: var(--text);
+}
+
+html[data-theme="dark"] .links-grid a {
+  background: var(--yellow);
+  color: var(--burgundy);
+}
+
+html[data-theme="dark"] .links-grid .link-tekst small,
+html[data-theme="dark"] .links-grid .link-tekst > span {
+  color: var(--text);
+}
+
+html[data-theme="dark"] #theme-toggle {
+  background: #493448;
+  border-color: var(--burgundy);
+  color: #fff3f8;
+}
+
+html[data-theme="dark"] footer {
+  background: var(--white);
+  color: var(--text);
+}
+
+html[data-theme="dark"] .vinyl-midden {
+  background: #49313b;
+  color: #fff3f8;
+}
+
+/* ========================================
+   BEWEGING BEPERKEN
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ========================================
+   GROTERE SCHERMEN
+   ======================================== */
+
+@media (min-width: 47rem) {
+  header {
+    padding: 2.2rem 1.25rem 1.5rem;
+  }
+
+  nav ul {
+    gap: 1.5rem;
+  }
+
+  .pagina {
+    padding: 2.8rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    min-height: 36rem;
+    padding: 3rem;
+  }
+
+  .hero-foto img {
+    height: 28rem;
+  }
+
+  .artiest-grid,
+  .artiesten-pagina .artiest-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .artiest-kaart {
+    grid-template-columns: 9.4rem 1fr;
+  }
+
+  .artiest-kaart img {
+    width: 9.4rem;
+    min-height: 11rem;
+  }
+
+  .artiesten-banner {
+    padding: 2.8rem;
+  }
+
+  .foto-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .moodboards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .links-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sfeer {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .artist-profile {
+    grid-template-columns: 45% 55%;
+  }
+
+  .artist-profile-foto {
+    padding: 2rem;
+  }
+
+  .artist-profile-foto img {
+    height: 30rem;
+  }
+
+  .artist-profile-info {
+    padding: 4rem 3rem;
+  }
+
+  .artist-info-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .artist-section {
+    padding: 2.5rem;
+  }
+
+  .songs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .waarom {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 2.8rem;
+  }
 }
 
 @media (max-width: 35rem) {
@@ -1922,53 +1344,13 @@ dialog#cookieModal button:hover {
     max-width: 7rem;
     padding: 0.5rem;
   }
-}
 
-
-/* VINYLPLATEN - KLIK OM TE PAUZEREN */
-
-.vinyl-toggle {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-}
-
-.vinyl-plaat {
-  animation: vinyl-draaien 5s linear infinite;
-  cursor: pointer;
-}
-
-.vinyl-toggle:checked + .vinyl-plaat {
-  animation-play-state: paused;
-}
-
-.vinyl-toggle:focus-visible + .vinyl-plaat {
-  outline: 0.15rem solid var(--burgundy);
-  outline-offset: 0.3rem;
-}
-
-@keyframes vinyl-draaien {
-  from {
-    transform: rotate(0deg);
+  .links-grid a {
+    gap: 0.6rem;
+    padding: 0.8rem;
   }
 
-  to {
-    transform: rotate(360deg);
+  .links-grid .link-tekst strong {
+    font-size: 1rem;
   }
 }
-/* KLEUR VAN DE LETTERS OP DE VINYLPLATEN */
-.vinyl-midden {
-  display: grid;
-  place-items: center;
-  width: 38%;
-  aspect-ratio: 1;
-  border: 2px solid #fff3f8;
-  border-radius: 50%;
-  background: #ffd6e8;
-  color: #d43c88;
-  font-family: Georgia, serif;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
