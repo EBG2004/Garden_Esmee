@@ -607,11 +607,11 @@ Ik wil mijn afbeeldingen, teksten en artiestenkaarten genoeg ruimte geven. Hierd
 
 **Feedback Teresa:**
 
-- Checken Contrast kleuren goed
-- knop maken?
+- Checken Contrast kleuren goed (Check)
+- knop maken light dark mode? (check)
 - GitHub er gewoon inlinken.
-- Dark mode aanpassen kleur
-- plaat laat draaien 
+- Dark mode aanpassen kleur (check)
+- plaat laat draaien (Check)
 
 
 
