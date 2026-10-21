@@ -618,6 +618,30 @@ Ik wil mijn afbeeldingen, teksten en artiestenkaarten genoeg ruimte geven. Hierd
 Ik heb alle feedback van gister verwerkt in mijn site + een animatie toegevoegd. 
 
 
+### 20 okt - Thuis 
+
+**Bi-Weekly Geek 3**
+
+1. From shrimp Jesus to erotic tractors — The Guardian
+Waar gaat het artikel over?
+
+Het artikel gaat over de groei van AI-slop: grote hoeveelheden AI-afbeeldingen, video's en andere content die online worden geplaatst. Voorbeelden zijn vreemde afbeeldingen van Jezus met het lichaam van een garnaal, bizarre tractorafbeeldingen en filmpjes met fruitpersonages die verliefd worden.
+
+Sommige makers maken dit soort content omdat ze veel weergaven, reacties en likes willen krijgen. Daarmee kunnen ze soms ook geld verdienen.
+
+Belangrijke punten:
+- AI kan in korte tijd heel veel content maken.
+- Vreemde of opvallende afbeeldingen trekken vaak de aandacht van mensen.
+- Sociale-media-algoritmes kunnen zulke content verder verspreiden wanneer die veel interactie oplevert.
+- Hierdoor kan het internet vollopen met content die weinig inhoud heeft of misleidend is.
+- Het wordt lastiger om betrouwbare informatie en menselijke creativiteit te onderscheiden van automatisch gemaakte content.
+Wat is de belangrijkste boodschap?
+
+Het probleem is niet alleen dat AI bestaat. Het gaat ook om de manier waarop AI wordt gebruikt en hoe sociale-mediaplatforms content verspreiden. Als aandacht en geld verdienen belangrijker worden dan kwaliteit, kan de online omgeving daaronder lijden.
+
+Voorbeeld: je scrolt door Facebook en ziet een afbeelding die heel bijzonder lijkt. Je denkt misschien dat iemand die echt heeft gemaakt of dat de afbeelding een echte gebeurtenis laat zien, terwijl deze volledig door AI is gegenereerd.
+
+
 
 
 
