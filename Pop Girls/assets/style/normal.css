@@ -1354,3 +1354,14 @@ html[data-theme="dark"] .vinyl-midden {
     font-size: 1rem;
   }
 }
+
+
+
+.favorieten img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
