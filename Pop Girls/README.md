@@ -620,32 +620,56 @@ Ik heb alle feedback van gister verwerkt in mijn site + een animatie toegevoegd.
 
 ### 20 okt - Thuis 
 
-**Bi-Weekly Geek 3**
-
-1. From shrimp Jesus to erotic tractors — The Guardian
-Waar gaat het artikel over?
-
-Het artikel gaat over de groei van AI-slop: grote hoeveelheden AI-afbeeldingen, video's en andere content die online worden geplaatst. Voorbeelden zijn vreemde afbeeldingen van Jezus met het lichaam van een garnaal, bizarre tractorafbeeldingen en filmpjes met fruitpersonages die verliefd worden.
-
-Sommige makers maken dit soort content omdat ze veel weergaven, reacties en likes willen krijgen. Daarmee kunnen ze soms ook geld verdienen.
-
-Belangrijke punten:
-- AI kan in korte tijd heel veel content maken.
-- Vreemde of opvallende afbeeldingen trekken vaak de aandacht van mensen.
-- Sociale-media-algoritmes kunnen zulke content verder verspreiden wanneer die veel interactie oplevert.
-- Hierdoor kan het internet vollopen met content die weinig inhoud heeft of misleidend is.
-- Het wordt lastiger om betrouwbare informatie en menselijke creativiteit te onderscheiden van automatisch gemaakte content.
-Wat is de belangrijkste boodschap?
-
-Het probleem is niet alleen dat AI bestaat. Het gaat ook om de manier waarop AI wordt gebruikt en hoe sociale-mediaplatforms content verspreiden. Als aandacht en geld verdienen belangrijker worden dan kwaliteit, kan de online omgeving daaronder lijden.
-
-Voorbeeld: je scrolt door Facebook en ziet een afbeelding die heel bijzonder lijkt. Je denkt misschien dat iemand die echt heeft gemaakt of dat de afbeelding een echte gebeurtenis laat zien, terwijl deze volledig door AI is gegenereerd.
+## Bi-Weekly Geek 3 
 
 
+**1. From shrimp Jesus to erotic tractors — The Guardian**
+
+Dit artikel gaat over AI-slop. Dat zijn afbeeldingen, filmpjes en teksten die met AI worden gemaakt en massaal op internet worden gezet. Vaak zijn ze heel raar of zien ze er nep uit. Denk bijvoorbeeld aan een afbeelding van Jezus met het lichaam van een garnaal.
+Mensen maken dit soort content soms om veel likes en views te krijgen. Hoe meer mensen erop klikken of reageren, hoe groter de kans dat het bericht verder wordt verspreid. Sommige makers verdienen hier ook geld mee.
+Het probleem is dat er steeds meer van dit soort content online komt. Daardoor wordt het moeilijker om goede en echte informatie te vinden.
+
+**Wat is belangrijk om te onthouden?**
+- AI kan heel snel veel afbeeldingen en filmpjes maken.
+- Mensen maken soms AI-content om veel views te krijgen en geld te verdienen.
+- Sociale media verspreiden berichten die veel aandacht krijgen.
+- Niet alles wat je op internet ziet, is echt.
+
+**2. Dead Internet Theory – Observatory**
+De Dead Internet Theory is een theorie over het internet. Volgens deze theorie bestaat een steeds groter deel van het internet uit bots en AI, in plaats van echte mensen. Bots zijn programma's die automatisch dingen doen, zoals berichten plaatsen of reageren op andere berichten. Sommige bots zijn handig, maar andere worden gebruikt om mensen te misleiden.
+
+Door AI kan er ook heel veel neppe of automatisch gemaakte content online komen. Hierdoor kan het lijken alsof een bericht heel populair is, terwijl een deel van de reacties misschien helemaal niet van echte mensen komt.
+De theorie zegt dus eigenlijk dat het internet steeds minder echt en persoonlijk wordt.
+
+**Wat is belangrijk om te onthouden?**
+- Er zijn steeds meer bots en AI berichten op internet.
+- Je weet niet altijd of je met een echt persoon praat.
+- Sommige berichten lijken populairder dan ze echt zijn.
+- Het is niet bewezen dat het internet grotendeels uit bots bestaat. Er zijn nog steeds heel veel echte mensen online.
+
+**3. Alive Internet Theory – Spencer Chang**
+De Alive Internet Theory kijkt juist naar de positieve kant van het internet. De schrijver vindt dat het internet niet dood is, omdat mensen nog steeds online contact met elkaar maken en samen dingen doen. Je kunt bijvoorbeeld online nieuwe vrienden maken, informatie delen of samen aan creatieve projecten werken. Ook zijn er kleine online groepen waar mensen met dezelfde hobby elkaar helpen.
+
+Het internet bestaat dus niet alleen uit AI, advertenties en sociale media. Er zijn nog steeds plekken waar mensen echt met elkaar praten en iets delen.
+
+**Wat is belangrijk om te onthouden?**
+- Mensen maken nog steeds echt contact via internet.
+- Je kunt online samenwerken en creatief bezig zijn.
+- Kleine online gemeenschappen kunnen heel waardevol zijn.
+- Mensen kunnen zelf helpen om het internet leuk en menselijk te houden.
+Het verschil met de Dead Internet Theory: de Dead Internet Theory kijkt vooral naar bots en neppe content. De Alive Internet Theory laat zien dat het internet ook nog steeds een goede plek kan zijn voor mensen.
 
 
+**4. Cursor Camp – Neal.fun**
+Cursor Camp is een interactieve website. Dat betekent dat je niet alleen naar informatie kijkt, maar ook zelf iets kunt doen en de website kunt ontdekken. De website is een voorbeeld van hoe internet ook creatief en leuk kan zijn. Je hoeft niet alleen maar door sociale media te scrollen of filmpjes te bekijken. Je kunt online ook nieuwe dingen ontdekken en ervaringen hebben.
 
+Dit past bij de Alive Internet Theory, omdat het laat zien dat internet meer kan zijn dan alleen berichten, likes en advertenties.
 
+**Wat is belangrijk om te onthouden?**
+- Je kunt zelf dingen ontdekken op een website.
+- Internet kan creatief en interactief zijn.
+- Niet alles hoeft om likes en views te draaien.
+- Websites kunnen mensen op een leuke manier bij elkaar brengen.
 
 
 
