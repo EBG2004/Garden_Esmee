@@ -734,6 +734,10 @@ main {
   gap: 0.6rem;
 }
 
+/* ========================================
+   BEKENDE NUMMERS — KLEUREN PER ARTIEST
+======================================== */
+
 .songs p,
 .songs div {
   margin: 0;
@@ -741,13 +745,8 @@ main {
   background: var(--light-pink);
   border: 0.15rem solid var(--border);
   border-radius: 0.75rem;
-  color: var(--burgundy);
+  color: var(--text);
   font-weight: bold;
-}
-
-.songs p:nth-child(even),
-.songs div:nth-child(even) {
-  background: var(--blue);
 }
 
 .songs span {
@@ -1014,6 +1013,8 @@ body:has(.artist-profile img[src*="ariana"]) {
   --yellow: #fff3b8;
   --white: #fffdf8;
   --text: #765d60;
+  --shadow: #ffcddb;
+  --border: #e58aa8;
 }
 
 body:has(.artist-profile img[src*="sabrina"]) {
@@ -1026,6 +1027,8 @@ body:has(.artist-profile img[src*="sabrina"]) {
   --yellow: #fff3b8;
   --white: #faffff;
   --text: #496b70;
+  --shadow: #d8fcff;
+  --border: #4c9ca8;
 }
 
 body:has(.artist-profile img[src*="olivia"]) {
@@ -1038,6 +1041,8 @@ body:has(.artist-profile img[src*="olivia"]) {
   --yellow: #fff3b8;
   --white: #fffaff;
   --text: #705b7b;
+  --shadow: #ead7f8;
+  --border: #9868b1;
 }
 
 body:has(.artist-profile img[src*="roxy"]) {
@@ -1050,6 +1055,8 @@ body:has(.artist-profile img[src*="roxy"]) {
   --yellow: #ffef9c;
   --white: #fffef8;
   --text: #75673e;
+  --shadow: #fff3b8;
+  --border: #a38a38;
 }
 
 body:has(.artist-profile img[src*="tate"]) {
@@ -1062,6 +1069,8 @@ body:has(.artist-profile img[src*="tate"]) {
   --yellow: #fff3b8;
   --white: #fffdf8;
   --text: #795b4e;
+  --shadow: #ffddc9;
+  --border: #b96e4c;
 }
 
 
@@ -1100,18 +1109,22 @@ html[data-theme="dark"] body:has(.artist-profile img[src*="ariana"]) {
   --yellow: #45402e;
   --white: #2d2429;
   --text: #f0e2e7;
+  --shadow: #49313b;
+  --border: #efb4ca;
 }
 
 html[data-theme="dark"] body:has(.artist-profile img[src*="sabrina"]) {
   --cream: #182225;
   --light-pink: #294044;
-  --pink: #91cbd2;
-  --burgundy: #a6e0e7;
+  --pink: #57a7b0;
+  --burgundy: #6cb0b8;
   --blue: #26383b;
   --lilac: #304044;
   --yellow: #3d402f;
   --white: #202c2f;
   --text: #e5f2f4;
+  --shadow: #294044;
+  --border: #6cb0b8;
 }
 
 html[data-theme="dark"] body:has(.artist-profile img[src*="olivia"]) {
@@ -1124,6 +1137,8 @@ html[data-theme="dark"] body:has(.artist-profile img[src*="olivia"]) {
   --yellow: #45402e;
   --white: #2d2732;
   --text: #eee5f2;
+  --shadow: #403548;
+  --border: #d5b4e5;
 }
 
 html[data-theme="dark"] body:has(.artist-profile img[src*="roxy"]) {
@@ -1136,6 +1151,8 @@ html[data-theme="dark"] body:has(.artist-profile img[src*="roxy"]) {
   --yellow: #45412e;
   --white: #302f25;
   --text: #f0eddc;
+  --shadow: #45412e;
+  --border: #ead990;
 }
 
 html[data-theme="dark"] body:has(.artist-profile img[src*="tate"]) {
@@ -1148,6 +1165,8 @@ html[data-theme="dark"] body:has(.artist-profile img[src*="tate"]) {
   --yellow: #45402e;
   --white: #302825;
   --text: #f2e7e1;
+  --shadow: #49372f;
+  --border: #edb99e;
 }
 
 /* ========================================
@@ -1170,16 +1189,28 @@ html[data-theme="dark"] .pagina {
 
 html[data-theme="dark"] .songs p,
 html[data-theme="dark"] .songs div {
-  background: var(--light-pink);
 }
 
 html[data-theme="dark"] .songs p:nth-child(even),
 html[data-theme="dark"] .songs div:nth-child(even) {
-  background: var(--blue);
 }
 
+/* ========================================
+   WAAROM IK HAAR LEUK VIND — DARK MODE
+======================================== */
+
 html[data-theme="dark"] .waarom {
-  background: #49313b;
+  background: var(--light-pink);
+  color: var(--text);
+}
+
+html[data-theme="dark"] .waarom h2,
+html[data-theme="dark"] .waarom p:last-child {
+  color: var(--text);
+}
+
+html[data-theme="dark"] .waarom .label {
+  color: var(--burgundy);
 }
 
 html[data-theme="dark"] .waarom h2,
@@ -1407,3 +1438,38 @@ nav a {
     position: relative;
 }
 
+
+/* ========================================
+   ARTIESTENKAARTEN — DARK MODE
+======================================== */
+
+html[data-theme="dark"] .artiest-kaart {
+  color: var(--text);
+  border-color: var(--burgundy);
+}
+
+html[data-theme="dark"] .artiest-kaart h2,
+html[data-theme="dark"] .artiest-kaart h3,
+html[data-theme="dark"] .artiest-kaart p {
+  color: var(--text);
+}
+
+html[data-theme="dark"] .kaart-ariana {
+  background: #49313b;
+}
+
+html[data-theme="dark"] .kaart-sabrina {
+  background: #294044;
+}
+
+html[data-theme="dark"] .kaart-olivia {
+  background: #403548;
+}
+
+html[data-theme="dark"] .kaart-roxy {
+  background: #45412e;
+}
+
+html[data-theme="dark"] .kaart-tate {
+  background: #49372f;
+}
