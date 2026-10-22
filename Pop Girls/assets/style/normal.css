@@ -262,10 +262,20 @@ main {
 
 /* Light/dark-knop */
 
+
+header {
+  position: relative;
+}
+
 #theme-toggle {
-  display: block;
-  margin: 0 0 1rem auto;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+
+  margin: 0;
   padding: 0.7em 1em;
+
   background: var(--white);
   border: 0.15em solid var(--burgundy);
   border-radius: 2em;
@@ -273,6 +283,7 @@ main {
   font: inherit;
   cursor: pointer;
 }
+
 
 #theme-toggle:hover {
   background: var(--light-pink);

@@ -818,7 +818,7 @@ footer a {
   color: inherit;
 }
 
-/* Extra witte vlakken binnen het YMCA-ontwerp verwijderen */
+
 body > main {
     background: transparent;
 }
@@ -837,7 +837,7 @@ body .poster > .title {
     padding-right: 0;
 }
 
-/* De kleine Village People-tekst blijft zichtbaar */
+
 body .poster .small-ymca {
     background: transparent;
     color: var(--text);
@@ -846,7 +846,113 @@ body .poster .small-ymca {
     z-index: 10;
 }
 
-/* De YMCA-titel krijgt dezelfde donkere kleur als de andere tekst */
+
 body .poster .title h1 {
     color: var(--text);
+}
+
+
+
+/* ========================================
+   ANIMATIES — STARTEN NA DE KLIK
+======================================== */
+
+/* De knop */
+#ymca-toggle {
+    position: absolute;
+    opacity: 0;
+}
+
+.animatie-knop {
+    display: block;
+    width: fit-content;
+    margin: 1rem auto;
+    padding: 0.8em 1.2em;
+    background: #f1c5dc;
+    color: #29222a;
+    border: 0.15em solid #29222a;
+    border-radius: 2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#ymca-toggle:focus-visible + .animatie-knop {
+    outline: 0.2em solid #d43c88;
+    outline-offset: 0.2em;
+}
+
+/* De letters staan stil totdat je op de knop klikt */
+#ymca-toggle:checked ~ .poster .ymca-left span,
+#ymca-toggle:checked ~ .poster .ymca-right span {
+    display: inline-block;
+    animation: letter-dans 0.7s ease-in-out infinite alternate;
+}
+
+/* De letters dansen om de beurt */
+#ymca-toggle:checked ~ .poster .ymca-left span:nth-child(3),
+#ymca-toggle:checked ~ .poster .ymca-right span:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+#ymca-toggle:checked ~ .poster .ymca-left span:nth-child(5),
+#ymca-toggle:checked ~ .poster .ymca-right span:nth-child(5) {
+    animation-delay: 0.3s;
+}
+
+#ymca-toggle:checked ~ .poster .ymca-left span:nth-child(7),
+#ymca-toggle:checked ~ .poster .ymca-right span:nth-child(7) {
+    animation-delay: 0.45s;
+}
+
+/* Beweeg de letters zonder hun draaiing te verliezen */
+@keyframes letter-dans {
+    from {
+        translate: 0 0;
+    }
+
+    to {
+        translate: 0 -0.3em;
+    }
+}
+
+/* IT'S FUN TO STAY beweegt pas na de klik */
+#ymca-toggle:checked ~ .poster .title h1 {
+    animation: titel-beweeg 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes titel-beweeg {
+    from {
+        rotate: -2deg;
+        scale: 1;
+    }
+
+    to {
+        rotate: 2deg;
+        scale: 1.05;
+    }
+}
+
+/* De grote YMCA pulseert pas na de klik */
+#ymca-toggle:checked ~ .poster .big-ymca {
+    animation: ymca-pulse 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes ymca-pulse {
+    from {
+        scale: 1;
+    }
+
+    to {
+        scale: 1.08;
+    }
+}
+
+/* Respecteer de instelling voor minder beweging */
+@media (prefers-reduced-motion: reduce) {
+    #ymca-toggle:checked ~ .poster .ymca-left span,
+    #ymca-toggle:checked ~ .poster .ymca-right span,
+    #ymca-toggle:checked ~ .poster .title h1,
+    #ymca-toggle:checked ~ .poster .big-ymca {
+        animation: none;
+    }
 }
