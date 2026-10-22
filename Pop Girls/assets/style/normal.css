@@ -1365,3 +1365,45 @@ html[data-theme="dark"] .vinyl-midden {
     margin: 0;
 }
 
+
+
+
+/* ========================================
+   TOETSENBORDTOEGANKELIJKHEID
+======================================== */
+
+/* Duidelijke focus voor links en knoppen */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+summary:focus-visible {
+    outline: 3px solid #8a245b;
+    outline-offset: 4px;
+}
+
+/* Zorg dat links en knoppen niet onzichtbaar zijn */
+a,
+button {
+    cursor: pointer;
+}
+
+
+
+/* ========================================
+   TOETSENBORDTOEGANKELIJKHEID
+======================================== */
+
+/* Duidelijke focus op navigatielinks */
+nav a:focus-visible {
+    outline: 3px solid #8a245b;
+    outline-offset: 5px;
+    border-radius: 3px;
+}
+
+/* Zorg dat de focus niet wordt verborgen */
+nav a {
+    position: relative;
+}
+
