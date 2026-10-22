@@ -672,6 +672,102 @@ Dit past bij de Alive Internet Theory, omdat het laat zien dat internet meer kan
 - Websites kunnen mensen op een leuke manier bij elkaar brengen.
 
 
+### 22 okt - Thuis 
+
+### Toegankelijkheid
+
+Omdat ik tijdens de lessen over toegankelijkheid ziek was, heb ik de stof zelfstandig ingehaald door de beoordelingscriteria te lezen en deze toe te passen op mijn eigen website.
+
+Ik heb mijn Pop Girls Digital Garden getest met alleen het toetsenbord. Ik heb gecontroleerd of ik met Tab door de links en knoppen kan navigeren, of de focus zichtbaar is en of ik interactieve onderdelen met Enter en de spatiebalk kan bedienen. Ook heb ik de volgorde van de navigatie gecontroleerd en getest of het cookievenster goed werkt.
+
+Daarnaast heb ik mijn website getest met VoiceOver op mijn Mac. Ik heb gecontroleerd of de paginatitel, navigatie, links, koppen en het cookievenster duidelijk worden voorgelezen.
+
+Door deze tests heb ik zelf geleerd waar ik op moet letten bij het toegankelijk maken van een website. Ik moet de alternatieve teksten van mijn afbeeldingen nog controleren en eventuele verbeteringen daarna opnieuw testen.
+Ik vind het fijn dat ik de beoordelingscriteria zelfstandig heb kunnen gebruiken om mijn website te controleren en verder te verbeteren.
+
+
+### Algemene beoordelingscriteria
+
+**1. Mijn website op GitHub en DLO**
+Ik heb mijn website gemaakt en de bestanden op GitHub gezet. Ik controleer of mijn pagina’s en links goed werken, zodat bezoekers mijn website zonder problemen kunnen bekijken.
+
+**2. Voortgangsgesprekken**
+Tijdens de voortgangsgesprekken kon ik laten zien waar ik mee bezig was en welke stappen ik had gezet. Ik heb mijn website steeds verder ontwikkeld en gewerkt aan de verbeterpunten.
+
+**3. Mijn proces vastleggen**
+In mijn learning log hou ik bij hoe ik aan mijn website heb gewerkt. Ik beschrijf mijn ideeën, ontwerpkeuzes, feedback en verbeteringen. Zo kan ik laten zien hoe mijn website zich heeft ontwikkeld.
+
+**4. Mijn bronnen vermelden**
+Ik gebruik bronnen om informatie op te zoeken en inspiratie op te doen. Ik vermeld mijn bronnen in mijn learning log en in mijn code wanneer dat nodig is. Zo is duidelijk waar bepaalde informatie of code vandaan komt.
+
+**5. Mijn eigen werk kunnen uitleggen**
+Ik heb zelf nagedacht over het ontwerp van mijn Pop Girls Digital Garden. Ik kan uitleggen waarom ik voor roze kleuren, opvallende koppen en een pop girl uitstraling heb gekozen. 
+
+**6. Verzorgd werk**
+Ik probeer mijn website netjes en overzichtelijk te houden. Ik let op spelling, uitlijning, kleuren, lettergroottes en de details van mijn ontwerp. Ik wil dat alle pagina’s bij dezelfde stijl passen.
+
+### 23 okt - (laatste werkgroep)
+### Reflectie op mijn Pop Girls Digital Garden
+
+## Oriënteren en begrijpen
+
+**Tempo, ritme en betekenis van de songtekst**
+Bij mijn songtekstontwerp voor YMCA probeer ik het ritme en de sfeer van het nummer terug te laten komen in de typografie. Door te spelen met de grootte en plaatsing van letters wil ik de tekst levendiger maken. Ook iemand die het nummer niet kent, moet iets van het ritme en de sfeer kunnen herkennen.
+
+**Mijn learning log**
+In mijn learning log houd ik belangrijke momenten uit mijn ontwerpproces bij. Ik beschrijf mijn eerste ideeën, de schetsen die ik heb gemaakt, de feedback die ik kreeg en de aanpassingen die ik daarna heb gedaan.
+
+## Verbeelden en conceptualiseren
+
+**Meerdere richtingen verkennen**
+Voor mijn songtekstontwerp heb ik verschillende ideeën onderzocht en schetsen gemaakt. Hierdoor kon ik verschillende ideeën bekijken voordat ik een richting koos. Ik heb mijn ideeën verder aangepast op basis van feedback.
+
+**Persoonlijke vormgeving**
+Bij mijn Pop Girls Digital Garden heb ik gekozen voor een zachte roze stijl met een glamoureuze en persoonlijke uitstraling. De kleuren, typografie en vormgeving passen bij mijn interesse in popartiesten. Bij mijn YMCA ontwerp kijk ik juist naar welke vormgeving goed past bij het nummer.
+
+## Prototypen en uitwerken
+
+**Privacy en cookies**
+Ik heb een cookievenster gemaakt dat past bij de stijl van mijn website. Bezoekers kunnen via de knoppen een keuze maken.
+
+**Toegankelijkheid**
+Ik heb de beoordelingscriteria over toegankelijkheid zelfstandig bekeken, omdat ik tijdens de lessen hierover ziek was. Daarna heb ik de punten toegepast op mijn eigen website. Ik heb bijvoorbeeld gekeken of de website duidelijk en makkelijk te gebruiken is.
+
+**HTML valideren**
+Ik controleer mijn HTML op fouten en kijk of mijn code volgens de HTML richtlijnen is opgebouwd. Hierdoor kan ik fouten ontdekken en mijn website verbeteren.
+
+**Navigeren met alleen het toetsenbord**
+Ik heb getest of ik met het toetsenbord door mijn website kan navigeren. Met Tab kan ik naar links en knoppen gaan. Ik heb ook gecontroleerd of duidelijk zichtbaar is welk onderdeel geselecteerd is en of ik onderdelen met Enter of de spatiebalk kan bedienen.
+
+**Testen met een screenreader**
+Ik heb mijn website getest met VoiceOver op mijn Mac. Ik heb gecontroleerd of de paginatitel, navigatie, links, koppen en het cookievenster duidelijk worden voorgelezen. Ik moet de alternatieve teksten van mijn afbeeldingen ook nog goed controleren.
+
+**De toegankelijkheid verbeteren**
+Door mijn website met het toetsenbord en VoiceOver te testen, heb ik zelf kunnen ontdekken waar ik op moet letten. Ik gebruik deze resultaten om verbeteringen aan te brengen. Daarna kan ik opnieuw testen of alles goed werkt.
+
+**Kleur, beeld en typografie**
+Ik heb gekozen voor een voornamelijk roze kleurenpalet, opvallende koppen en een glamoureuze uitstraling. Dit past bij het onderwerp Pop Girls en bij mijn eigen interesses. Ik gebruik verschillende lettergroottes en kleuren om belangrijke onderdelen meer op te laten vallen.
+
+**Gestalt, visuele hiërarchie en typografie**
+Ik probeer onderdelen die bij elkaar horen ook bij elkaar te plaatsen. Door koppen groter te maken dan gewone tekst, ontstaat er een duidelijke volgorde. Hierdoor kunnen bezoekers sneller zien welke informatie belangrijk is.
+
+**Responsive en grid-based layout**
+Ik gebruik een duidelijke indeling om de inhoud van mijn website overzichtelijk te presenteren. Ik controleer of de pagina’s zich goed aanpassen aan verschillende schermformaten, zodat de website niet alleen op mijn laptop prettig werkt.
+
+**Minimaal twee thema’s**
+Ik controleer of mijn website minimaal twee thema’s heeft, bijvoorbeeld een licht en een donker thema. Ik wil dat de vormgeving in beide thema’s duidelijk blijft en dat de tekst goed leesbaar is.
+
+**CSS custom properties**
+Ik gebruik CSS om de vormgeving van mijn website te regelen. Met CSS custom properties kan ik kleuren en andere waarden centraal instellen. Hierdoor kan ik mijn stijl makkelijker aanpassen en dezelfde kleuren op meerdere plekken gebruiken.
+
+**@font-face**
+Met `@font-face` kan ik eigen lettertypebestanden in mijn website laden. Hierdoor kan ik lettertypes gebruiken die passen bij de uitstraling van mijn ontwerp. Ik controleer of de lettertypes goed worden weergegeven op mijn pagina’s.
+
+**Bronnenlijst**
+- W3 Schools
+- Deep Dives
+- Google/Youtube
+
 
 
 
