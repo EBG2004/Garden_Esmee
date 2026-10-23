@@ -707,6 +707,13 @@ Ik heb zelf nagedacht over het ontwerp van mijn Pop Girls Digital Garden. Ik kan
 Ik probeer mijn website netjes en overzichtelijk te houden. Ik let op spelling, uitlijning, kleuren, lettergroottes en de details van mijn ontwerp. Ik wil dat alle pagina’s bij dezelfde stijl passen.
 
 ### 23 okt - (laatste werkgroep)
+
+<img width="5712" height="400" alt="IMG_300" src="https://github.com/user-attachments/assets/d04abe18-9eeb-4035-8b7b-1cd5dd1a78e4" />
+<img width="5712" height="400" alt="IMG_300" src="https://github.com/user-attachments/assets/7a94bfaa-b6f5-4da5-9b0b-d4a5d26aac39" />
+<img width="5712" height="400" alt="IMG_300" src="https://github.com/user-attachments/assets/3d5c86ce-babc-4a8f-a0ec-2ffae3f3e45f" />
+
+
+
 ### Reflectie op mijn Pop Girls Digital Garden
 
 ## Oriënteren en begrijpen
@@ -767,6 +774,8 @@ Met `@font-face` kan ik eigen lettertypebestanden in mijn website laden. Hierdoo
 - W3 Schools
 - Deep Dives
 - Google/Youtube
+
+
 
 
 
