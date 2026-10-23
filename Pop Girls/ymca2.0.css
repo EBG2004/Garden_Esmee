@@ -857,7 +857,6 @@ body .poster .title h1 {
    ANIMATIES — STARTEN NA DE KLIK
 ======================================== */
 
-/* De knop */
 #ymca-toggle {
     position: absolute;
     opacity: 0;
@@ -881,7 +880,6 @@ body .poster .title h1 {
     outline-offset: 0.2em;
 }
 
-/* De letters staan stil totdat je op de knop klikt */
 #ymca-toggle:checked ~ .poster .ymca-left span,
 #ymca-toggle:checked ~ .poster .ymca-right span {
     display: inline-block;
@@ -904,7 +902,6 @@ body .poster .title h1 {
     animation-delay: 0.45s;
 }
 
-/* Beweeg de letters zonder hun draaiing te verliezen */
 @keyframes letter-dans {
     from {
         translate: 0 0;
@@ -915,7 +912,6 @@ body .poster .title h1 {
     }
 }
 
-/* IT'S FUN TO STAY beweegt pas na de klik */
 #ymca-toggle:checked ~ .poster .title h1 {
     animation: titel-beweeg 1.2s ease-in-out infinite alternate;
 }
@@ -932,7 +928,6 @@ body .poster .title h1 {
     }
 }
 
-/* De grote YMCA pulseert pas na de klik */
 #ymca-toggle:checked ~ .poster .big-ymca {
     animation: ymca-pulse 0.8s ease-in-out infinite alternate;
 }
@@ -947,7 +942,6 @@ body .poster .title h1 {
     }
 }
 
-/* Respecteer de instelling voor minder beweging */
 @media (prefers-reduced-motion: reduce) {
     #ymca-toggle:checked ~ .poster .ymca-left span,
     #ymca-toggle:checked ~ .poster .ymca-right span,
