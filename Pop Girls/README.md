@@ -776,6 +776,16 @@ Met `@font-face` kan ik eigen lettertypebestanden in mijn website laden. Hierdoo
 - Deep Dives
 - Google/Youtube
 
+  
+
+## Feedback Charley:
+
+**Wat heb ik veranderd aan mijn HTML?**
+
+Ik heb mijn HTML gecontroleerd en gecorrigeerd, zodat de code voldoet aan de W3C HTML richtlijnen. Hierbij heb ik gekeken of de HTML-elementen op de juiste manier zijn gebruikt en of de structuur van mijn pagina klopt. Ook heb ik gecontroleerd of mijn CSS bestand goed is gekoppeld aan mijn HTML-bestand. Na de aanpassingen is mijn HTML gevalideerd en voldoet deze aan de W3C richtlijnen :).
+
+
+
 
 
 
