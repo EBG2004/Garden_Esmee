@@ -567,6 +567,7 @@ header {
   font-size: 1.2rem;
 }
 
+
 /* ========================================
    SFEERWOORDEN
    ======================================== */
@@ -613,6 +614,29 @@ header {
   color: var(--text);
   font-size: 0.9rem;
 }
+
+
+/* ========================================
+   HOME — SFEERWOORDEN DARK MODE
+======================================== */
+
+html[data-theme="dark"] .sfeer li:nth-child(1) {
+  background: #ae4d79;
+}
+
+html[data-theme="dark"] .sfeer li:nth-child(2) {
+  background: #4d8fae;
+}
+
+html[data-theme="dark"] .sfeer li:nth-child(3) {
+  background: #6c3996;
+}
+
+html[data-theme="dark"] .sfeer li {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
 
 /* ========================================
    ARTIEST PROFIELPAGINA
@@ -1466,21 +1490,34 @@ html[data-theme="dark"] .artiest-kaart p {
 }
 
 html[data-theme="dark"] .kaart-ariana {
-  background: #49313b;
+    background: #ae4d79;
 }
 
 html[data-theme="dark"] .kaart-sabrina {
-  background: #294044;
+    background: #4d8fae;
 }
 
 html[data-theme="dark"] .kaart-olivia {
-  background: #403548;
+    background: #6c3996;
 }
 
 html[data-theme="dark"] .kaart-roxy {
-  background: #45412e;
+    background: #bfb748;
 }
 
 html[data-theme="dark"] .kaart-tate {
-  background: #49372f;
+    background: #bf8048;
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
 }

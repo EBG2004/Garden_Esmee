@@ -2,6 +2,16 @@
    BASIS
 ======================================== */
 
+
+@font-face {
+    font-family: "Seraphs";
+    src: url("./assets/SeraphsVF.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -21,7 +31,6 @@ body > main {
     padding: 30px;
 }
 
-/* Geen extra vlak over de poster */
 body .poster {
     background: transparent;
     box-shadow: none;
@@ -72,14 +81,12 @@ body .poster .title h1 {
     justify-content: center;
     align-items: center;
 
-    font-family: "Anton", sans-serif;
+    font-family: "Seraphs", serif;
 
     font-size: 70px;
     line-height: 0.75;
 }
 
-
-/* verschillende groottes en rotaties */
 
 .ymca-left span:nth-child(1) {
     transform: rotate(-8deg) scale(1.2);
@@ -114,8 +121,6 @@ body .poster .title h1 {
    TITEL
 ======================================== */
 
-
-/* TITEL */
 .title {
     grid-column: 2;
     grid-row: 1;
@@ -130,7 +135,7 @@ body .poster .title h1 {
 .title h1 {
     margin: 0;
 
-    font-family: "Anton", sans-serif;
+     font-family: "Seraphs", serif;
     font-size: clamp(70px, 8vw, 120px);
     line-height: 0.82;
     letter-spacing: 1px;
@@ -141,7 +146,7 @@ body .poster .title h1 {
 .title h2 {
     margin: 25px 0 0 0;
 
-    font-family: "Oswald", sans-serif;
+     font-family: "Seraphs", serif;
     font-weight: 300;
     font-size: 42px;
     letter-spacing: 5px;
@@ -152,7 +157,7 @@ body .poster .title h1 {
 .title .at-the {
     margin: 80px 0 0 80px;
 
-    font-family: "Oswald", sans-serif;
+     font-family: "Seraphs", serif;
     font-weight: 300;
     font-size: 28px;
     letter-spacing: 4px;
@@ -170,7 +175,7 @@ body .poster .title h1 {
 
     width: 500px;
 
-    font-family: "Oswald", sans-serif;
+     font-family: "Seraphs", serif;
     font-weight: 300;
 
     font-size: 20px;
@@ -219,7 +224,7 @@ body .poster .title h1 {
 
 
 .lyric-box .emphasis {
-    font-family: "Anton", sans-serif;
+     font-family: "Seraphs", serif;
 
     font-size: 27px;
     line-height: 30px;
@@ -242,7 +247,7 @@ body .poster .title h1 {
 
     margin: 0;
 
-    font-family: "Anton", sans-serif;
+    font-family: "Seraphs", serif;
     font-size: clamp(80px, 10vw, 150px);
     font-weight: normal;
 
@@ -269,7 +274,7 @@ body .poster .title h1 {
     justify-content: center;
     align-items: center;
 
-    font-family: "Anton", sans-serif;
+    font-family: "Seraphs", serif;
 
     font-size: 70px;
     line-height: 0.75;
@@ -315,7 +320,7 @@ body .poster .title h1 {
     left: 80px;
     top: 30px;
 
-    font-family: "Oswald", sans-serif;
+    font-family: "Seraphs", serif;
 
     font-size: 22px;
     letter-spacing: 5px;
@@ -344,32 +349,38 @@ body .poster .title h1 {
     .ymca-left,
     .ymca-right {
         font-size: 38px;
+        font-family: "Seraphs", serif;
     }
 
     .title {
         grid-column: 2;
         padding-top: 60px;
         min-width: 0;
+        font-family: "Seraphs", serif;
     }
 
     .title h1 {
         font-size: clamp(55px, 9vw, 85px);
+        font-family: "Seraphs", serif;
     }
 
     .title h2 {
         font-size: clamp(24px, 4vw, 34px);
         letter-spacing: 2px;
+        font-family: "Seraphs", serif;
     }
 
     .title .at-the {
         margin: 35px 0 0 25px;
         font-size: 24px;
+        font-family: "Seraphs", serif;
     }
 
     .lyric-box {
         width: min(420px, 65%);
         font-size: 16px;
         line-height: 1.5;
+        font-family: "Seraphs", serif;
     }
 
     .box-top {
@@ -385,6 +396,7 @@ body .poster .title h1 {
     .lyric-box .emphasis {
         font-size: 21px;
         line-height: 1.2;
+        font-family: "Seraphs", serif;
     }
 
     .big-ymca {
@@ -392,6 +404,7 @@ body .poster .title h1 {
         bottom: 55px;
         font-size: clamp(55px, 10vw, 85px);
         letter-spacing: 2px;
+        font-family: "Seraphs", serif;
     }
 
     .small-ymca {
@@ -399,6 +412,7 @@ body .poster .title h1 {
         top: 20px;
         font-size: 16px;
         letter-spacing: 2px;
+        font-family: "Seraphs", serif;
     }
 }
 
@@ -425,6 +439,7 @@ body .poster .title h1 {
     .ymca-right {
         font-size: 25px;
         line-height: 0.85;
+         font-family: "Seraphs", serif;
     }
 
     .title {
@@ -434,11 +449,13 @@ body .poster .title h1 {
     .title h1 {
         font-size: clamp(42px, 12vw, 65px);
         line-height: 0.95;
+        font-family: "Seraphs", serif;
     }
 
     .title h2 {
         margin-top: 22px;
         font-size: clamp(20px, 6vw, 28px);
+        font-family: "Seraphs", serif;
         line-height: 1.15;
         letter-spacing: 1px;
     }
@@ -447,6 +464,7 @@ body .poster .title h1 {
         margin: 30px 0 0 12px;
         font-size: 19px;
         letter-spacing: 2px;
+        font-family: "Seraphs", serif;
     }
 
     .lyric-box {
@@ -455,6 +473,7 @@ body .poster .title h1 {
         font-size: 13px;
         line-height: 1.5;
         overflow-wrap: anywhere;
+         font-family: "Seraphs", serif;
     }
 
     .box-top {
@@ -479,6 +498,7 @@ body .poster .title h1 {
     .lyric-box .emphasis {
         font-size: 16px;
         line-height: 1.3;
+         font-family: "Seraphs", serif;
     }
 
     .big-ymca {
@@ -488,6 +508,7 @@ body .poster .title h1 {
         font-size: clamp(42px, 12vw, 65px);
         letter-spacing: 1px;
         white-space: nowrap;
+         font-family: "Seraphs", serif;
     }
 
     .small-ymca {
@@ -496,6 +517,7 @@ body .poster .title h1 {
         max-width: calc(100% - 76px);
         font-size: 11px;
         letter-spacing: 1px;
+        font-family: "Seraphs", serif;
     }
 }
 
