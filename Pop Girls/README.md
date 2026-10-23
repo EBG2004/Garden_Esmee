@@ -708,9 +708,9 @@ Ik probeer mijn website netjes en overzichtelijk te houden. Ik let op spelling, 
 
 ### 23 okt - (laatste werkgroep)
 
-<img width="5712" height="400" alt="IMG_300" src="https://github.com/user-attachments/assets/d04abe18-9eeb-4035-8b7b-1cd5dd1a78e4" />
-<img width="5712" height="400" alt="IMG_300" src="https://github.com/user-attachments/assets/7a94bfaa-b6f5-4da5-9b0b-d4a5d26aac39" />
-<img width="5712" height="400" alt="IMG_300" src="https://github.com/user-attachments/assets/3d5c86ce-babc-4a8f-a0ec-2ffae3f3e45f" />
+<img width="5712" height="700" alt="IMG_500" src="https://github.com/user-attachments/assets/d04abe18-9eeb-4035-8b7b-1cd5dd1a78e4" />
+<img width="5712" height="700" alt="IMG_500" src="https://github.com/user-attachments/assets/7a94bfaa-b6f5-4da5-9b0b-d4a5d26aac39" />
+<img width="5712" height="700" alt="IMG_500" src="https://github.com/user-attachments/assets/3d5c86ce-babc-4a8f-a0ec-2ffae3f3e45f" />
 
 
 
