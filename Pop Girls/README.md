@@ -784,6 +784,15 @@ Met `@font-face` kan ik eigen lettertypebestanden in mijn website laden. Hierdoo
 
 Ik heb mijn HTML gecontroleerd en gecorrigeerd, zodat de code voldoet aan de W3C HTML richtlijnen. Hierbij heb ik gekeken of de HTML-elementen op de juiste manier zijn gebruikt en of de structuur van mijn pagina klopt. Ook heb ik gecontroleerd of mijn CSS bestand goed is gekoppeld aan mijn HTML-bestand. Na de aanpassingen is mijn HTML gevalideerd en voldoet deze aan de W3C richtlijnen :).
 
+**Metafoor Tekening Sprint 2**
+
+<img width="500" height="300" alt="sprint 2 metafoor" src="https://github.com/user-attachments/assets/c8ba0fec-f816-4423-9de0-3f7072499749" />
+
+
+### 26 okt - [Laatste les]
+
+
+
 
 
 
