@@ -836,7 +836,7 @@ html[data-theme="dark"] .sfeer li {
 
 /* ========================================
    TERUGLINK
-   ======================================== */
+======================================== */
 
 .terug {
   margin: 3rem 0 5rem;
@@ -844,22 +844,27 @@ html[data-theme="dark"] .sfeer li {
 }
 
 .terug a {
-  color: var(--burgundy);
+  display: inline-block;
+  color: var(--button-text);
+  background: var(--burgundy);
+  border: 0.15rem solid var(--burgundy);
+  border-radius: 1.5rem;
+  padding: 0.8rem 1.4rem;
+  font-size: 0.75rem;
   font-weight: bold;
+  letter-spacing: 0.06rem;
   text-decoration: none;
-  border-bottom: 0.15rem solid var(--burgundy);
+  opacity: 1;
+  visibility: visible;
 }
 
-/* ========================================
-   STERRETJES
-   ======================================== */
-
-.ster {
-  color: var(--burgundy);
-  font-size: 1.5rem;
-  pointer-events: none;
-  opacity: 0.8;
+.terug a:hover {
+  background: var(--pink);
+  color: var(--text);
+  transform: translateY(-0.2rem);
+  box-shadow: 0.3rem 0.3rem 0 var(--burgundy);
 }
+
 
 /* ========================================
    FOOTER
