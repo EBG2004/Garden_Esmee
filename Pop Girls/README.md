@@ -714,8 +714,7 @@ Ik probeer mijn website netjes en overzichtelijk te houden. Ik let op spelling, 
 
 
 
-
-### Reflectie op mijn Pop Girls Digital Garden
+### Competenties: 
 
 ## Oriënteren en begrijpen
 
@@ -790,6 +789,66 @@ Ik heb mijn HTML gecontroleerd en gecorrigeerd, zodat de code voldoet aan de W3C
 
 
 ### 26 okt - [Laatste les]
+
+<img width="500" height="400" alt="IMG_3816" src="https://github.com/user-attachments/assets/a6a8f660-7b26-4151-a8e7-b8787329f0da" />
+<img width="500" height="400" alt="IMG_3815" src="https://github.com/user-attachments/assets/38d72837-b979-4ab5-85d1-5bb1e7b5e053" />
+
+**Reflectie op de expo**
+
+Tijdens de expo hebben mijn klasgenoten mijn website bekeken en feedback gegeven met blauwe, rode en groene stickers. Met deze stickers konden ze aangeven wat ze goed vonden aan mijn website en wat ik eventueel nog kan verbeteren.
+
+Ik kreeg vooral positieve feedback over mijn vormgeving en techniek. Mijn klasgenoten vonden dat mijn website er mooi en professioneel uitziet. Ook kreeg ik terug dat mijn CSS er netjes uitziet en dat de website goed leesbaar is. Dit vind ik fijn om te horen, omdat ik veel tijd heb besteed aan het ontwerpen van mijn Pop Girls Digital Garden.
+
+De blauwe sticker ging over toegankelijkheid en privacy. Ik wil ervoor zorgen dat mijn website niet alleen mooi is, maar ook voor verschillende mensen goed te gebruiken is.
+
+Ik vond het leuk om mijn website tijdens de expo aan mijn klasgenoten te laten zien en hun mening te horen. Door de feedback heb ik een beter beeld gekregen van wat al goed gaat. Ik neem deze feedback mee naar het volgende blok!
+
+
+### Reflectie op mijn Pop Girls Digital Garden
+
+## Oriënteren en begrijpen
+
+Tijdens het maken van mijn Pop Girls Digital Garden en mijn songtekstontwerp voor YMCA heb ik verschillende ideeën onderzocht. Bij mijn YMCA ontwerp probeer ik het ritme en de sfeer van het nummer terug te laten komen in de typografie. Door te spelen met de grootte en plaatsing van letters wil ik de tekst levendiger maken. Ook iemand die het nummer niet kent of doof is moet iets van de sfeer kunnen herkennen.
+
+Tijdens mijn ontwerpproces hou ik belangrijke momenten bij in mijn learning log. Ik beschrijf mijn eerste ideeën, de schetsen die ik heb gemaakt, de feedback die ik heb gekregen en de aanpassingen die ik daarna heb gedaan. Zo kan ik laten zien hoe mijn ontwerpen is ontstaan.
+
+## Verbeelden en conceptualiseren
+
+Voor mijn songtekst heb ik verschillende ideeën onderzocht en schetsen gemaakt. Hierdoor kon ik meerdere richtingen bekijken voordat ik een keuze maakte. Met de feedback die ik kreeg tijdens een gezamenlijk presentatie kon ik mijn ontwerp verder aanpassen en verbeteren.
+
+Voor mijn Pop Girls Digital Garden heb ik gekozen voor een zachte roze stijl met een beetje mijn persoonlijke uitstraling. De kleuren, typografie en vormgeving passen bij mijn onderwerp popartiesten. Bij mijn YMCA ontwerp kijk ik juist naar welke vormgeving het beste bij het nummer past.
+
+Ik heb ook nagedacht over de indeling van mijn website. Door onderdelen die bij elkaar horen bij elkaar te plaatsen en belangrijke koppen groter te maken, ontstaat er een duidelijke Hierachie. Dit helpt gebruiker om de website makkelijker te begrijpen en snel belangrijke informatie te vinden.
+
+## Prototypen en uitwerken
+
+Tijdens het bouwen van mijn website heb ik gewerkt aan de vormgeving, de techniek en de toegankelijkheid. Ik heb gekozen voor een roze kleurenpalet, opvallende koppen en een pop uitstraling. Deze stijl past bij het onderwerp Pop Girls en bij mijn eigen interesses.
+
+Om mijn website overzichtelijk te houden, gebruik ik CSS voor de vormgeving. Ook gebruik ik `@font-face` om eigen lettertypes in mijn website te laden. Hierdoor kan ik de vormgeving beter laten passen bij mijn stijl. Daarnaast heb ik een light/Dark mode gemaakt. Ik heb controleert of de tekst in beide thema's goed leesbaar blijft. Super tof dat ik dit heb kunnen maken. Zag het vaak voorbij komen maar nooit geweten hoe je het zelf maakt.
+
+Voor de cookies heb ik een cookievenster gemaakt dat bij mijn website past. Gebruikers kunnen via de knoppen hun voorkeur aangeven. Ik heb hierbij ook gelet op de duidelijkheid van het venster.
+
+Bij mijn YMCA ontwerp vond ik het maken van de animatie het moeilijkste onderdeel. Ik vond het lastig om de animatie te maken zoals ik het in mijn hoofd had. Toch ben ik blijven proberen en heb ik gekeken naar wat mij wel lukte. Uiteindelijk heb ik de animatie gemaakt die wel ik gelukt. Niet helemaal perfect maar heb ik geprobeerd. Hoewel niet alles is gelukt zoals ik had bedacht, ben ik trots op het eindresultaat. Ik heb nieuwe dingen geprobeerd en geleerd wat ik moeilijk vind. Ik ben vooral trots op het deel van de animatie dat wel is gelukt. 
+
+## Testen en verbeteren
+
+Tijdens het maken van mijn website heb ik verschillende onderdelen getest. Ik heb mijn HTML met een validator gecheckt om fouten in mijn code te ontdekken. Zo kan ik mijn code verbeteren en ervoor zorgen dat de HTML goed is volgens de wet.
+
+Ook heb ik gekeken naar de toegankelijkheid van mijn website. Omdat ik tijdens de lessen hierover ziek was, heb ik de beoordelingscriteria zelf bekeken. Daarna heb ik het toegepast op mijn eigen website.
+
+Ik heb getest of ik mijn website alleen met het toetsenbord kan bedienen. Met Tab kan ik naar links en knoppen gaan. Ook heb ik gecheckt of duidelijk zichtbaar is welk onderdeel geselecteerd is en ik onderdelen met Enter of de spatiebalk kan bedienen. Daarnaast heb ik mijn website getest met VoiceOver op mijn Mac. 
+Door deze tests heb ik geleerd waar ik op moet letten bij het toegankelijk maken van een website. 
+
+## Bronnen
+
+Tijdens het maken van mijn website heb ik verschillende bronnen gebruikt om informatie op te zoeken en meer te leren over programmeren.
+Want natuurlijk wist ik niet alles uit mijn hoofd. 
+- W3Schools
+- Deep Dives
+- Google en YouTube
+
+
+
 
 
 
